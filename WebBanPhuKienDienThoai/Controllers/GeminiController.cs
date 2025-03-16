@@ -56,6 +56,6 @@ namespace NguyenPhuongTinh_Tuan3.Controllers
                 return Json(new { success = false, error = ex.Message });
             }
         }
-
+        
     }
 }

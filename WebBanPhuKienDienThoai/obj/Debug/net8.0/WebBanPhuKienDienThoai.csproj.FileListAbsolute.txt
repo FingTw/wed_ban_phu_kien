@@ -170,3 +170,4 @@ D:\c#\wed\WebBanPhuKienDienThoai\WebBanPhuKienDienThoai\obj\Debug\net8.0\refint\
 D:\c#\wed\WebBanPhuKienDienThoai\WebBanPhuKienDienThoai\obj\Debug\net8.0\WebBanPhuKienDienThoai.pdb
 D:\c#\wed\WebBanPhuKienDienThoai\WebBanPhuKienDienThoai\obj\Debug\net8.0\WebBanPhuKienDienThoai.genruntimeconfig.cache
 D:\c#\wed\WebBanPhuKienDienThoai\WebBanPhuKienDienThoai\obj\Debug\net8.0\ref\WebBanPhuKienDienThoai.dll
+D:\c#\wed\WebBanPhuKienDienThoai\WebBanPhuKienDienThoai\obj\Debug\net8.0\WebBanPhuKienDienThoai.sourcelink.json

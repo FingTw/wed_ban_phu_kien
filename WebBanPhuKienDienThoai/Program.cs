@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using WebBanPhuKienDienThoai.Data;
 using WebBanPhuKienDienThoai.Models;
-using WebBanPhuKienDienThoai.Repositories;
+using WebBanPhuKienDienThoai.Respository;
 using WebBanPhuKienDienThoai.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,25 +13,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
-builder.Services.AddScoped<IProductCategoryRepository, EFProductCategoryRepository>();
+builder.Services.AddScoped<IDeviceTypeRepository, EFDeviceTypeRepository>();
 
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<IGeminiService, GeminiService>();
-
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    var context = services.GetRequiredService<ApplicationDbContext>();
-
-    // Áp dụng migrations
-    context.Database.Migrate();
-
-    // Seed dữ liệu
-    DataSeeder.SeedData(context);
-}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

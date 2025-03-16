@@ -1,7 +1,5 @@
-﻿using WebBanPhuKienDienThoai.Models;
+using WebBanPhuKienDienThoai.Models;
 
-namespace WebBanPhuKienDienThoai.Repositories
-{
     public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetAllAsync();
@@ -9,6 +7,5 @@ namespace WebBanPhuKienDienThoai.Repositories
         Task AddAsync(Product product);
         Task UpdateAsync(Product product);
         Task DeleteAsync(int id);
-
+        Task<IEnumerable<Product>> GetByCategoryIdAsync(int categoryId);
     }
-}

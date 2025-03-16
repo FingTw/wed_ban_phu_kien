@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\c#\\wed\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai\\wwwroot\\images\\20230817.jpg",
+      "PackagePath": "staticwebassets\\images\\20230817.jpg"
+    },
+    {
       "Id": "D:\\c#\\wed\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

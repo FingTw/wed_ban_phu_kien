@@ -1,0 +1,27 @@
+@model IEnumerable<WebBanPhuKienDienThoai.Models.DeviceType>
+
+<div class="container mt-4">
+    <h2 class="mb-3">Danh sách thiết bị</h2>
+    <table class="table table-striped table-hover shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th class="text-center">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var deviceType in Model)
+            {
+                <tr>
+                    <td>@deviceType.Id</td>
+                    <td>@deviceType.Name</td>
+                    <td class="text-center">
+                        <a asp-action="Update" asp-route-id="@deviceType.Id" class="btn btn-warning btn-sm">Sửa</a>
+                        <a asp-action="Delete" asp-route-id="@deviceType.Id" class="btn btn-danger btn-sm">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

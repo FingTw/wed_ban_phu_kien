@@ -1,7 +1,5 @@
-﻿using WebBanPhuKienDienThoai.Models;
+using WebBanPhuKienDienThoai.Models;
 
-namespace WebBanPhuKienDienThoai.Repositories
-{
     public interface ICategoryRepository
     {
         Task<IEnumerable<Category>> GetAllAsync();
@@ -10,4 +8,3 @@ namespace WebBanPhuKienDienThoai.Repositories
         Task UpdateAsync(Category category);
         Task DeleteAsync(int id);
     }
-}

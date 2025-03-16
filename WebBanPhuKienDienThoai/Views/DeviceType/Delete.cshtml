@@ -1,0 +1,13 @@
+@model WebBanPhuKienDienThoai.Models.DeviceType
+
+<div class="container mt-4">
+    <h2 class="mb-3 text-danger">Xóa danh mục</h2>
+    <div class="alert alert-warning">
+        Bạn có chắc chắn muốn xóa danh mục <strong>@Model.Name</strong> không?
+    </div>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>
