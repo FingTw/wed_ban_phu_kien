@@ -4,7 +4,7 @@ using WebBanPhuKienDienThoai.Models;
     {
         Task<IEnumerable<Product>> GetAllAsync();
         Task<Product> GetByIdAsync(int id);
-        Task AddAsync(Product product);
+        Task AddAsync(Product product , List<ProductImage> productImages);
         Task UpdateAsync(Product product);
         Task DeleteAsync(int id);
         Task<IEnumerable<Product>> GetByCategoryIdAsync(int categoryId);

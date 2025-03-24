@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\wed\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj": {}
+    "/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai.csproj": {}
   },
   "projects": {
-    "D:\\c#\\wed\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj": {
+    "/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\wed\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
+        "projectUniqueName": "/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai.csproj",
         "projectName": "WebBanPhuKienDienThoai",
-        "projectPath": "D:\\c#\\wed\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\wed\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai\\obj\\",
+        "projectPath": "/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai.csproj",
+        "packagesPath": "/Users/phuongtinh/.nuget/packages/",
+        "outputPath": "/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/phuongtinh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,13 +37,20 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -69,6 +70,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -90,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

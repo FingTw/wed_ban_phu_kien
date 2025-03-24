@@ -29,12 +29,18 @@ namespace WebBanPhuKienDienThoai.Respository
             return await _context.Products
                 .Include(p => p.DeviceType)  // 🔹 Load thông tin DeviceType
                 .Include(p => p.Category)    // 🔹 Load cả Category nếu cần
+                .Include(p => p.Images)      // 🔹 Load danh sách hình ảnh
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task AddAsync(Product product)
+        public async Task AddAsync(Product product , List<ProductImage> productImages)
         {
             _context.Products.Add(product);
+            foreach (var image in productImages)
+            {
+                image.Product = product; // Gắn sản phẩm vào từng hình ảnh
+                _context.ProductImages.Add(image);
+            }
             await _context.SaveChangesAsync();
         }
 

@@ -17,93 +17,123 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebBanPhuKienDienThoai
 build_property.RootNamespace = WebBanPhuKienDienThoai
-build_property.ProjectDir = D:\c#\wed\WebBanPhuKienDienThoai\WebBanPhuKienDienThoai\
+build_property.ProjectDir = /Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\c#\wed\WebBanPhuKienDienThoai\WebBanPhuKienDienThoai
+build_property.MSBuildProjectDirectory = /Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Category/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Category/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Category/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Category/ProductsByCategory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcUHJvZHVjdHNCeUNhdGVnb3J5LmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Category/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/DeviceType/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlVHlwZVxEZWxldGUuY3NodG1s
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/DeviceType/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlVHlwZVxJbmRleC5jc2h0bWw=
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/DeviceType/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlVHlwZVxVcGRhdGUuY3NodG1s
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Product/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/ProductsByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvUHJvZHVjdHNCeUNhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Product/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Product/Display.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEaXNwbGF5LmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/DeviceType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGV2aWNlVHlwZS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Product/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/DeviceType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGV2aWNlVHlwZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Product/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/DeviceType/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGV2aWNlVHlwZS9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9BZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/wed/WebBanPhuKienDienThoai/WebBanPhuKienDienThoai/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-e9e8sn13zb
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EaXNwbGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9VcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/phuongtinh/Desktop/code/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6ng2nq0p2b

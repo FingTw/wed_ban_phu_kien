@@ -12,7 +12,7 @@ namespace WebBanPhuKienDienThoai.Models
         public string Description { get; set; }
         public int Stock { get; set; }
         public string? ImageUrl { get; set; }
-        public List<ProductImage>? Images { get; set; }
+        public List<ProductImage>? Images { get; set; } = new List<ProductImage>();
         public int? CategoryId { get; set; }
         public int? DeviceTypeId { get; set; }
         public DeviceType? DeviceType { get; set; }

@@ -8,29 +8,34 @@
     .product-detail-card {
         background-color: #fff;
         border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         margin-top: 30px;
         padding: 20px;
     }
+
     .product-detail-img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 5px;
     }
+
     .product-detail-info {
         padding-left: 20px;
     }
+
     .product-detail-label {
         font-weight: 600;
     }
+
     .product-detail-title {
         margin-bottom: 15px;
         font-size: 1.8rem;
         font-weight: bold;
         color: #333;
     }
+
     .product-detail-background {
         background: #f9f9f9;
         padding: 30px 0;
@@ -42,11 +47,35 @@
         <div class="col-md-10">
             <div class="product-detail-card row">
                 <div class="col-md-4 text-center">
-                    <img class="product-detail-img" src="@Model.ImageUrl" alt="@Model.Name" />
+                    <!-- Carousel for images -->
+                    <div id="productImagesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Main Image -->
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 product-detail-img" src="@Model.ImageUrl" alt="@Model.Name" />
+                            </div>
+                            <!-- Additional Images -->
+                            @foreach (var image in Model.Images)
+                            {
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 product-detail-img" src="@image.Url" alt="Additional Image" />
+                                </div>
+                            }
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productImagesCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productImagesCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="col-md-8 product-detail-info">
                     <h2 class="product-detail-title">@Model.Name</h2>
-                    
+
                     <p><span class="product-detail-label">Giá:</span> @Model.Price.ToString("C")</p>
                     <p><span class="product-detail-label">Mô tả:</span> @Model.Description</p>
                     <p><span class="product-detail-label">Danh mục:</span> @(Model.Category?.Name)</p>

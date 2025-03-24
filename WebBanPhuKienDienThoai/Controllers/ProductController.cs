@@ -45,33 +45,37 @@ namespace WebBanPhuKienDienThoai.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(Product product, IFormFile imageUrl)
+public async Task<IActionResult> Add(Product product, List<IFormFile> imageUrls)
+{
+    if (!ModelState.IsValid)
+    {
+        foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
         {
-            if (!ModelState.IsValid) // Nếu có lỗi thì in ra
-            {
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    LogToFile("Validation Error: " + error.ErrorMessage);
-                    LogToFile("Product added successfully!");
-
-                }
-
-                var categories = await _categoryRepository.GetAllAsync();
-                ViewBag.Categories = new SelectList(categories, "Id", "Name");
-                var devicetypes = await _devicetypeRepository.GetAllAsync();
-                ViewBag.DeviceTypes = new SelectList(devicetypes, "Id", "Name");
-                return View(product);
-            }
-
-            if (imageUrl != null)
-            {
-                product.ImageUrl = await SaveImage(imageUrl);
-            }
-
-            await _productRepository.AddAsync(product);
-            Console.WriteLine("Product added successfully!");
-            return RedirectToAction(nameof(Index));
+            LogToFile("Validation Error: " + error.ErrorMessage);
         }
+
+        var categories = await _categoryRepository.GetAllAsync();
+        ViewBag.Categories = new SelectList(categories, "Id", "Name");
+        var devicetypes = await _devicetypeRepository.GetAllAsync();
+        ViewBag.DeviceTypes = new SelectList(devicetypes, "Id", "Name");
+        return View(product);
+    }
+
+    var productImages = new List<ProductImage>();
+
+    if (imageUrls != null && imageUrls.Count > 0)
+    {
+        foreach (var image in imageUrls)
+        {
+            var imageUrl = await SaveImage(image);
+            productImages.Add(new ProductImage { Url = imageUrl });
+        }
+    }
+
+    await _productRepository.AddAsync(product, productImages);
+    Console.WriteLine("Product added successfully!");
+    return RedirectToAction(nameof(Index));
+}
 
         private async Task<string> SaveImage(IFormFile image)
         {
