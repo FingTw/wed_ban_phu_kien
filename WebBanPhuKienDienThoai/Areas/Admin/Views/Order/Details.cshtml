@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WebBanPhuKienDienThoai.Models.Order
+<h2>Order #@Model.Id Details</h2>
+<div>
+    <p><strong>User:</strong> @Model.ApplicationUser.UserName</p>
+    <p><strong>Order Date:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")</p>
+    <p><strong>Total Price:</strong> @Model.TotalPrice.ToString("#,##0") VNĐ</p>
+    <p><strong>Shipping Address:</strong> @Model.ShippingAddress</p>
+    <p><strong>Notes:</strong> @Model.Notes</p>
+    <h3>Order Items</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderDetails)
+            {
+                <tr>
+                    <td>@item.Product?.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Price.ToString("#,##0") VNĐ</td>
+                    <td>@(item.Quantity * item.Price).ToString("#,##0") VNĐ</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>

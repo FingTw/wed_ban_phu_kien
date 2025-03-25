@@ -1,0 +1,37 @@
+﻿@model int
+
+<section class="py-5 text-center">
+    <div class="container px-4 px-lg-5">
+        <div class="card border-0 shadow-sm" style="max-width: 600px; margin: 0 auto;">
+            <div class="card-body py-5">
+                <!-- Icon thành công -->
+                <div class="mb-4">
+                    <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+                </div>
+
+                <!-- Tiêu đề -->
+                <h1 class="fw-bold mb-3">Order Completed!</h1>
+
+                <!-- Thông báo -->
+                <p class="lead text-muted mb-4">
+                    Your order with ID <span class="fw-bold text-danger">#@Model</span> has been placed successfully.
+                </p>
+
+                <!-- Thông tin bổ sung -->
+                <p class="text-muted">
+                    Thank you for shopping with us! You'll receive a confirmation email soon.
+                </p>
+
+                <!-- Nút điều hướng -->
+                <div class="d-flex justify-content-center gap-3 mt-5">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary px-4">
+                        <i class="bi bi-house-door me-2"></i> Back to Home
+                    </a>
+                    <a asp-area="Admin" asp-controller="Order" asp-action="Details" asp-route-id="@Model" class="btn btn-primary px-4">
+                        View Order Details <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

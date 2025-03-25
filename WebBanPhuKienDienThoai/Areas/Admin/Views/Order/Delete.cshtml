@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WebBanPhuKienDienThoai.Models.Order
+<h2>Delete Order #@Model.Id</h2>
+<p>Are you sure you want to delete this order?</p>
+<div>
+    <p><strong>User:</strong> @Model.ApplicationUser?.UserName</p>
+    <p><strong>Order Date:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")</p>
+    <p><strong>Total Price:</strong> @Model.TotalPrice.ToString("#,##0") VNĐ</p>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,91 @@
+﻿@model WebBanPhuKienDienThoai.Models.Order
+
+@{
+    ViewData["Title"] = "Chỉnh sửa đơn hàng #" + Model.Id;
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-info text-white text-center py-3">
+                    <h2 class="mb-0">@ViewData["Title"]</h2>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="UserId" class="form-label">Người dùng</label>
+                            <input asp-for="UserId" class="form-control" readonly />
+                            <span asp-validation-for="UserId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="OrderDate" class="form-label">Ngày đặt hàng</label>
+                            <input asp-for="OrderDate" class="form-control" type="date" />
+                            <span asp-validation-for="OrderDate" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="TotalPrice" class="form-label">Tổng tiền</label>
+                            <input asp-for="TotalPrice" class="form-control" readonly />
+                            <span asp-validation-for="TotalPrice" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="ShippingAddress" class="form-label">Địa chỉ giao hàng</label>
+                            <input asp-for="ShippingAddress" class="form-control" />
+                            <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Notes" class="form-label">Ghi chú</label>
+                            <textarea asp-for="Notes" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Notes" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-info w-100 py-2">Lưu thay đổi</button>
+                        <a asp-action="Index" class="btn btn-secondary w-100 mt-2">Hủy</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS tùy chỉnh -->
+<style>
+    .card-header {
+        border-bottom: none;
+    }
+
+    .form-control:focus {
+        border-color: #17a2b8;
+        box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+    }
+
+    .btn-info {
+        background-color: #17a2b8;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-info:hover {
+        background-color: #138496;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border: none;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+</style>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

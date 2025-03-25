@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using WebBanPhuKienDienThoai.Models;
 using WebBanPhuKienDienThoai.Respository;
 
 namespace WebBanPhuKienDienThoai.Controllers
@@ -8,15 +9,18 @@ namespace WebBanPhuKienDienThoai.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IProductRepository _productRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IProductRepository productRepository)
         {
             _logger = logger;
+            _productRepository = productRepository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var products = await _productRepository.GetAllAsync();  
+            return View(products);
         }
 
         public IActionResult Privacy()

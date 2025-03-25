@@ -11,7 +11,7 @@ using WebBanPhuKienDienThoai.Respository;
 namespace WebBanPhuKienDienThoai.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin + "," + SD.Role_Employee)]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductAController : Controller
     {
         private readonly IProductRepository _productRepository;
@@ -48,41 +48,46 @@ namespace WebBanPhuKienDienThoai.Controllers
         }
 
         [HttpPost]
-public async Task<IActionResult> Add(Product product, List<IFormFile> imageUrls)
-{
-    if (!ModelState.IsValid)
-    {
-        foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(Product product, List<IFormFile> imageUrls , IFormFile imageUrl)
         {
-            LogToFile("Validation Error: " + error.ErrorMessage);
+            if (!ModelState.IsValid)
+            {
+                // Xử lý lỗi validation
+                var categories = await _categoryRepository.GetAllAsync();
+                ViewBag.Categories = new SelectList(categories, "Id", "Name");
+                var devicetypes = await _devicetypeRepository.GetAllAsync();
+                ViewBag.DeviceTypes = new SelectList(devicetypes, "Id", "Name");
+                return View(product);
+            }
+
+            var productImages = new List<ProductImage>();
+
+            // Xử lý hình ảnh chính
+            if (imageUrl != null && imageUrl.Length > 0)
+            {
+                product.ImageUrl = await SaveImage(imageUrl);
+            }
+
+            // Xử lý hình ảnh bổ sung
+            if (imageUrls != null && imageUrls.Count > 0)
+            {
+                foreach (var image in imageUrls)
+                {
+                    var imageUrlPath = await SaveImage(image);
+                    productImages.Add(new ProductImage { Url = imageUrlPath });
+                }
+            }
+
+            await _productRepository.AddAsync(product, productImages);
+            return RedirectToAction(nameof(Index));
         }
-
-        var categories = await _categoryRepository.GetAllAsync();
-        ViewBag.Categories = new SelectList(categories, "Id", "Name");
-        var devicetypes = await _devicetypeRepository.GetAllAsync();
-        ViewBag.DeviceTypes = new SelectList(devicetypes, "Id", "Name");
-        return View(product);
-    }
-
-    var productImages = new List<ProductImage>();
-
-    if (imageUrls != null && imageUrls.Count > 0)
-    {
-        foreach (var image in imageUrls)
-        {
-            var imageUrl = await SaveImage(image);
-            productImages.Add(new ProductImage { Url = imageUrl });
-        }
-    }
-
-    await _productRepository.AddAsync(product, productImages);
-    Console.WriteLine("Product added successfully!");
-    return RedirectToAction(nameof(Index));
-}
 
         private async Task<string> SaveImage(IFormFile image)
         {
-            var savePath = Path.Combine("wwwroot/images", image.FileName); 
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
+            var savePath = Path.Combine("wwwroot/images", image.FileName);
             using (var fileStream = new FileStream(savePath, FileMode.Create))
             {
                 await image.CopyToAsync(fileStream);

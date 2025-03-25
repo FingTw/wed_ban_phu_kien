@@ -9,7 +9,7 @@ using WebBanPhuKienDienThoai.Respository;
 
 namespace WebBanPhuKienDienThoai.Controllers
 {
-    public class ProductController : Controller
+    public class ProductController : Controller 
     {
         private readonly IProductRepository _productRepository;
 

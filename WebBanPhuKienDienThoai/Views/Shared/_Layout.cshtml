@@ -1,10 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@using WebBanPhuKienDienThoai.Extensions
+@using WebBanPhuKienDienThoai.Models
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebBanPhuKienDienThoai</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+          rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebBanPhuKienDienThoai.styles.css" asp-append-version="true" />
 </head>
@@ -36,6 +41,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="Admin" asp-controller="ProductA" asp-action="Index">Product</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">Order</a>
+                            </li>
                         }
                         else
                         {
@@ -52,6 +60,17 @@
 
                         </ul>
                         <partial name="_LoginPartial" />
+
+                        <form class="d-flex">
+                        @{
+                            var cart = HttpContextAccessor.HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+                            var itemCount = cart.Items.Sum(i => i.Quantity);
+                        }
+                        <button asp-controller="ShoppingCart" asp-action="Index" class="btn btn-outline-dark " type="submit">
+                                <i class="bi-cart-fill me-1 "></i>
+                            Cart  (@itemCount)
+                            </button>
+                        </form>
                     </div>
                 </div>
             </nav>

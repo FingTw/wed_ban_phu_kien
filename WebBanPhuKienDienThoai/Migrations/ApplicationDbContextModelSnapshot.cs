@@ -648,6 +648,68 @@ namespace WebBanPhuKienDienThoai.Migrations
                         });
                 });
 
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ShippingAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.OrderDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderDetails");
+                });
+
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -793,6 +855,36 @@ namespace WebBanPhuKienDienThoai.Migrations
                     b.Navigation("DeviceType");
                 });
 
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>
+                {
+                    b.HasOne("WebBanPhuKienDienThoai.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
+                });
+
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.OrderDetail", b =>
+                {
+                    b.HasOne("WebBanPhuKienDienThoai.Models.Order", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebBanPhuKienDienThoai.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Product", b =>
                 {
                     b.HasOne("WebBanPhuKienDienThoai.Models.Category", "Category")
@@ -835,6 +927,11 @@ namespace WebBanPhuKienDienThoai.Migrations
                     b.Navigation("DeviceTypeCategories");
 
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Product", b =>

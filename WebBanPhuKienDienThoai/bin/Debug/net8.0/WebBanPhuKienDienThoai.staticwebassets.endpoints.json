@@ -2495,7 +2495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 18:41:25 GMT"
+          "Value": "Tue, 25 Mar 2025 07:32:35 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2540,13 +2540,587 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 18:41:25 GMT"
+          "Value": "Tue, 25 Mar 2025 07:32:35 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-tWUEjGtp54xHGl7kw9+OnQ7QISxDz/O7Jvi7ZQ6i8CU="
+        }
+      ]
+    },
+    {
+      "Route": "images/26546-khung-pc-1.3iqkkrmwts.jpg",
+      "AssetFile": "images/26546-khung-pc-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "396028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1fxQAXFoPBrNrqxHuLIj4FrzINs36tncAcR2TnhZywE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 07:32:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3iqkkrmwts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1fxQAXFoPBrNrqxHuLIj4FrzINs36tncAcR2TnhZywE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/26546-khung-pc-1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/26546-khung-pc-1.jpg",
+      "AssetFile": "images/26546-khung-pc-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "396028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1fxQAXFoPBrNrqxHuLIj4FrzINs36tncAcR2TnhZywE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 07:32:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1fxQAXFoPBrNrqxHuLIj4FrzINs36tncAcR2TnhZywE="
+        }
+      ]
+    },
+    {
+      "Route": "images/2_52721.jpg",
+      "AssetFile": "images/2_52721.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18081"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGEa5GhE/oD4nmjRIbzhvA4td+iQW6BVSJg6QpTvat0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGEa5GhE/oD4nmjRIbzhvA4td+iQW6BVSJg6QpTvat0="
+        }
+      ]
+    },
+    {
+      "Route": "images/2_52721.oxg3uulbiu.jpg",
+      "AssetFile": "images/2_52721.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18081"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hGEa5GhE/oD4nmjRIbzhvA4td+iQW6BVSJg6QpTvat0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oxg3uulbiu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hGEa5GhE/oD4nmjRIbzhvA4td+iQW6BVSJg6QpTvat0="
+        },
+        {
+          "Name": "label",
+          "Value": "images/2_52721.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/360_F.1awhusqgiu.jpg",
+      "AssetFile": "images/360_F.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qSsddhON6LVrog9nLmzJ//cTa6Dhi/X8UjS7WjFMCVc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1awhusqgiu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qSsddhON6LVrog9nLmzJ//cTa6Dhi/X8UjS7WjFMCVc="
+        },
+        {
+          "Name": "label",
+          "Value": "images/360_F.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/360_F.jpg",
+      "AssetFile": "images/360_F.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33306"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qSsddhON6LVrog9nLmzJ//cTa6Dhi/X8UjS7WjFMCVc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qSsddhON6LVrog9nLmzJ//cTa6Dhi/X8UjS7WjFMCVc="
+        }
+      ]
+    },
+    {
+      "Route": "images/46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg",
+      "AssetFile": "images/46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r8LpTIUyaD69HCkXmUiRIVfccY1T2Ghxn8EaORlBfCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 07:32:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r8LpTIUyaD69HCkXmUiRIVfccY1T2Ghxn8EaORlBfCk="
+        }
+      ]
+    },
+    {
+      "Route": "images/46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.xod4jnj1n5.jpg",
+      "AssetFile": "images/46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r8LpTIUyaD69HCkXmUiRIVfccY1T2Ghxn8EaORlBfCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 07:32:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xod4jnj1n5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r8LpTIUyaD69HCkXmUiRIVfccY1T2Ghxn8EaORlBfCk="
+        },
+        {
+          "Name": "label",
+          "Value": "images/46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/71LMiD9i+ML._AC_SL1500_.jpg",
+      "AssetFile": "images/71LMiD9i+ML._AC_SL1500_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1QYsHEvtVe4cghn1Ejmvth6ubR1bJO8dPoMcDJ2Sw1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QYsHEvtVe4cghn1Ejmvth6ubR1bJO8dPoMcDJ2Sw1o="
+        }
+      ]
+    },
+    {
+      "Route": "images/71LMiD9i+ML._AC_SL1500_.ls5uqpf1u5.jpg",
+      "AssetFile": "images/71LMiD9i+ML._AC_SL1500_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1QYsHEvtVe4cghn1Ejmvth6ubR1bJO8dPoMcDJ2Sw1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls5uqpf1u5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1QYsHEvtVe4cghn1Ejmvth6ubR1bJO8dPoMcDJ2Sw1o="
+        },
+        {
+          "Name": "label",
+          "Value": "images/71LMiD9i+ML._AC_SL1500_.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.0ngpxf6msf.jpg",
+      "AssetFile": "images/8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243065"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 07:03:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ngpxf6msf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28="
+        },
+        {
+          "Name": "label",
+          "Value": "images/8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg",
+      "AssetFile": "images/8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243065"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 07:03:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28="
+        }
+      ]
+    },
+    {
+      "Route": "images/9732_57860_man_hinh_do_hoa_lg_32ur500k_b_6.frjkqtyspl.jpg",
+      "AssetFile": "images/9732_57860_man_hinh_do_hoa_lg_32ur500k_b_6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "247978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9VBGNCA/vVOKA3sRNYfHYIj4eoSSNB7/08r4BoMnhkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:34:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "frjkqtyspl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9VBGNCA/vVOKA3sRNYfHYIj4eoSSNB7/08r4BoMnhkY="
+        },
+        {
+          "Name": "label",
+          "Value": "images/9732_57860_man_hinh_do_hoa_lg_32ur500k_b_6.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/9732_57860_man_hinh_do_hoa_lg_32ur500k_b_6.jpg",
+      "AssetFile": "images/9732_57860_man_hinh_do_hoa_lg_32ur500k_b_6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "247978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9VBGNCA/vVOKA3sRNYfHYIj4eoSSNB7/08r4BoMnhkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:34:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9VBGNCA/vVOKA3sRNYfHYIj4eoSSNB7/08r4BoMnhkY="
         }
       ]
     },
@@ -2715,6 +3289,88 @@
       ]
     },
     {
+      "Route": "images/Macbook-2.9ok8z80ouc.jpg",
+      "AssetFile": "images/Macbook-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qT3AhH27B9lNbjD0IfkrmRbM5UOF8lCoY1FnUXIh25c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ok8z80ouc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qT3AhH27B9lNbjD0IfkrmRbM5UOF8lCoY1FnUXIh25c="
+        },
+        {
+          "Name": "label",
+          "Value": "images/Macbook-2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/Macbook-2.jpg",
+      "AssetFile": "images/Macbook-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qT3AhH27B9lNbjD0IfkrmRbM5UOF8lCoY1FnUXIh25c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qT3AhH27B9lNbjD0IfkrmRbM5UOF8lCoY1FnUXIh25c="
+        }
+      ]
+    },
+    {
       "Route": "images/broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36c72-9bc9-410a-b349-1ca8ed4994bc.h0i7youf2s.webp",
       "AssetFile": "images/broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36c72-9bc9-410a-b349-1ca8ed4994bc.webp",
       "Selectors": [],
@@ -2793,6 +3449,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-8bhn32YCTKFcUEecf0mNTSFOFsnGx9dA6LpxjVL3DXo="
+        }
+      ]
+    },
+    {
+      "Route": "images/iphone-16-blue-600x600.83boe8q45f.png",
+      "AssetFile": "images/iphone-16-blue-600x600.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "272704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3CMBhYpHFPPCErGfizmG37dfxuBgEEpiZ7zw4X6IfE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:34:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "83boe8q45f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3CMBhYpHFPPCErGfizmG37dfxuBgEEpiZ7zw4X6IfE8="
+        },
+        {
+          "Name": "label",
+          "Value": "images/iphone-16-blue-600x600.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/iphone-16-blue-600x600.png",
+      "AssetFile": "images/iphone-16-blue-600x600.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "272704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3CMBhYpHFPPCErGfizmG37dfxuBgEEpiZ7zw4X6IfE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:34:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3CMBhYpHFPPCErGfizmG37dfxuBgEEpiZ7zw4X6IfE8="
+        }
+      ]
+    },
+    {
+      "Route": "images/lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600.ehn7m8mmk4.jpg",
+      "AssetFile": "images/lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XrfYEKy6jJXTQxX67VqWi7EqtBoupWbBiGG4owNvNFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ehn7m8mmk4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XrfYEKy6jJXTQxX67VqWi7EqtBoupWbBiGG4owNvNFc="
+        },
+        {
+          "Name": "label",
+          "Value": "images/lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600.jpg",
+      "AssetFile": "images/lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XrfYEKy6jJXTQxX67VqWi7EqtBoupWbBiGG4owNvNFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XrfYEKy6jJXTQxX67VqWi7EqtBoupWbBiGG4owNvNFc="
+        }
+      ]
+    },
+    {
+      "Route": "images/lenovoyogaslim7pro14iah782ut006cvn1.j9te7c8z42.jpg",
+      "AssetFile": "images/lenovoyogaslim7pro14iah782ut006cvn1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147955"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+L0J9M3tZ1uiFNpL6xB+RI8I8iGVO9Zo1HSMYUqE4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j9te7c8z42"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+L0J9M3tZ1uiFNpL6xB+RI8I8iGVO9Zo1HSMYUqE4c="
+        },
+        {
+          "Name": "label",
+          "Value": "images/lenovoyogaslim7pro14iah782ut006cvn1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/lenovoyogaslim7pro14iah782ut006cvn1.jpg",
+      "AssetFile": "images/lenovoyogaslim7pro14iah782ut006cvn1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147955"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+L0J9M3tZ1uiFNpL6xB+RI8I8iGVO9Zo1HSMYUqE4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+L0J9M3tZ1uiFNpL6xB+RI8I8iGVO9Zo1HSMYUqE4c="
+        }
+      ]
+    },
+    {
+      "Route": "images/macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg",
+      "AssetFile": "images/macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SgG5Wa1txbZ6U9fgFTpzBbKRsc8INtgZMd+ICOZImSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SgG5Wa1txbZ6U9fgFTpzBbKRsc8INtgZMd+ICOZImSE="
+        }
+      ]
+    },
+    {
+      "Route": "images/macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.yi6dzjfu3p.jpg",
+      "AssetFile": "images/macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SgG5Wa1txbZ6U9fgFTpzBbKRsc8INtgZMd+ICOZImSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:35:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yi6dzjfu3p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SgG5Wa1txbZ6U9fgFTpzBbKRsc8INtgZMd+ICOZImSE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/macbook-air-m3-15-silver-2tmobile.jpg",
+      "AssetFile": "images/macbook-air-m3-15-silver-2tmobile.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg="
+        }
+      ]
+    },
+    {
+      "Route": "images/macbook-air-m3-15-silver-2tmobile.xmrczf8oeg.jpg",
+      "AssetFile": "images/macbook-air-m3-15-silver-2tmobile.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xmrczf8oeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg="
+        },
+        {
+          "Name": "label",
+          "Value": "images/macbook-air-m3-15-silver-2tmobile.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/macbook_pro_13_inch_intel_m1.jpg",
+      "AssetFile": "images/macbook_pro_13_inch_intel_m1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xdm7qmN1k10vRN+tMYMbM2SvX9mKkmvqi+HN7AF89fg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xdm7qmN1k10vRN+tMYMbM2SvX9mKkmvqi+HN7AF89fg="
+        }
+      ]
+    },
+    {
+      "Route": "images/macbook_pro_13_inch_intel_m1.lys7zywi9k.jpg",
+      "AssetFile": "images/macbook_pro_13_inch_intel_m1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xdm7qmN1k10vRN+tMYMbM2SvX9mKkmvqi+HN7AF89fg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 08:12:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lys7zywi9k"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xdm7qmN1k10vRN+tMYMbM2SvX9mKkmvqi+HN7AF89fg="
+        },
+        {
+          "Name": "label",
+          "Value": "images/macbook_pro_13_inch_intel_m1.jpg"
         }
       ]
     },

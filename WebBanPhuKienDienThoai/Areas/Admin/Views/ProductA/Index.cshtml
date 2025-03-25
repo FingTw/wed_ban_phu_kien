@@ -10,7 +10,10 @@
     @foreach (var product in Model)
     {
         <div class="card product-card">
-            <img src="@product.ImageUrl" alt="@product.Name" class="product-image"/>
+            <div>
+                <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
+            </div>
+            
             <div class="card-body">
                 <h5 class="card-title">@product.Name</h5>
                 <p class="card-text">
