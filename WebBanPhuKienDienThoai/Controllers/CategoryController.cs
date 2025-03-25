@@ -37,74 +37,7 @@ namespace WebBanPhuKienDienThoai.Controllers
             return View(category);
         }
 
-        // Cho phép Admin và Employee thêm danh mục
-        public IActionResult Add()
-        {
-            return View();
-        }
-
-        // Cho phép Admin và Employee thêm danh mục
-        [HttpPost]
-        public async Task<IActionResult> Add(Category category)
-        {
-            if (ModelState.IsValid)
-            {
-                await _categoryRepository.AddAsync(category);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(category);
-        }
-
-        // Cho phép Admin và Employee sửa danh mục
-        public async Task<IActionResult> Update(int id)
-        {
-            var category = await _categoryRepository.GetByIdAsync(id);
-            if (category == null)
-            {
-                return NotFound();
-            }
-            return View(category);
-        }
-
-        // Cho phép Admin và Employee sửa danh mục
-        [HttpPost]
-        public async Task<IActionResult> Update(int id, Category category)
-        {
-            if (id != category.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                await _categoryRepository.UpdateAsync(category);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(category);
-        }
-
-        // Cho phép Admin và Employee xóa danh mục
-        public async Task<IActionResult> Delete(int id)
-        {
-            var category = await _categoryRepository.GetByIdAsync(id);
-            if (category == null)
-            {
-                return NotFound();
-            }
-            return View(category);
-        }
-
-        // Cho phép Admin và Employee xóa danh mục
-        [HttpPost, ActionName("DeleteConfirmed")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var category = await _categoryRepository.GetByIdAsync(id);
-            if (category != null)
-            {
-                await _categoryRepository.DeleteAsync(id);
-            }
-            return RedirectToAction(nameof(Index));
-        }
+       
 
         public async Task<IActionResult> ProductsByCategory(int id)
         {

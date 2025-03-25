@@ -13,10 +13,10 @@
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.FullName" class="form-control" autocomplete="username" aria-required="true" placeholder="username" />
-                <label asp-for="Input.FullName">Username</label>
+                <input asp-for="Input.FullName" class="form-control" autocomplete="fullname" aria-required="true" />
+                <label asp-for="Input.FullName">Full Name</label>
                 <span asp-validation-for="Input.FullName" class="text-danger"></span>
-            </div>
+                </div>
             <div class="form-floating mb-3">
                 <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                 <label asp-for="Input.Email">Email</label>
@@ -33,10 +33,11 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <select asp-for="Input.Role" asp-asp-items="@Model.Input.Rolelist" class="form-control">
-                    <option disabled selected>-select role -</option>
-                    
+                <select asp-for="Input.Role" asp-items="@Model.Input.Rolelist" class="form-control">
+                    <option disabled selected value="">Chọn vai trò</option>    
                 </select>
+                <label asp-for="Input.Role" class="form-label">Vai trò</label>
+                <span asp-validation-for="Input.Role" class="text-danger"></span>
             </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
         </form>

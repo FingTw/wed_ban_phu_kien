@@ -8,16 +8,11 @@ namespace WebBanPhuKienDienThoai.Controllers
 
     public class DeviceTypeController : Controller
     {
-        private readonly IProductRepository _productRepository;
-        private readonly ICategoryRepository _categoryRepository;
         private readonly IDeviceTypeRepository _devicetypeRepository;
 
-        public DeviceTypeController(IProductRepository productRepository,
-                                    ICategoryRepository categoryRepository,
-                                    IDeviceTypeRepository devicetypeRepository)
+        public DeviceTypeController(IDeviceTypeRepository devicetypeRepository)
         {
-            _productRepository = productRepository;
-            _categoryRepository = categoryRepository;
+            
             _devicetypeRepository = devicetypeRepository;
         }
 
@@ -35,58 +30,6 @@ namespace WebBanPhuKienDienThoai.Controllers
                 return NotFound();
             }
             return View(devicetype);
-        }
-
-
-        // Cho phép Admin và Employee sửa danh mục
-        public async Task<IActionResult> Update(int id)
-        {
-            var devicetype = await _devicetypeRepository.GetByIdAsync(id);
-            if (devicetype == null)
-            {
-                return NotFound();
-            }
-            return View(devicetype);
-        }
-
-        // Cho phép Admin và Employee sửa danh mục
-        [HttpPost]
-        public async Task<IActionResult> Update(int id, DeviceType devicetype)
-        {
-            if (id != devicetype.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                await _devicetypeRepository.UpdateAsync(devicetype);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(devicetype);
-        }
-
-        // Cho phép Admin và Employee xóa danh mục
-        public async Task<IActionResult> Delete(int id)
-        {
-            var devicetype = await _devicetypeRepository.GetByIdAsync(id);
-            if (devicetype == null)
-            {
-                return NotFound();
-            }
-            return View(devicetype);
-        }
-
-        // Cho phép Admin và Employee xóa danh mục
-        [HttpPost, ActionName("DeleteConfirmed")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var devicetype = await _devicetypeRepository.GetByIdAsync(id);
-            if (devicetype != null)
-            {
-                await _devicetypeRepository.DeleteAsync(id);
-            }
-            return RedirectToAction(nameof(Index));
         }
 
     }

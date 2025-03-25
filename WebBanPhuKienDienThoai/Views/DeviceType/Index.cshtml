@@ -7,7 +7,6 @@
             <tr>
                 <th>ID</th>
                 <th>Tên</th>
-                <th class="text-center">Hành động</th>
             </tr>
         </thead>
         <tbody>
@@ -16,10 +15,7 @@
                 <tr>
                     <td>@deviceType.Id</td>
                     <td>@deviceType.Name</td>
-                    <td class="text-center">
-                        <a asp-action="Update" asp-route-id="@deviceType.Id" class="btn btn-warning btn-sm">Sửa</a>
-                        <a asp-action="Delete" asp-route-id="@deviceType.Id" class="btn btn-danger btn-sm">Xóa</a>
-                    </td>
+                 
                 </tr>
             }
         </tbody>

@@ -1,6 +1,9 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\20230817.jpg
+wwwroot\images\broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36c72-9bc9-410a-b349-1ca8ed4994bc.webp
+wwwroot\images\Case-MBP13-CrystalX.jpg
+wwwroot\images\Case-MBP13-Huex-Black-A.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

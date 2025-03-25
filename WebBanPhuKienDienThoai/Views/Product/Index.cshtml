@@ -4,7 +4,6 @@
 }
 
 <h2 class="mb-4">Danh Sách Sản Phẩm</h2>
-                <a class="btn btn-sm btn-primary" asp-action="Add" >Add</a>
 <!-- Grid hiển thị sản phẩm -->
 <div class="product-grid">
     @foreach (var product in Model)
@@ -20,8 +19,6 @@
                     <strong>Device available:</strong> @(product.DeviceType?.Name)
                 </p>
                 <a class="btn btn-sm btn-info" asp-action="Display" asp-route-id="@product.Id">View</a>
-                <a class="btn btn-sm btn-warning" asp-action="Update" asp-route-id="@product.Id">Edit</a>
-                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
             </div>
         </div>
     }
