@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using WebBanPhuKienDienThoai.Models;
@@ -13,6 +13,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders()
     .AddDefaultUI()
@@ -26,6 +28,14 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+builder.Services.AddAuthentication()
+    .AddGoogle(googleOptions =>
+    {
+        googleOptions.ClientId = builder.Configuration["Google:ClientId"];
+        googleOptions.ClientSecret = builder.Configuration["Google:ClientSecret"];
+        googleOptions.CallbackPath = "/signin-google";
+    });
 
 builder.Services.ConfigureApplicationCookie(Option =>
 {
@@ -67,15 +77,16 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
         name: "Admin",
         pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapRazorPages();
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapRazorPages();
 });
 
 app.MapControllerRoute(

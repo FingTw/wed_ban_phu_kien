@@ -4,63 +4,62 @@
 }
 
 <h2 class="mb-4">Danh Sách Sản Phẩm</h2>
-<a asp-area ="Admin" class="btn btn-sm btn-primary" asp-action="Add" >Add</a>
-<!-- Grid hiển thị sản phẩm -->
-<div class="product-grid">
-    @foreach (var product in Model)
-    {
-        <div class="card product-card">
-            <div>
-                <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
-            </div>
-            
-            <div class="card-body">
-                <h5 class="card-title">@product.Name</h5>
-                <p class="card-text">
-                    <strong>Price:</strong> @product.Price.ToString("C")<br />
-                    <strong>Description:</strong> @product.Description<br />
-                    <strong>Category:</strong> @(product.Category?.Name)<br />
-                    <strong>Device available:</strong> @(product.DeviceType?.Name)
-                </p>
-                <a class="btn btn-sm btn-info" asp-area="Admin" asp-action="Display" asp-route-id="@product.Id">View</a>
-                <a class="btn btn-sm btn-warning" asp-area="Admin" asp-action="Update" asp-route-id="@product.Id">Edit</a>
-                <a class="btn btn-sm btn-danger" asp-area="Admin" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
-            </div>
-        </div>
-    }
+<a asp-area="Admin" class="btn btn-sm btn-primary mb-3" asp-action="Add">Add</a>
+
+<!-- Bảng hiển thị sản phẩm -->
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Device Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@product.ImageUrl" alt="@product.Name" style="width: 50px; height: 50px; object-fit: cover;" />
+                    </td>
+                    <td>@product.Name</td>
+                    <td>@product.Price.ToString("C")</td>
+                    <td>@product.Description</td>
+                    <td>@(product.Category?.Name ?? "N/A")</td>
+                    <td>@(product.DeviceType?.Name ?? "N/A")</td>
+                    <td>
+                        <a class="btn btn-sm btn-info" asp-area="Admin" asp-action="Display" asp-route-id="@product.Id">View</a>
+                        <a class="btn btn-sm btn-warning" asp-area="Admin" asp-action="Update" asp-route-id="@product.Id">Edit</a>
+                        <a class="btn btn-sm btn-danger" asp-area="Admin" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 
-<!-- CSS riêng cho grid layout -->
+<!-- CSS tối giản cho bảng -->
 <style>
-    .product-grid {
-        display: grid;
-        /* Giảm kích thước minmax để vừa nhiều card hơn nếu màn hình đủ rộng */
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 15px;
-        padding: 20px;
+    .table-responsive {
         margin: 0 auto;
-        max-width: 1400px; /* Giới hạn chiều rộng tối đa cho grid, bạn có thể chỉnh tùy ý */
+        max-width: 1400px;
     }
 
-    .product-card {
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        transition: transform 0.2s ease;
+    .table th, .table td {
+        vertical-align: middle;
+        text-align: left;
     }
 
-    .product-card:hover {
-        transform: translateY(-10px);
+    .table th {
+        background-color: #f8f9fa;
     }
 
-    .product-image {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-
-    .card-body {
-        padding: 15px;
+    .table img {
+        border-radius: 4px;
     }
 </style>

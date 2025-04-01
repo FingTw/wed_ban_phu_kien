@@ -1,24 +1,24 @@
-html {
-  font-size: 14px;
+﻿html {
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .floating-dot {
@@ -143,4 +143,27 @@ body {
 
         .chat-input button:hover {
             background-color: #0056b3;
+        }
+
+.position-relative {
+    position: relative;
+}
+
+#searchResults {
+    top: 100%; /* Đặt ngay dưới ô nhập */
+    left: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+    #searchResults .list-group-item {
+        cursor: pointer;
+    }
+
+        #searchResults .list-group-item:hover,
+        #searchResults .list-group-item.active {
+            background-color: #f8f9fa;
         }

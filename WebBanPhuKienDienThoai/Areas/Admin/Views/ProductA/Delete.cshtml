@@ -13,7 +13,7 @@
             <p class="fs-5 text-center">Are you sure you want to delete <strong>@Model.Name</strong>?</p>
             <div class="text-center">
                 <button type="submit" class="btn btn-danger">Delete</button>
-                <button href="@Url.Action("Index", "Product")" class="btn btn-danger">Return</button>
+                <a href="@Url.Action("Index", "ProductA", new { area = "Admin" })" class="btn btn-secondary">Return</a>
             </div>
         </form>
     </div>

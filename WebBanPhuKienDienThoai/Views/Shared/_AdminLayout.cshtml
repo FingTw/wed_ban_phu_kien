@@ -1,0 +1,133 @@
+﻿@using WebBanPhuKienDienThoai.Extensions
+@using WebBanPhuKienDienThoai.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin - @ViewData["Title"] - Phu Kien Smart Phone</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f6fa;
+        }
+
+        .sidebar {
+            min-height: 100vh;
+            background-color: #dc3545;
+            color: white;
+            padding-top: 20px;
+        }
+
+            .sidebar .nav-link {
+                color: white;
+                padding: 10px 20px;
+            }
+
+                .sidebar .nav-link:hover {
+                    background-color: #c82333;
+                }
+
+                .sidebar .nav-link.active {
+                    background-color: #ffffff;
+                    color: #dc3545;
+                }
+
+        .content {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar col-md-3 col-lg-2 d-md-block">
+            <div class="position-sticky">
+                <div class="p-3 text-center">
+                    <a class="navbar-brand text-white" asp-area="Admin" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/images.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                    </a>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="Admin" asp-controller="Home" asp-action="Index">
+                            <i class="bi bi-house me-2"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="CategoryA" asp-action="Index">
+                            <i class="bi bi-tags me-2"></i> Category
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="DeviceTypeA" asp-action="Index">
+                            <i class="bi bi-phone me-2"></i> Device Type
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="ProductA" asp-action="Index">
+                            <i class="bi bi-box-seam me-2"></i> Products
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="p-3 mt-5">
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="content col-md-9 col-lg-10">
+            <header class="header d-flex justify-content-between align-items-center">
+                <span class="fs-5 fw-bold">Manage Listings</span>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown me-3">
+                        <a class="dropdown-toggle text-dark text-decoration-none" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://via.placeholder.com/30" alt="User" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                            Admin
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <main role="main" class="py-4">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

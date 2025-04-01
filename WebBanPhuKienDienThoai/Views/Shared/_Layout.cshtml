@@ -6,156 +6,133 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebBanPhuKienDienThoai</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>@ViewData["Title"] - Phu Kien Smart Phone</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/WebBanPhuKienDienThoai.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebBanPhuKienDienThoai</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/images.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="Admin" asp-controller="CategoryA" asp-action="Index">Category</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="Admin" asp-controller="DeviceTypeA" asp-action="Index">DeviceType</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="Admin" asp-controller="ProductA" asp-action="Index">Product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">Order</a>
-                            </li>
-                        }
-                        else
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="DeviceType" asp-action="Index">DeviceType</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
-                            </li>
-                        }
 
-                        </ul>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mobile-products">Products</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#yearly-sale">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#latest-blog">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="DeviceType" asp-action="Index">DeviceType</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <div class="position-relative me-3" style="width: 300px;">
+                            <form class="d-flex position-relative">
+                                <input id="searchInput" class="form-control" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                                <ul id="searchResults" class="list-group position-absolute w-100" style="display: none; z-index: 1000;"></ul>
+                            </form>
+                        </div>
+
                         <partial name="_LoginPartial" />
 
-                        <form class="d-flex">
-                        @{
-                            var cart = HttpContextAccessor.HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-                            var itemCount = cart.Items.Sum(i => i.Quantity);
-                        }
-                        <button asp-controller="ShoppingCart" asp-action="Index" class="btn btn-outline-dark " type="submit">
-                                <i class="bi-cart-fill me-1 "></i>
-                            Cart  (@itemCount)
-                            </button>
+                        <form class="d-flex ms-3">
+                            @{
+                                var cart = HttpContextAccessor.HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+                                var itemCount = cart.Items.Sum(i => i.Quantity);
+                            }
+                            <a asp-controller="ShoppingCart" asp-action="Index" class="btn btn-outline-dark">
+                                <i class="bi-cart-fill me-1"></i>
+                                Cart (@itemCount)
+                            </a>
                         </form>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 pt-5">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Chat box -->
+    <div class="chat-icon position-fixed bottom-0 end-0 m-3" onclick="toggleChat()" style="cursor: pointer; font-size: 24px;">💬</div>
+    <div class="chat-box position-fixed bottom-0 end-0 m-3 bg-light border rounded" id="chatBox" style="display: none; width: 300px;">
+        <div class="chat-header bg-dark text-white p-2">Gemini Chatbot</div>
+        <div class="chat-messages p-2" id="chatMessages" style="height: 200px; overflow-y: auto;">
+            <p class="bot-message">Xin chào! Tôi có thể giúp gì cho bạn?</p>
+        </div>
+        <div class="chat-input p-2">
+            <div class="input-group">
+                <input type="text" id="chatInput" class="form-control" placeholder="Nhập tin nhắn..." onkeypress="if(event.key === 'Enter') sendMessage();">
+                <button class="btn btn-primary" onclick="sendMessage()">Gửi</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 border-top mt-5">
         <div class="container">
-            <main role="main" class="pb-3">
-                                    @RenderBody()
-            </main>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h6>We ship with:</h6>
+                    <img src="~/images/dhl.png" alt="DHL" class="me-2" style="height: 30px;">
+                    <img src="~/images/shippingcard.png" alt="Shipping" style="height: 30px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6>Payment options:</h6>
+                    <img src="~/images/visa.jpg" alt="Visa" class="me-2" style="height: 30px;">
+                    <img src="~/images/mastercard.jpg" alt="Mastercard" class="me-2" style="height: 30px;">
+                    <img src="~/images/paypal.jpg" alt="Paypal" style="height: 30px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p class="mb-0">
+                        © 2023 MiniStore. Design by
+                        <a href="https://templatesjungle.com/">TemplatesJungle</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <!-- Chat box -->
-        <div class="chat-icon" onclick="toggleChat()">💬</div>
-        <div class="chat-box" id="chatBox">
-            <div class="chat-header">Gemini Chatbot</div>
-            <div class="chat-messages" id="chatMessages">
-                <p class="bot-message">Xin chào! Tôi có thể giúp gì cho bạn?</p>
-            </div>
-            <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Nhập tin nhắn..." onkeypress="if(event.key === 'Enter') sendMessage();">
-                <button onclick="sendMessage()">Gửi</button>
-            </div>
-        </div>
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2025 - WebBanPhuKienDienThoai - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            </div>
-        </footer>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-                            @await RenderSectionAsync("Scripts", required: false)
+    </footer>
 
-
-        <!-- JavaScript cho chat box (giữ nguyên) -->
-        <script>
-             function toggleChat() {
-                const chatBox = document.getElementById('chatBox');
-                chatBox.style.display = chatBox.style.display === 'flex' ? 'none' : 'flex';
-            }
-
-            function addMessage(content, isUser) {
-                const messages = document.getElementById('chatMessages');
-                const messageDiv = document.createElement('div');
-                messageDiv.className = 'message ' + (isUser ? 'user-message' : 'bot-message');
-                messageDiv.textContent = content;
-                messages.appendChild(messageDiv);
-                messages.scrollTop = messages.scrollHeight;
-            }
-
-            async function sendMessage() {
-                const input = document.getElementById('chatInput');
-                const message = input.value.trim();
-                if (!message || message.length === 0) {
-                    addMessage("Vui lòng nhập tin nhắn!", false);
-                    return;
-                }
-
-                addMessage(message, true);
-                input.value = '';
-
-                try {
-                    const response = await fetch('/Gemini/Chat', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Accept': 'application/json'
-                        },
-                        body: JSON.stringify(message)
-                    });
-
-                    if (!response.ok) {
-                        const errorText = await response.text();
-                        throw new Error(`Server error: ${response.status} - ${errorText}`);
-                    }
-
-                    const data = await response.json();
-                    if (data.success) {
-                        addMessage(data.response, false);
-                    } else {
-                        addMessage('Lỗi: ' + data.error, false);
-                    }
-                } catch (error) {
-                    addMessage('Lỗi: ' + error.message, false);
-                }
-            }
-
-        </script>
-    </body>
-    </html>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Gemini.js"></script>
+    <script src="~/js/Shearcgh.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

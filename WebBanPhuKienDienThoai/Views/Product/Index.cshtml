@@ -9,14 +9,14 @@
     @foreach (var product in Model)
     {
         <div class="card product-card">
-            <img src="@product.ImageUrl" alt="@product.Name" class="product-image"/>
+            <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
             <div class="card-body">
                 <h5 class="card-title">@product.Name</h5>
                 <p class="card-text">
                     <strong>Price:</strong> @product.Price.ToString("C")<br />
                     <strong>Description:</strong> @product.Description<br />
-                    <strong>Category:</strong> @(product.Category?.Name)<br />
-                    <strong>Device available:</strong> @(product.DeviceType?.Name)
+                    <strong>Category:</strong> @(product.Category?.Name ?? "N/A")<br />
+                    <strong>Device available:</strong> @(product.DeviceType?.Name ?? "N/A")
                 </p>
                 <a class="btn btn-sm btn-info" asp-action="Display" asp-route-id="@product.Id">View</a>
             </div>
@@ -28,33 +28,57 @@
 <style>
     .product-grid {
         display: grid;
-        /* Giảm kích thước minmax để vừa nhiều card hơn nếu màn hình đủ rộng */
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+        gap: 20px;
         padding: 20px;
         margin: 0 auto;
-        max-width: 1400px; /* Giới hạn chiều rộng tối đa cho grid, bạn có thể chỉnh tùy ý */
+        max-width: 1400px; 
+        justify-content: center; 
     }
 
     .product-card {
         background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd; 
+        border-radius: 8px;
         overflow: hidden;
-        transition: transform 0.2s ease;
-    }
-
-    .product-card:hover {
-        transform: translateY(-10px);
+        display: flex;
+        flex-direction: column;
+        height: 450px; 
     }
 
     .product-image {
         width: 100%;
-        height: 250px;
+        height: 200px; 
         object-fit: cover;
     }
 
     .card-body {
         padding: 15px;
+        flex-grow: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; 
+        -webkit-box-orient: vertical;
+    }
+
+    .btn {
+        align-self: flex-start; 
     }
 </style>

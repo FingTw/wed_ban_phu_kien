@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebBanPhuKienDienThoai.Models;
 using WebBanPhuKienDienThoai.Respository;
@@ -32,6 +33,19 @@ namespace WebBanPhuKienDienThoai.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<IActionResult> Search(string query)
+        {
+            var products = await _productRepository.GetAllAsync();
+            var result = products
+                .Where(p => p.Name.Contains(query, StringComparison.OrdinalIgnoreCase))
+                .Select(p => new { p.Id, p.Name, p.ImageUrl })
+                .ToList();
+
+            return Json(result);
         }
     }
 }
