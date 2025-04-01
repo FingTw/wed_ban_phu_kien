@@ -22,6 +22,7 @@ wwwroot\images\macbook_pro_13_inch_intel_m1.jpg
 wwwroot\images\Macbook-2.jpg
 wwwroot\images\macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg
 wwwroot\images\macbook-air-m3-15-silver-2tmobile.jpg
+wwwroot\images\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg
 wwwroot\js\ajax-loader.gif
 wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\Gemini.js

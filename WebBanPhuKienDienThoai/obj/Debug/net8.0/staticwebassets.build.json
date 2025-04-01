@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pDLN3+AK+ESb5jpXCMbYcGb3hAuzubJxzaQOfx3ZmG0=",
+  "Hash": "V/zgiaJf0XPlbAquNx5oErAie+tyZNO7jNkxN9fxTsA=",
   "Source": "WebBanPhuKienDienThoai",
   "BasePath": "_content/WebBanPhuKienDienThoai",
   "Mode": "Default",
@@ -1821,6 +1821,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\macbook-air-m3-15-silver-2tmobile.jpg"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wgno7s8x9b",
+      "Integrity": "MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg"
     },
     {
       "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\ajax-loader.gif",
@@ -7395,6 +7416,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg="
+        }
+      ]
+    },
+    {
+      "Route": "images/op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 16:16:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk="
+        }
+      ]
+    },
+    {
+      "Route": "images/op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.wgno7s8x9b.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 16:16:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wgno7s8x9b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk="
         }
       ]
     },
