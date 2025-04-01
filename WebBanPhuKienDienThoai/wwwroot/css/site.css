@@ -167,3 +167,22 @@ body {
         #searchResults .list-group-item.active {
             background-color: #f8f9fa;
         }
+
+
+.banner-container {
+    padding: 0; /* Loại bỏ padding của col-md-6 */
+}
+
+.banner-image {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    height: 300px; /* Cố định chiều cao để khớp với thiết kế */
+    object-fit: cover; /* Lấp đầy mà không bị méo */
+    display: block; /* Loại bỏ khoảng trống dưới hình ảnh */
+    border-radius: 8px; /* Thêm viền bo góc giống trong hình */
+}
+
+@media (max-width: 767.98px) {
+    .banner-image {
+        height: 200px; /* Giảm chiều cao trên mobile */
+    }
+}
