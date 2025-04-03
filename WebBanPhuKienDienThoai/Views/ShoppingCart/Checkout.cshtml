@@ -1,14 +1,42 @@
 ﻿@model Order
 <h2>Checkout</h2>
+
 <form asp-action="Checkout" method="post">
     <div class="form-group">
         <label asp-for="ShippingAddress">Shipping Address</label>
-        <input asp-for="ShippingAddress" class="form-control" />
+        <input asp-for="ShippingAddress" class="form-control" required />
     </div>
     <div class="form-group">
         <label asp-for="Notes">Notes</label>
         <textarea asp-for="Notes" class="form-control"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Place Order</button>
+
+    <!-- Chọn phương thức thanh toán -->
+    <div class="form-check">
+        <input type="radio" id="payNow" name="PaymentMethod" value="PayPal" class="form-check-input" onclick="togglePayPal(true)">
+        <label for="payNow" class="form-check-label">Thanh toán ngay</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" id="payLater" name="PaymentMethod" value="Direct" class="form-check-input" onclick="togglePayPal(false)" checked>
+        <label for="payLater" class="form-check-label">Thanh toán trực tiếp</label>
+    </div>
+
+    <br>
+
+    <!-- Nút thanh toán trực tiếp -->
+    <button type="submit" id="placeOrderBtn" class="btn btn-primary">Place Order</button>
+
+    <!-- Nút thanh toán bằng PayPal -->
+    <button type="button" id="payWithPayPal" class="btn btn-success" style="display: none;" onclick="payWithPayPal()">Thanh toán bằng PayPal</button>
 </form>
 
+<script>
+    function togglePayPal(isPayNow) {
+        document.getElementById("payWithPayPal").style.display = isPayNow ? "block" : "none";
+        document.getElementById("placeOrderBtn").style.display = isPayNow ? "none" : "block";
+    }
+
+    function payWithPayPal() {
+        window.location.href = "/PayPal/CreatePayment";
+    }
+</script>
