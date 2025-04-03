@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "sNr3cgMstK0=",
-  "success": false,
+  "dgSpecHash": "pyT6MSVOF6Y=",
+  "success": true,
   "projectFilePath": "C:\\Users\\ngogi\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngogi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -85,9 +85,9 @@
     "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.11\\microsoft.data.sqlite.core.8.0.11.nupkg.sha512",
     "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.diasymreader\\2.0.0\\microsoft.diasymreader.2.0.0.nupkg.sha512",
     "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\8.0.7\\microsoft.dotnet.scaffolding.shared.8.0.7.nupkg.sha512",
-    "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.2\\microsoft.entityframeworkcore.9.0.2.nupkg.sha512",
-    "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.2\\microsoft.entityframeworkcore.abstractions.9.0.2.nupkg.sha512",
-    "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.2\\microsoft.entityframeworkcore.analyzers.9.0.2.nupkg.sha512",
+    "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.3\\microsoft.entityframeworkcore.9.0.3.nupkg.sha512",
+    "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.3\\microsoft.entityframeworkcore.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.3\\microsoft.entityframeworkcore.analyzers.9.0.3.nupkg.sha512",
     "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.3\\microsoft.entityframeworkcore.design.9.0.3.nupkg.sha512",
     "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.3\\microsoft.entityframeworkcore.relational.9.0.3.nupkg.sha512",
     "C:\\Users\\ngogi\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\8.0.11\\microsoft.entityframeworkcore.sqlite.8.0.11.nupkg.sha512",
@@ -192,15 +192,6 @@
       "warningLevel": 1,
       "message": "Package 'PayPalCoreSDK 1.7.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
       "libraryId": "PayPalCoreSDK",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 9.0.3 to 9.0.2. Reference the package directly from the project to select a different version. \r\n WebBanPhuKienDienThoai -> Microsoft.AspNetCore.Identity.EntityFrameworkCore 8.0.11 -> Microsoft.EntityFrameworkCore.Relational 9.0.3 -> Microsoft.EntityFrameworkCore (>= 9.0.3) \r\n WebBanPhuKienDienThoai -> Microsoft.EntityFrameworkCore (>= 9.0.2)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
       "targetGraphs": [
         "net8.0"
       ]
