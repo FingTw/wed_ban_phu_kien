@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebBanPhuKienDienThoai.Models;
@@ -39,13 +39,21 @@ namespace WebBanPhuKienDienThoai.Controllers
         [HttpGet]
         public async Task<IActionResult> Search(string query)
         {
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return Json(new List<object>()); // Trả về danh sách rỗng nếu query null hoặc rỗng
+            }
+
             var products = await _productRepository.GetAllAsync();
+
             var result = products
-                .Where(p => p.Name.Contains(query, StringComparison.OrdinalIgnoreCase))
+                .Where(p => p.Name.IndexOf(query, StringComparison.OrdinalIgnoreCase) >= 0)
                 .Select(p => new { p.Id, p.Name, p.ImageUrl })
                 .ToList();
 
             return Json(result);
         }
+
+
     }
 }

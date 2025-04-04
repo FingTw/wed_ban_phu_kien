@@ -12,6 +12,7 @@ wwwroot\images\8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg
 wwwroot\images\9732_57860_man_hinh_do_hoa_lg_32ur500k_b_6.jpg
 wwwroot\images\banner.jpg
 wwwroot\images\broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36c72-9bc9-410a-b349-1ca8ed4994bc.webp
+wwwroot\images\cangdanang.jpg
 wwwroot\images\Case-MBP13-CrystalX.jpg
 wwwroot\images\Case-MBP13-Huex-Black-A.jpg
 wwwroot\images\images.png
@@ -23,6 +24,7 @@ wwwroot\images\Macbook-2.jpg
 wwwroot\images\macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg
 wwwroot\images\macbook-air-m3-15-silver-2tmobile.jpg
 wwwroot\images\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg
+wwwroot\images\z6375930182846_c4336c38e517c449d7ff079d949e32c7.jpg
 wwwroot\js\ajax-loader.gif
 wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\Gemini.js

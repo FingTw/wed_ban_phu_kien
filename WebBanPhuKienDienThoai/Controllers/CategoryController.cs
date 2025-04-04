@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebBanPhuKienDienThoai.Models;
 using WebBanPhuKienDienThoai.Respository;
@@ -51,6 +51,7 @@ namespace WebBanPhuKienDienThoai.Controllers
             ViewBag.CategoryName = category.Name;
             return View(products);
         }
+
 
     }
 }

@@ -84,5 +84,18 @@ namespace WebBanPhuKienDienThoai.Respository
                 })
                 .ToList();
         }
+
+
+        public async Task<IEnumerable<Product>> GetProductsByPriceAsync(decimal price)
+        {
+            return await _context.Products.Where(p => p.Price <= price).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Product>> SearchProductsAsync(string searchString)
+        {
+            return await _context.Products
+                .Where(p => p.Name.Contains(searchString))
+                .ToListAsync();
+        }
     }
 }

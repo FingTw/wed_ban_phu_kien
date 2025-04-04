@@ -18,13 +18,43 @@ namespace WebBanPhuKienDienThoai.Controllers
             _productRepository = productRepository;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(decimal? priceFilter, string sortOrder, string searchString)
         {
-            var products = await _productRepository.GetAllAsync();
+            IEnumerable<Product> products;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                products = await _productRepository.SearchProductsAsync(searchString);
+            }
+            else if (priceFilter.HasValue)
+            {
+                products = await _productRepository.GetProductsByPriceAsync(priceFilter.Value);
+                ViewData["CurrentFilter"] = priceFilter.Value;
+            }
+            else
+            {
+                products = await _productRepository.GetAllAsync();
+            }
+
+            switch (sortOrder)
+            {
+                case "priceAsc":
+                    products = products.OrderBy(p => p.Price);
+                    break;
+                case "newest":
+                    products = products.OrderByDescending(p => p.CreatedAt);
+                    break;
+            }
+
             return View(products);
         }
+        //public async Task<IActionResult> Index()
+        //{
+        //    var products = await _productRepository.GetAllAsync();
+        //    return View(products);
+        //}
 
-        
+
         public async Task<IActionResult> Display(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
