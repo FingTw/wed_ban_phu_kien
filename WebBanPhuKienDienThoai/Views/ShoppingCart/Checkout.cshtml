@@ -10,5 +10,56 @@
         <textarea asp-for="Notes" class="form-control"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Place Order</button>
+
+    <div class="form-check">
+        <input type="radio" id="payNow" name="PaymentMethod" value="PayPal" class="form-check-input">
+        <label for="payNow" class="form-check-label">Thanh toán ngay</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" id="payLater" name="PaymentMethod" value="Direct" class="form-check-input" checked>
+        <label for="payLater" class="form-check-label">Thanh toán trực tiếp</label>
+    </div>
+
+    <br>
+
+    <!-- Nút thanh toán trực tiếp -->
+    <button type="submit" id="placeOrderBtn" class="btn btn-primary">Place Order</button>
+
+    <!-- Nút thanh toán bằng PayPal -->
+    <button type="button" id="payWithPayPal" class="btn btn-success" style="display: none;">Thanh toán bằng PayPal</button>
 </form>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function togglePayPal(isPayNow) {
+            const paypalBtn = document.getElementById("payWithPayPal");
+            const placeOrderBtn = document.getElementById("placeOrderBtn");
+
+            if (paypalBtn && placeOrderBtn) {
+                paypalBtn.style.display = isPayNow ? "block" : "none";
+                placeOrderBtn.style.display = isPayNow ? "none" : "block";
+            }
+        }
+
+        // Gán sự kiện khi chọn radio button
+        document.getElementById("payNow").addEventListener("click", function () {
+            togglePayPal(true);
+        });
+
+        document.getElementById("payLater").addEventListener("click", function () {
+            togglePayPal(false);
+        });
+
+        // Đăng ký hàm vào window để tránh lỗi undefined
+        window.payWithPayPal = function () {
+            console.log("Redirecting to PayPal...");
+            window.location.href = "/Paypal/CreatePayment";
+        };
+
+        // Thêm sự kiện click cho nút PayPal
+        const paypalBtn = document.getElementById("payWithPayPal");
+        if (paypalBtn) {
+            paypalBtn.addEventListener("click", payWithPayPal);
+        }
+    });
+</script>

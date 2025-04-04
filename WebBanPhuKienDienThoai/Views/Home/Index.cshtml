@@ -1,4 +1,9 @@
-﻿@model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
+﻿@{
+    ViewData["title"] = "Home Page";
+    int numOfQuantity = 1;
+}
+
+@model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
 
 <section class="bg-light py-5">
     <div class="container">
@@ -70,8 +75,12 @@
                                 <a href="@Url.Action("Display", "Product", new { id = item.Id })">@item.Name</a>
                             </h5>
                             <p class="card-text">@item.Price.ToString("#,##0") VND</p>
-                            <a href="@Url.Action("AddToCart", "ShoppingCart", new { productID = item.Id })"
-                               class="btn btn-dark">Add to Cart</a>
+                            
+                            <a asp-controller ="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id"
+                            asp-route-quantity="@numOfQuantity">
+                            <button class="btn btn-outline-dark"><i class="bi-cart-fill me-1">Add to cart</i></button>
+                        </a>
+
                         </div>
                     </div>
                 </div>
