@@ -28,7 +28,7 @@
                         <img src="@product.ImageUrl" alt="@product.Name" style="width: 50px; height: 50px; object-fit: cover;" />
                     </td>
                     <td>@product.Name</td>
-                    <td>@product.Price.ToString("C")</td>
+                    <td>@product.Price.ToString("#,##0") VNĐ</td>
                     <td>@product.Description</td>
                     <td>@(product.Category?.Name ?? "N/A")</td>
                     <td>@(product.DeviceType?.Name ?? "N/A")</td>

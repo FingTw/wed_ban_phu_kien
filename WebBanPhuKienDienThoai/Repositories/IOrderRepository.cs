@@ -1,6 +1,5 @@
 ﻿using WebBanPhuKienDienThoai.Models;
 
-
 namespace WebBanPhuKienDienThoai.Repositories
 {
     public interface IOrderRepository

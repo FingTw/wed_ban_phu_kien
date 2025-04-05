@@ -17,213 +17,233 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebBanPhuKienDienThoai
 build_property.RootNamespace = WebBanPhuKienDienThoai
-build_property.ProjectDir = D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\
+build_property.ProjectDir = C:\Users\phitr\OneDrive\Máy tính\ĐAWEB\wed_ban_phu_kien\WebBanPhuKienDienThoai\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai
+build_property.MSBuildProjectDirectory = C:\Users\phitr\OneDrive\Máy tính\ĐAWEB\wed_ban_phu_kien\WebBanPhuKienDienThoai
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Add.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Delete.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/ProductsByCategory.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/ProductsByCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBXFByb2R1Y3RzQnlDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Update.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/CategoryA/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DeviceTypeA/Delete.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DeviceTypeA/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGV2aWNlVHlwZUFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DeviceTypeA/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DeviceTypeA/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGV2aWNlVHlwZUFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DeviceTypeA/Update.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DeviceTypeA/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGV2aWNlVHlwZUFcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcQWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Delete.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Details.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Edit.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Add.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Delete.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Display.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFcRGlzcGxheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Update.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/ProductA/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/ProductsByCategory.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Category/ProductsByCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcUHJvZHVjdHNCeUNhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/DeviceType/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/DeviceType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlVHlwZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Home/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Home/Privacy.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Paypal/PaymentCancel.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Paypal/PaymentCancel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cGFsXFBheW1lbnRDYW5jZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Paypal/PaymentSuccess.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Paypal/PaymentSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cGFsXFBheW1lbnRTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Display.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEaXNwbGF5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/Error.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/Checkout.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XENoZWNrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/Index.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/CompareProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XENvbXBhcmVQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/OrderCompleted.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/OrderCompleted.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVyQ29tcGxldGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/_ViewImports.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/ShoppingCart/OrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVySGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/_ViewStart.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/wed/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_Layout.cshtml]
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e9e8sn13zb

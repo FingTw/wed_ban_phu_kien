@@ -84,5 +84,14 @@ namespace WebBanPhuKienDienThoai.Respository
                 })
                 .ToList();
         }
+        public async Task<IEnumerable<Product>> GetProductsByIdsAsync(int[] productIds)
+        {
+            return await _context.Products
+                .Where(p => productIds.Contains(p.Id))
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .Include(p => p.Images)
+                .ToListAsync();
+        }
     }
 }
