@@ -37,9 +37,9 @@ namespace WebBanPhuKienDienThoai.Controllers
             return View(category);
         }
 
-       
 
-        public async Task<IActionResult> ProductsByCategory(int id)
+
+        public async Task<IActionResult> ProductsByCategory(int id, decimal? priceFilter)
         {
             var category = await _categoryRepository.GetByIdAsync(id);
             if (category == null)
@@ -48,10 +48,18 @@ namespace WebBanPhuKienDienThoai.Controllers
             }
 
             var products = await _productRepository.GetByCategoryIdAsync(id);
+
+            if (priceFilter.HasValue)
+            {
+                products = products.Where(p => p.Price <= priceFilter.Value).ToList();
+            }
+
             ViewBag.CategoryName = category.Name;
+            ViewBag.CategoryId = id;
+            ViewData["CurrentFilter"] = priceFilter;
+
             return View(products);
         }
-
 
     }
 }
