@@ -13,47 +13,113 @@ namespace WebBanPhuKienDienThoai.Controllers
         private readonly IProductRepository _productRepository;
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
-        public ShoppingCartController(ApplicationDbContext context,
-       UserManager<ApplicationUser> userManager, IProductRepository
-       productRepository)
+
+        public ShoppingCartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager, IProductRepository productRepository)
         {
             _productRepository = productRepository;
             _context = context;
             _userManager = userManager;
         }
-        public IActionResult Checkout()
+
+        public async Task<IActionResult> Checkout()
         {
-            return View(new Order());
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (cart == null || !cart.Items.Any())
+            {
+                return RedirectToAction("Index");
+            }
+
+            var order = new Order
+            {
+                OrderDate = DateTime.UtcNow,
+                OrderDetails = cart.Items.Select(i => new OrderDetail
+                {
+                    ProductId = i.ProductId,
+                    Quantity = i.Quantity,
+                    Price = i.Price,
+                    Product = _context.Products.Include(p => p.Images).FirstOrDefault(p => p.Id == i.ProductId)
+                }).ToList(),
+                TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity)
+            };
+
+            var discountCode = HttpContext.Session.GetString("DiscountCode");
+            if (!string.IsNullOrEmpty(discountCode))
+            {
+                var discount = await _context.DiscountCodes
+                    .FirstOrDefaultAsync(d => d.Code == discountCode && d.ExpiryDate >= DateTime.Now && d.UsageCount < d.UsageLimit);
+
+                if (discount != null)
+                {
+                    decimal discountAmount = 0;
+                    if (discount.DiscountPercent.HasValue)
+                    {
+                        discountAmount = order.TotalPrice * (decimal)(discount.DiscountPercent.Value / 100);
+                    }
+                    else if (discount.DiscountAmount.HasValue)
+                    {
+                        discountAmount = discount.DiscountAmount.Value;
+                    }
+                    order.TotalPrice -= discountAmount;
+                    TempData["DiscountAmount"] = discountAmount;
+                    TempData["DiscountSuccess"] = $"Đã áp dụng mã giảm giá: {(discount.DiscountPercent.HasValue ? $"{discount.DiscountPercent}%" : $"{discount.DiscountAmount:N0} VNĐ")}";
+                }
+            }
+
+            return View(order);
         }
+
         [HttpPost]
         public async Task<IActionResult> Checkout(Order order)
         {
-            var cart =
-           HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
             if (cart == null || !cart.Items.Any())
             {
-                // Xử lý giỏ hàng trống...
                 return RedirectToAction("Index");
             }
+
             var user = await _userManager.GetUserAsync(User);
             order.UserId = user.Id;
             order.OrderDate = DateTime.UtcNow;
-            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
             order.OrderDetails = cart.Items.Select(i => new OrderDetail
             {
                 ProductId = i.ProductId,
                 Quantity = i.Quantity,
                 Price = i.Price
             }).ToList();
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+
+            var discountCode = HttpContext.Session.GetString("DiscountCode");
+            if (!string.IsNullOrEmpty(discountCode))
+            {
+                var discount = await _context.DiscountCodes
+                    .FirstOrDefaultAsync(d => d.Code == discountCode && d.ExpiryDate >= DateTime.Now && d.UsageCount < d.UsageLimit);
+                if (discount != null)
+                {
+                    decimal discountAmount = 0;
+                    if (discount.DiscountPercent.HasValue)
+                    {
+                        discountAmount = order.TotalPrice * (decimal)(discount.DiscountPercent.Value / 100);
+                    }
+                    else if (discount.DiscountAmount.HasValue)
+                    {
+                        discountAmount = discount.DiscountAmount.Value;
+                    }
+                    order.TotalPrice -= discountAmount;
+                    discount.UsageCount++;
+                    _context.Update(discount);
+                }
+            }
+
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
             HttpContext.Session.Remove("Cart");
-            return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
+            HttpContext.Session.Remove("DiscountCode");
+            return View("OrderCompleted", order.Id);
         }
+
         public async Task<IActionResult> AddToCart(int productId, int quantity)
         {
-            // Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
-            var product = await GetProductFromDatabase(productId);
+            var product = await _productRepository.GetByIdAsync(productId);
             var cartItem = new CartItem
             {
                 ProductId = productId,
@@ -61,20 +127,18 @@ namespace WebBanPhuKienDienThoai.Controllers
                 Price = product.Price,
                 Quantity = quantity
             };
-            var cart =
-           HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new
-           ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
             cart.AddItem(cartItem);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
-            return RedirectToAction("Index" , "Home");
+            return RedirectToAction("Index", "Home");
         }
+
         public IActionResult Index()
         {
-            var cart =
-           HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new
-           ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
             return View(cart);
         }
+
         [AllowAnonymous]
         public async Task<IActionResult> CompareProducts(string productIds)
         {
@@ -82,11 +146,11 @@ namespace WebBanPhuKienDienThoai.Controllers
             {
                 return View(new List<Product>());
             }
-
             var ids = productIds.Split(',').Select(int.Parse).ToArray();
             var products = await _productRepository.GetProductsByIdsAsync(ids);
             return View(products);
         }
+
         public async Task<IActionResult> OrderHistory()
         {
             var user = await _userManager.GetUserAsync(User);
@@ -98,24 +162,63 @@ namespace WebBanPhuKienDienThoai.Controllers
                 .ToListAsync();
             return View(orders);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ApplyDiscount(string discountCode)
+        {
+            if (string.IsNullOrEmpty(discountCode))
+            {
+                return Json(new { success = false, message = "Vui lòng nhập mã giảm giá." });
+            }
+
+            var discount = await _context.DiscountCodes
+                .FirstOrDefaultAsync(d => d.Code == discountCode && d.ExpiryDate >= DateTime.Now && d.UsageCount < d.UsageLimit);
+
+            if (discount == null)
+            {
+                return Json(new { success = false, message = "Mã giảm giá không hợp lệ, đã hết hạn hoặc đã dùng hết số lần cho phép." });
+            }
+
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (cart == null || !cart.Items.Any())
+            {
+                return Json(new { success = false, message = "Giỏ hàng trống." });
+            }
+
+            decimal totalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            decimal discountAmount = 0;
+            if (discount.DiscountPercent.HasValue)
+            {
+                discountAmount = totalPrice * (decimal)(discount.DiscountPercent.Value / 100);
+            }
+            else if (discount.DiscountAmount.HasValue)
+            {
+                discountAmount = discount.DiscountAmount.Value;
+            }
+
+            TempData["DiscountAmount"] = discountAmount;
+            HttpContext.Session.SetString("DiscountCode", discount.Code);
+            TempData["DiscountSuccess"] = $"Đã áp dụng mã giảm giá: {(discount.DiscountPercent.HasValue ? $"{discount.DiscountPercent}%" : $"{discount.DiscountAmount:N0} VNĐ")}";
+            return Json(new { success = true });
+        }
+
         private async Task<Product> GetProductFromDatabase(int productId)
         {
-            // Truy vấn cơ sở dữ liệu để lấy thông tin sản phẩm
-            var product = await _productRepository.GetByIdAsync(productId);
-            return product;
+            return await _productRepository.GetByIdAsync(productId);
         }
+
         [HttpPost]
         public IActionResult RemoveFromCart(int productId)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-            if (cart is not null)
+            if (cart != null)
             {
                 cart.RemoveItem(productId);
-                // Lưu lại giỏ hàng vào Session sau khi đã xóa mục
                 HttpContext.Session.SetObjectAsJson("Cart", cart);
             }
-            return RedirectToAction("Index");
+            return Json(new { success = true });
         }
+
         [HttpPost]
         public IActionResult UpdateCart(int productId, int quantity)
         {
@@ -123,17 +226,16 @@ namespace WebBanPhuKienDienThoai.Controllers
             if (cart != null)
             {
                 var product = _context.Products.FirstOrDefault(p => p.Id == productId);
-                if (product == null)
+                if (product == null || quantity > product.Stock)
                 {
                     return Json(new { success = false, message = "Số lượng sản phẩm không đủ trong kho." });
                 }
-
                 cart.UpdateItem(productId, quantity);
                 HttpContext.Session.SetObjectAsJson("Cart", cart);
             }
-
             return Json(new { success = true, itemCount = cart?.GetTotalQuantity() ?? 0 });
         }
+
         [HttpPost]
         public IActionResult ClearCart()
         {

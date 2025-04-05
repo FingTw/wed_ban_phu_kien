@@ -44,6 +44,7 @@ builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 builder.Services.AddScoped<IDeviceTypeRepository, EFDeviceTypeRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IDiscountRepository, EFDiscountRepository>();
 
 builder.Services.AddRazorPages();
 

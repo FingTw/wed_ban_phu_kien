@@ -60,6 +60,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGV2aWNlVHlwZUFcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/DiscountCode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY291bnRDb2RlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/phitr/OneDrive/Máy tính/ĐAWEB/wed_ban_phu_kien/WebBanPhuKienDienThoai/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

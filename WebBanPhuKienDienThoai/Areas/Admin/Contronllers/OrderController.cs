@@ -113,13 +113,10 @@ namespace WebBanPhuKienDienThoai.Areas.Admin.Controllers
                 PdfDocument pdf = new PdfDocument(writer);
                 Document document = new Document(pdf);
 
-                // Tiêu đề
                 document.Add(new Paragraph("Hóa Đơn - Phụ Kiện Điện Thoại")
                     .SetTextAlignment(TextAlignment.CENTER)
                     .SetFontSize(20));
 
-
-                // Thông tin đơn hàng
                 document.Add(new Paragraph($"Mã đơn hàng: {order.Id}"));
                 document.Add(new Paragraph($"Khách hàng: {order.ApplicationUser?.UserName}"));
                 document.Add(new Paragraph($"Ngày đặt: {order.OrderDate:dd/MM/yyyy HH:mm}"));
@@ -127,9 +124,8 @@ namespace WebBanPhuKienDienThoai.Areas.Admin.Controllers
                 if (!string.IsNullOrEmpty(order.Notes))
                     document.Add(new Paragraph($"Ghi chú: {order.Notes}"));
 
-                document.Add(new Paragraph(" ")); // Khoảng cách
+                document.Add(new Paragraph(" "));
 
-                // Bảng chi tiết sản phẩm
                 Table table = new Table(UnitValue.CreatePercentArray(new float[] { 10, 40, 15, 20, 20 }));
                 table.SetWidth(UnitValue.CreatePercentValue(100));
 
@@ -151,11 +147,18 @@ namespace WebBanPhuKienDienThoai.Areas.Admin.Controllers
 
                 document.Add(table);
 
-                // Tổng tiền
+                var totalPriceBeforeDiscount = order.OrderDetails.Sum(d => d.Price * d.Quantity);
+                var discountAmount = totalPriceBeforeDiscount - order.TotalPrice;
+                document.Add(new Paragraph($"Tổng tiền sản phẩm: {totalPriceBeforeDiscount:#,##0} VNĐ")
+                    .SetTextAlignment(TextAlignment.RIGHT));
+                if (discountAmount > 0)
+                {
+                    document.Add(new Paragraph($"Giảm giá: {discountAmount:#,##0} VNĐ")
+                        .SetTextAlignment(TextAlignment.RIGHT));
+                }
                 document.Add(new Paragraph($"Tổng tiền: {order.TotalPrice:#,##0} VNĐ")
                     .SetTextAlignment(TextAlignment.RIGHT)
                     .SetFontSize(14));
-                    
 
                 document.Close();
 

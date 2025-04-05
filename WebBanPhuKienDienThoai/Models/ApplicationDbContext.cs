@@ -15,6 +15,7 @@ namespace WebBanPhuKienDienThoai.Models
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<DeviceType> DeviceTypes { get; set; }
         public DbSet<DeviceTypeCategory> DeviceTypeCategories { get; set; }
+        public DbSet<DiscountCode> DiscountCodes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
