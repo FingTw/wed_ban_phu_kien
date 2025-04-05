@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ik4heq9zur</Fingerprint>
-      <Integrity>YvdLHPgkqJ8DVUxjjnGVlMMJtNimJ6dYkowFFvp4kKs=</Integrity>
+      <Fingerprint>65vh5pkwea</Fingerprint>
+      <Integrity>6iAyWcn3SwMvqDPqKErE2oybgWngxxsUoWwGBav0Okg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap.min.css'))</OriginalItemSpec>
@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zauq7d412e</Fingerprint>
-      <Integrity>61YldbdfO8hDnGbFBxZjU3A66qOlPZNMKy+Q2rMQTYA=</Integrity>
+      <Fingerprint>hap1f26nto</Fingerprint>
+      <Integrity>t/KJ0cxMTXWGHG5+pZdjgc3fezy6hoXIdGMakA/hcFc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2oyfr6vy3j</Fingerprint>
-      <Integrity>vl/a0YhuSh+1EeDx5HisCK0VQKwMy5ppZ26U/45zAwI=</Integrity>
+      <Fingerprint>c58r91wp59</Fingerprint>
+      <Integrity>AO8Dr2t3Zy0TdvgXZhe2MLktm2l3cvHeNvJkRDnSzqo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\vendor.css'))</OriginalItemSpec>
@@ -216,6 +216,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9732_57860_man_hinh_do_hoa_lg_32ur500k_b_6.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\apple-airpods-max-1_1.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/apple-airpods-max-1_1.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nssrywb043</Fingerprint>
+      <Integrity>eaO6T0eB40qPRsiadfFPyiFCDMi0htEPedVGlXGIxTM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\apple-airpods-max-1_1.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\banner.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>WebBanPhuKienDienThoai</SourceId>
@@ -287,6 +305,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Case-MBP13-Huex-Black-A.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m95ouhjmkt</Fingerprint>
+      <Integrity>Vl3pd90lMrbdq2u3FSqbCKHB7wHVERt8N5PA8ZFw5tI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\images.png'))">
       <SourceType>Package</SourceType>
@@ -480,8 +516,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1hlhnlro98</Fingerprint>
-      <Integrity>9SEPo+fwJFpMUet/KACSwO+Z/dKMReF9q4zFhU/fT9M=</Integrity>
+      <Fingerprint>lqe157yz2r</Fingerprint>
+      <Integrity>I36DFhv+CYy+/bPtLsadSn8s4Xok98qhTZ8K5dwKgpE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.bundle.min.js'))</OriginalItemSpec>

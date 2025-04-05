@@ -4,7 +4,65 @@
 }
 
 @model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var selectedProducts = [];
 
+            $('.compare').on('click', function () {
+                var productId = $(this).data('productid');
+                var productName = $(this).data('name');
+                var productImage = $(this).data('image');
+                if (!selectedProducts.some(p => p.id === productId)) {
+                    selectedProducts.push({ id: productId, name: productName, image: productImage });
+                    updateCompareSection();
+                }
+            });
+
+            function updateCompareSection() {
+                var compareSection = $('#compare-section');
+                compareSection.empty();
+                selectedProducts.forEach(function (product, index) {
+                    compareSection.append(`
+                        <div class="compare-item">
+                            <img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;" />
+                            <span>${product.name}</span>
+                            <button class="remove-compare" data-index="${index}">×</button>
+                        </div>
+                    `);
+                });
+                if (selectedProducts.length > 0) {
+                    compareSection.append(`
+                        <div class="compare-actions">
+                            <button id="compare-now" class="btn btn-primary">So sánh ngay</button>
+                            <button id="clear-compare" class="btn btn-danger">Xóa tất cả</button>
+                        </div>
+                    `);
+                }
+            }
+
+            $(document).on('click', '.remove-compare', function () {
+                var index = $(this).data('index');
+                selectedProducts.splice(index, 1);
+                updateCompareSection();
+            });
+
+            $(document).on('click', '#clear-compare', function () {
+                selectedProducts = [];
+                updateCompareSection();
+            });
+
+            $(document).on('click', '#compare-now', function () {
+                if (selectedProducts.length > 0) {
+                    var productIds = selectedProducts.map(p => p.id).join(',');
+                    window.location.href = '/ShoppingCart/CompareProducts?productIds=' + productIds;
+                } else {
+                    alert('Vui lòng chọn ít nhất một sản phẩm để so sánh!');
+                }
+            });
+        });
+    </script>
+}
 <section class="bg-light py-5">
     <div class="container">
         <div class="row align-items-center">
@@ -75,19 +133,28 @@
                                 <a href="@Url.Action("Display", "Product", new { id = item.Id })">@item.Name</a>
                             </h5>
                             <p class="card-text">@item.Price.ToString("#,##0") VND</p>
-                            
-                            <a asp-controller ="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id"
-                            asp-route-quantity="@numOfQuantity">
-                            <button class="btn btn-outline-dark"><i class="bi-cart-fill me-1">Add to cart</i></button>
-                        </a>
-
+                            <div class="d-flex align-items-center">
+                                <a href="@Url.Action("AddToCart", "ShoppingCart", new { productId = item.Id, quantity = 1 })"
+                                   class="btn btn-dark me-2">Add to Cart</a>
+                                <button class="compare btn btn-primary btn-sm"
+                                        data-productid="@item.Id"
+                                        data-name="@item.Name"
+                                        data-image="@item.ImageUrl">
+                                    +
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             }
+            }
+            else
+            {
+            <p>Không có sản phẩm để hiển thị.</p>
+            }
         </div>
+        <div id="compare-section" class="mt-4 d-flex align-items-center flex-wrap gap-3"></div>
     </div>
-</section>
 
 <section class="bg-light py-5">
     <div class="container">

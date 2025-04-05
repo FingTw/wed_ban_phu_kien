@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebBanPhuKienDienThoai.Extensions;
 using WebBanPhuKienDienThoai.Models;
 
@@ -74,7 +75,29 @@ namespace WebBanPhuKienDienThoai.Controllers
            ShoppingCart();
             return View(cart);
         }
-        // Các actions khác...
+        [AllowAnonymous]
+        public async Task<IActionResult> CompareProducts(string productIds)
+        {
+            if (string.IsNullOrEmpty(productIds))
+            {
+                return View(new List<Product>());
+            }
+
+            var ids = productIds.Split(',').Select(int.Parse).ToArray();
+            var products = await _productRepository.GetProductsByIdsAsync(ids);
+            return View(products);
+        }
+        public async Task<IActionResult> OrderHistory()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            var orders = await _context.Orders
+                .Include(o => o.OrderDetails)
+                .ThenInclude(od => od.Product)
+                .Where(o => o.UserId == user.Id)
+                .OrderByDescending(o => o.OrderDate)
+                .ToListAsync();
+            return View(orders);
+        }
         private async Task<Product> GetProductFromDatabase(int productId)
         {
             // Truy vấn cơ sở dữ liệu để lấy thông tin sản phẩm
