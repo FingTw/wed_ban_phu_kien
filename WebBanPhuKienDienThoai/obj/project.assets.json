@@ -12135,23 +12135,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\phitr\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phitr\\OneDrive\\Máy tính\\ĐAWEB\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
+      "projectUniqueName": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
       "projectName": "WebBanPhuKienDienThoai",
-      "projectPath": "C:\\Users\\phitr\\OneDrive\\Máy tính\\ĐAWEB\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
-      "packagesPath": "C:\\Users\\phitr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phitr\\OneDrive\\Máy tính\\ĐAWEB\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\",
+      "projectPath": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\phitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

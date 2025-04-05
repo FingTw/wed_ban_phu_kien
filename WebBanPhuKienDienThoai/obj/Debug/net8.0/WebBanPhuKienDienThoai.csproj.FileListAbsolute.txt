@@ -1129,3 +1129,18 @@ C:\Users\phitr\OneDrive\Máy tính\ĐAWEB\wed_ban_phu_kien\WebBanPhuKienDienThoa
 C:\Users\phitr\OneDrive\Máy tính\ĐAWEB\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\phitr\OneDrive\Máy tính\ĐAWEB\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\phitr\OneDrive\Máy tính\ĐAWEB\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.barcodes.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.forms.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.io.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.kernel.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.layout.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.pdfa.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.pdfua.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.sign.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.styledxmlparser.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.svg.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\itext.commons.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll

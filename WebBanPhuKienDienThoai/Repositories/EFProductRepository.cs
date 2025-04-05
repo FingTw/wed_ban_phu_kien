@@ -12,6 +12,28 @@ namespace WebBanPhuKienDienThoai.Respository
             _context = context;
         }
 
+        public async Task<IEnumerable<Product>> FilterAsync(int? categoryId, int? deviceTypeId, decimal? minPrice, decimal? maxPrice)
+        {
+            var query = _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .AsQueryable();
+
+            if (categoryId.HasValue)
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+
+            if (deviceTypeId.HasValue)
+                query = query.Where(p => p.DeviceTypeId == deviceTypeId.Value);
+
+            if (minPrice.HasValue)
+                query = query.Where(p => p.Price >= minPrice.Value);
+
+            if (maxPrice.HasValue)
+                query = query.Where(p => p.Price <= maxPrice.Value);
+
+            return await query.ToListAsync();
+        }
+
         public async Task<IEnumerable<Product>> GetByCategoryIdAsync(int categoryId)
         {
             return await _context.Products.Where(p => p.CategoryId == categoryId).ToListAsync();

@@ -125,6 +125,7 @@ namespace WebBanPhuKienDienThoai.Models
                 new DeviceTypeCategory { DeviceTypeId = 5, CategoryId = 9 },
                 new DeviceTypeCategory { DeviceTypeId = 5, CategoryId = 10 }
             );
+
         }
     }
 }

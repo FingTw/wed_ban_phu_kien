@@ -113,6 +113,10 @@
         {
             <div class="table-responsive">
                 <table class="table table-hover align-middle">
+                    <div class="input-group">
+                        <input type="text" id="discountCode" class="form-control" placeholder="Nhập mã giảm giá" />
+                        <button id="apply-discount" class="btn btn-outline-danger">Áp dụng</button>
+                    </div>
                     <thead class="table-light">
                         <tr>
                             <th>Sản phẩm</th>
@@ -126,10 +130,7 @@
                         @foreach (var item in Model.Items)
                         {
                             <div class="col-md-6">
-                                <div class="input-group">
-                                    <input type="text" id="discountCode" class="form-control" placeholder="Nhập mã giảm giá" />
-                                    <button id="apply-discount" class="btn btn-outline-danger">Áp dụng</button>
-                                </div>
+                                
                                 <div id="discount-message" class="mt-2">
                                     @if (TempData["DiscountSuccess"] != null)
                                     {

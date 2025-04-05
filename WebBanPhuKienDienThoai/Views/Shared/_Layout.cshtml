@@ -35,10 +35,6 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#mobile-products">Products</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link" href="#yearly-sale">Sale</a>
                         </li>
                         <li class="nav-item">
@@ -47,9 +43,6 @@
 
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="DeviceType" asp-action="Index">DeviceType</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
@@ -92,17 +85,15 @@
     </div>
 
     <!-- Chat box -->
-    <div class="chat-icon position-fixed bottom-0 end-0 m-3" onclick="toggleChat()" style="cursor: pointer; font-size: 24px;">💬</div>
-    <div class="chat-box position-fixed bottom-0 end-0 m-3 bg-light border rounded" id="chatBox" style="display: none; width: 300px;">
-        <div class="chat-header bg-dark text-white p-2">Gemini Chatbot</div>
-        <div class="chat-messages p-2" id="chatMessages" style="height: 200px; overflow-y: auto;">
+    <div class="chat-icon" onclick="toggleChat()">💬</div>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">Gemini Chatbot</div>
+        <div class="chat-messages" id="chatMessages">
             <p class="bot-message">Xin chào! Tôi có thể giúp gì cho bạn?</p>
         </div>
-        <div class="chat-input p-2">
-            <div class="input-group">
-                <input type="text" id="chatInput" class="form-control" placeholder="Nhập tin nhắn..." onkeypress="if(event.key === 'Enter') sendMessage();">
-                <button class="btn btn-primary" onclick="sendMessage()">Gửi</button>
-            </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Nhập tin nhắn..." onkeypress="if(event.key === 'Enter') sendMessage();">
+            <button onclick="sendMessage()">Gửi</button>
         </div>
     </div>
 
