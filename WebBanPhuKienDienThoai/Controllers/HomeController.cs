@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebBanPhuKienDienThoai.Models;
 using WebBanPhuKienDienThoai.Respository;
+using Microsoft.Extensions.Localization;// Thêm cái này
+using Microsoft.AspNetCore.Localization;// Thêm cái này
+
 
 namespace WebBanPhuKienDienThoai.Controllers
 {
@@ -11,15 +14,18 @@ namespace WebBanPhuKienDienThoai.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IProductRepository _productRepository;
+        private readonly IStringLocalizer<HomeController> _localizer; // Thêm dòng này
 
-        public HomeController(ILogger<HomeController> logger, IProductRepository productRepository)
+        public HomeController(ILogger<HomeController> logger, IProductRepository productRepository, IStringLocalizer<HomeController> localizer)
         {
             _logger = logger;
             _productRepository = productRepository;
+            _localizer = localizer;
         }
 
         public async Task<IActionResult> Index()
         {
+            var LocalizedTitle = _localizer["Title"];// thêm dòng này
             var products = await _productRepository.GetAllAsync();  
             return View(products);
         }
@@ -54,6 +60,18 @@ namespace WebBanPhuKienDienThoai.Controllers
             return Json(result);
         }
 
+        // Thêm đoạn này để lựa chọn ngôn ngữ
+        [HttpPost]
+        public IActionResult ChangeLanguage(string culture, string returnUrl)
+        {
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+            );
+
+            return LocalRedirect(returnUrl);
+        }
 
     }
 }

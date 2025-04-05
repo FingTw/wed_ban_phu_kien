@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\webbanphukiendienthoai.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:webbanphukiendienthoai.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\category\\productsbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\category\\productsbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +59,12 @@
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\repositories\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:repositories\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\areas\\admin\\contronllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:areas\\admin\\contronllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\areas\\admin\\contronllers\\devicetypeacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,28 +75,12 @@
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\paypal\\paymentcancel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\paypal\\paymentcancel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1142A3B4-D572-F228-B199-B08FD1C98973}|WebBanPhuKienDienThoai.csproj|c:\\web_ai\\wed_ban_phu_kien\\webbanphukiendienthoai\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -110,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -121,161 +125,103 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductsByCategory.cshtml",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Category\\ProductsByCategory.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\ProductsByCategory.cshtml",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Category\\ProductsByCategory.cshtml",
-              "RelativeToolTip": "Views\\Category\\ProductsByCategory.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T04:00:32.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwDEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:47:57.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T04:00:24.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ICategoryRepository.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\ICategoryRepository.cs",
-              "RelativeToolTip": "Repositories\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:29:40.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAqwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:28:56.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IProductRepository.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\IProductRepository.cs",
-              "RelativeToolTip": "Repositories\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:29:18.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EFCategoryRepository.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFCategoryRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EFCategoryRepository.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFCategoryRepository.cs",
-              "RelativeToolTip": "Repositories\\EFCategoryRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T06:10:10.883Z",
+              "WhenOpened": "2025-04-01T13:39:52.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "WebBanPhuKienDienThoai",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
+              "RelativeDocumentMoniker": "WebBanPhuKienDienThoai.csproj",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\WebBanPhuKienDienThoai.csproj",
+              "RelativeToolTip": "WebBanPhuKienDienThoai.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T13:55:23.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA3wDEAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwEkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T14:16:11.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EFProductRepository.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFProductRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EFProductRepository.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFProductRepository.cs",
-              "RelativeToolTip": "Repositories\\EFProductRepository.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAADwv1wAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:30:41.994Z",
+              "DocumentIndex": 1,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Display.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Display.cshtml",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Display.cshtml",
+              "RelativeToolTip": "Views\\Product\\Display.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T04:00:18.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T13:39:52.787Z"
+              "WhenOpened": "2025-04-04T04:00:24.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Contronllers\\HomeController.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\HomeController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Contronllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswDYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T03:57:30.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T14:16:07.238Z"
+              "WhenOpened": "2025-04-04T03:52:48.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DeviceTypeAController.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:44:21.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
@@ -288,32 +234,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Display.cshtml",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Display.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Display.cshtml",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Product\\Display.cshtml",
-              "RelativeToolTip": "Views\\Product\\Display.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T04:00:18.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEoAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T03:57:30.946Z",
+              "DocumentIndex": 11,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwDEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:47:57.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 9,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ICategoryRepository.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:29:40.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductsByCategory.cshtml",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Category\\ProductsByCategory.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\ProductsByCategory.cshtml",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Category\\ProductsByCategory.cshtml",
+              "RelativeToolTip": "Views\\Category\\ProductsByCategory.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwCIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T04:00:32.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:28:56.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IProductRepository.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:29:18.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EFCategoryRepository.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFCategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFCategoryRepository.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFCategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\EFCategoryRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T06:10:10.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EFProductRepository.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFProductRepository.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Repositories\\EFProductRepository.cs",
+              "RelativeToolTip": "Repositories\\EFProductRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv1wAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:30:41.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Contronllers\\HomeController.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Contronllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T14:16:07.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeviceTypeAController.cs",
+              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
+              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Contronllers\\DeviceTypeAController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:44:21.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -321,11 +359,12 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T03:57:18.622Z"
+              "WhenOpened": "2025-04-04T03:57:18.622Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -333,35 +372,25 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-04T03:05:06.009Z"
+              "WhenOpened": "2025-04-04T03:05:06.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:52:48.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\ShoppingCart\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\ShoppingCart\\Index.cshtml",
               "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\ShoppingCart\\Index.cshtml",
               "RelativeToolTip": "Views\\ShoppingCart\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T03:56:39.611Z"
+              "WhenOpened": "2025-04-04T03:56:39.611Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "PaymentCancel.cshtml",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Paypal\\PaymentCancel.cshtml",
               "RelativeDocumentMoniker": "Views\\Paypal\\PaymentCancel.cshtml",
@@ -369,11 +398,12 @@
               "RelativeToolTip": "Views\\Paypal\\PaymentCancel.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T03:06:57.863Z"
+              "WhenOpened": "2025-04-04T03:06:57.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "PaypalService.cs",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Services\\PaypalService.cs",
               "RelativeDocumentMoniker": "Services\\PaypalService.cs",
@@ -381,23 +411,25 @@
               "RelativeToolTip": "Services\\PaypalService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAADwvzwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:03:38.683Z"
+              "WhenOpened": "2025-04-04T03:03:38.683Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\ShoppingCart\\Checkout.cshtml",
               "RelativeDocumentMoniker": "Views\\ShoppingCart\\Checkout.cshtml",
               "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\ShoppingCart\\Checkout.cshtml",
               "RelativeToolTip": "Views\\ShoppingCart\\Checkout.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADQAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAIBJwDQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T03:08:36.953Z"
+              "WhenOpened": "2025-04-04T03:08:36.953Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "PaymentSuccess.cshtml",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Views\\Paypal\\PaymentSuccess.cshtml",
               "RelativeDocumentMoniker": "Views\\Paypal\\PaymentSuccess.cshtml",
@@ -405,23 +437,25 @@
               "RelativeToolTip": "Views\\Paypal\\PaymentSuccess.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T03:07:23.502Z"
+              "WhenOpened": "2025-04-04T03:07:23.502Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PaypalController.cs",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\PaypalController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaypalController.cs",
               "ToolTip": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\Controllers\\PaypalController.cs",
               "RelativeToolTip": "Controllers\\PaypalController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBQwCQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:00:35.148Z"
+              "WhenOpened": "2025-04-04T03:00:35.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "site.css",
               "DocumentMoniker": "C:\\web_AI\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -429,7 +463,8 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAKIAAAAAAAAAAAAgwK8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-01T13:44:03.265Z"
+              "WhenOpened": "2025-04-01T13:44:03.265Z",
+              "EditorCaption": ""
             }
           ]
         }
