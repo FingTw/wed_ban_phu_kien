@@ -32,7 +32,8 @@
                                 <td>@(product.Description ?? "Không có thông tin")</td>
                                 <td>
                                     <a href="@Url.Action("AddToCart", "ShoppingCart", new { productId = product.Id, quantity = 1 })"
-                                       class="btn btn-dark btn-sm">Mua ngay</a>
+                                       class="btn btn-dark btn-sm add-to-cart-btn-global">Mua ngay</a>
+                                    
                                 </td>
                             </tr>
                         }

@@ -33,8 +33,8 @@ namespace WebBanPhuKienDienThoai.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                discountCode.Code = $"DISCOUNT-{Guid.NewGuid().ToString().Substring(0, 8).ToUpper()}"; // Tạo mã ngẫu nhiên
-                discountCode.UsageCount = 0; // Khởi tạo số lần sử dụng
+                discountCode.Code = $"DISCOUNT-{Guid.NewGuid().ToString().Substring(0, 8).ToUpper()}"; 
+                discountCode.UsageCount = 0;
                 _context.DiscountCodes.Add(discountCode);
                 _context.SaveChanges();
                 return RedirectToAction(nameof(Index));

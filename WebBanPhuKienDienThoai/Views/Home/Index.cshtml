@@ -10,124 +10,16 @@
 
 @section Scripts {
     <script>
-        $(document).ready(function () {
-            var selectedProducts = [];
-
-            $('.compare').on('click', function () {
-                var productId = $(this).data('productid');
-                var productName = $(this).data('name');
-                var productImage = $(this).data('image');
-                if (!selectedProducts.some(p => p.id === productId)) {
-                    selectedProducts.push({ id: productId, name: productName, image: productImage });
-                    updateCompareSection();
-                }
-            });
-
-            function updateCompareSection() {
-                var compareSection = $('#compare-section');
-                compareSection.empty();
-                selectedProducts.forEach(function (product, index) {
-                    compareSection.append(`
-                        <div class="compare-item">
-                            <img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;" />
-                            <span>${product.name}</span>
-                            <button class="remove-compare" data-index="${index}">×</button>
-                        </div>
-                    `);
-                });
-                if (selectedProducts.length > 0) {
-                    compareSection.append(`
-                        <div class="compare-actions">
-                            <button id="compare-now" class="btn btn-primary">@Localizer["Compare Now"]</button>
-                            <button id="clear-compare" class="btn btn-danger">@Localizer["Clear All"]</button>
-                        </div>
-                    `);
-                }
-            }
-
-            $(document).on('click', '.remove-compare', function () {
-                var index = $(this).data('index');
-                selectedProducts.splice(index, 1);
-                updateCompareSection();
-            });
-
-            $(document).on('click', '#clear-compare', function () {
-                selectedProducts = [];
-                updateCompareSection();
-            });
-
-            $(document).on('click', '#compare-now', function () {
-                if (selectedProducts.length > 0) {
-                    var productIds = selectedProducts.map(p => p.id).join(',');
-                    window.location.href = '/ShoppingCart/CompareProducts?productIds=' + productIds;
-                } else {
-                    alert('@Localizer["Please select at least one product to compare!"]');
-                }
-            });
-        });
-                // Hàm lấy token (cần @Html.AntiForgeryToken() trong _Layout.cshtml)
-        function getAntiForgeryToken() {
-            return $('input[name="__RequestVerificationToken"]').val();
-        }
-
-        // Bắt sự kiện click chung cho các nút Add to Cart
-        // Sử dụng class 'add-to-cart-btn-global' hoặc class bạn đã dùng ở _Layout
-        $(document).on('click', '.add-to-cart-btn-global', function(e) {
-            e.preventDefault(); // Ngăn thẻ <a> điều hướng
-            var productId = $(this).data('product-id');
-            var quantity = 1; // Mặc định số lượng là 1
-            var $button = $(this); // Lưu lại button để disable nếu cần
-
-            if (!productId) return; // Thoát nếu không có productId
-
-            $button.prop('disabled', true).text('Adding...'); // (Tùy chọn) Disable nút
-
-            $.ajax({
-                url: '@Url.Action("AddToCart", "ShoppingCart")', // URL tới Action
-                type: 'POST',
-                // Gửi dạng form-urlencoded để tương thích ValidateAntiForgeryToken
-                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-                data: {
-                    __RequestVerificationToken: getAntiForgeryToken(), // << GỬI TOKEN
-                    productId: productId,
-                    quantity: quantity
-                },
-                dataType: 'json', // Mong đợi JSON
-                success: function (response) {
-                    if (response.success) {
-                        // Cập nhật số lượng trên header (nếu có và action trả về count)
-                        if (typeof response.count !== 'undefined') {
-                            $('#cart-count').text(response.count); // Cập nhật số trên nút Cart màu vàng
-                        }
-
-                        // Hiển thị thông báo
-                        alert(response.message);
-
-                        // Tải lại trang SAU KHI người dùng nhấn OK trên alert
-                        window.location.reload();
-
-                    } else {
-                        // Xử lý lỗi trả về từ server
-                        alert("Lỗi: " + response.message);
-                        $button.prop('disabled', false).text('Add to Cart'); // Kích hoạt lại nút nếu lỗi
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error("AJAX Error:", status, error, xhr.responseText);
-                    alert("Có lỗi xảy ra khi thêm sản phẩm!");
-                    $button.prop('disabled', false).text('Add to Cart'); // Kích hoạt lại nút nếu lỗi
-                }
-                // Không cần complete vì trang sẽ reload nếu thành công
-            });
-        });
+        
+        
     </script>
 }
 
 <section class="bg-light py-5">
-    <div class="container">
+    <div class="container img-hover-zoom">
         <div class="row align-items-center">
             <div class="col-md-12 banner-container">
-                <img src="~/images/banner.jpg" alt="banner" class="banner-image">
+                <img src="~/images/banner.jpg" alt="banner" class="banner-image ">
                 <div class="col-md-6">
                     <h1 class="display-4 fw-bold">@Localizer["Products"]</h1>
                     <a href="@Url.Action("Index", "Product")" class="btn btn-dark mt-3">@Localizer["Shop Product"]</a>
@@ -188,22 +80,23 @@
                 <div class="col">
                     <div class="card h-100">
                         <a asp-controller="Product" asp-action="Display" asp-route-id="@item.Id">
-                            <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
+                            <img src="@item.ImageUrl" class="card-img-top img-hover-zoom" alt="@item.Name">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">
                                 <a href="@Url.Action("Display", "Product", new { id = item.Id })">@item.Name</a>
                             </h5>
                             <p class="card-text">@item.Price.ToString("#,##0") VND</p>
-                            <div class="d-flex align-items-center">
-                                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@item.Id, 1); return false;">@Localizer["Add to Cart"]</a>
-                                <button class="compare btn btn-primary btn-sm"
-                                        data-productid="@item.Id"
-                                        data-name="@item.Name"
-                                        data-image="@item.ImageUrl">
+                            <div class="d-flex align-items-center gap-2">
+                                <a asp-controller="ShoppingCart" asp-action="AddToCart" class="btn btn-dark add-to-cart-btn-global px-4" data-product-id="@item.Id">Add to Cart</a>
+                                <a class="compare btn btn-primary " data-productid="@item.Id" data-name="@item.Name" data-image="@item.ImageUrl">
                                     +
-                                </button>
+                                </a>
+                                <a asp-controller="Product" asp-action="Display" asp-route-id="@item.Id" class="btn btn-outline-primary me-2">
+                                     View
+                                </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -213,7 +106,7 @@
     </div>
 </section>
 
-<section class="bg-light py-5">
+<section id="yearly-sale" class="bg-light py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">

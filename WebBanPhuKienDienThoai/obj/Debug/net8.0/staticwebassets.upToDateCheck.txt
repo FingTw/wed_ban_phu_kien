@@ -3,6 +3,7 @@ wwwroot\css\bootstrap.min.css
 wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\css\vendor.css
+wwwroot\images\1fc768ca974ed7aa495f561738fc8a48.jpg
 wwwroot\images\2_52721.jpg
 wwwroot\images\20230817.jpg
 wwwroot\images\26546-khung-pc-1.jpg
@@ -16,6 +17,8 @@ wwwroot\images\broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36
 wwwroot\images\Case-MBP13-CrystalX.jpg
 wwwroot\images\Case-MBP13-Huex-Black-A.jpg
 wwwroot\images\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp
+wwwroot\images\cu-sac-sikenai---2a5v_1661910493.png
+wwwroot\images\Designer.png
 wwwroot\images\images (1).jpg
 wwwroot\images\images.png
 wwwroot\images\iphone-16-blue-600x600.png
@@ -25,7 +28,14 @@ wwwroot\images\macbook_pro_13_inch_intel_m1.jpg
 wwwroot\images\Macbook-2.jpg
 wwwroot\images\macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg
 wwwroot\images\macbook-air-m3-15-silver-2tmobile.jpg
+wwwroot\images\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg
+wwwroot\images\MYYU3.jpg
+wwwroot\images\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg
 wwwroot\images\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg
+wwwroot\images\Op-lung-tu-tinh-mo_2.jpg
+wwwroot\images\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png
+wwwroot\images\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg
+wwwroot\js\Addtocart.js
 wwwroot\js\ajax-loader.gif
 wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\Gemini.js
@@ -36,6 +46,7 @@ wwwroot\js\plugins.js
 wwwroot\js\script.js
 wwwroot\js\Shearcgh.js
 wwwroot\js\site.js
+wwwroot\js\Sosanh.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

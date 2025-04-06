@@ -1524,3 +1524,4 @@ D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\obj\Debug\net8.0\WebBanPhuKienDie
 D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\obj\Debug\net8.0\WebBanPhuKienDienThoai.csproj.GenerateResource.cache
 D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\obj\Debug\net8.0\en-US\WebBanPhuKienDienThoai.resources.dll
 D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\obj\Debug\net8.0\vi-VN\WebBanPhuKienDienThoai.resources.dll
+D:\wed\wed_ban_phu_kien\WebBanPhuKienDienThoai\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css

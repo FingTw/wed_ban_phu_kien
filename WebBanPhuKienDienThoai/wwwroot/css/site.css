@@ -87,6 +87,14 @@ body {
     z-index: 1000;
 }
 
+.img-hover-zoom {
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà trong 0.3 giây */
+}
+
+    .img-hover-zoom:hover {
+        transform: scale(1.1); /* Phóng to ảnh lên 110% khi hover */
+    }
+
 .chat-icon {
     position: fixed;
     bottom: 20px;

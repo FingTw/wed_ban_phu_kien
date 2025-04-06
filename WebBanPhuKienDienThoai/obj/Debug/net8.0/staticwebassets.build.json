@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c9zYHa7Wnf5X7gEUauy1iSzQ4TBvELYk9L+4MPNvcaE=",
+  "Hash": "PRxU8K6tNymCYBVed0qRLdGVoZkxqicaANxCTWgt6+M=",
   "Source": "WebBanPhuKienDienThoai",
   "BasePath": "_content/WebBanPhuKienDienThoai",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "a656irfxqd",
-      "Integrity": "TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=",
+      "Fingerprint": "zd691t0rek",
+      "Integrity": "aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanPhuKienDienThoai.styles.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "a656irfxqd",
-      "Integrity": "TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=",
+      "Fingerprint": "zd691t0rek",
+      "Integrity": "aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hap1f26nto",
-      "Integrity": "t/KJ0cxMTXWGHG5+pZdjgc3fezy6hoXIdGMakA/hcFc=",
+      "Fingerprint": "xilc1chn21",
+      "Integrity": "+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1422,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\vendor.css"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/1fc768ca974ed7aa495f561738fc8a48#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "71sv1qmb5z",
+      "Integrity": "VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg"
     },
     {
       "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\2_52721.jpg",
@@ -1697,6 +1718,48 @@
       "OriginalItemSpec": "wwwroot\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp"
     },
     {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-sikenai---2a5v_1661910493.png",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/cu-sac-sikenai---2a5v_1661910493#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26dvddbxnq",
+      "Integrity": "asWIQ1u7L4JSOdDD+tpJFdHiYUPk2MWktL+SYa5ZrMA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cu-sac-sikenai---2a5v_1661910493.png"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Designer.png",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/Designer#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ispguv042u",
+      "Integrity": "kqCpyuZmLRc2nI+KT5blpRmTg2PKRdgSm57Jg/iHwcI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Designer.png"
+    },
+    {
       "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (1).jpg",
       "SourceId": "WebBanPhuKienDienThoai",
       "SourceType": "Discovered",
@@ -1886,6 +1949,69 @@
       "OriginalItemSpec": "wwwroot\\images\\macbook-air-m3-15-silver-2tmobile.jpg"
     },
     {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "igrqm5igsa",
+      "Integrity": "gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\MYYU3.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/MYYU3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uasq24yub9",
+      "Integrity": "xoNbublug3QFao2iZdUKcXITy8HkKGOCmBZVvpmGSCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\MYYU3.jpg"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8wygn7htlv",
+      "Integrity": "qFdyQ6SNrGNJLP2Pbljj8nBgk7FVasgGK3+zUy7XR50=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg"
+    },
+    {
       "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
       "SourceId": "WebBanPhuKienDienThoai",
       "SourceType": "Discovered",
@@ -1905,6 +2031,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Op-lung-tu-tinh-mo_2.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/Op-lung-tu-tinh-mo_2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lo8hkx84fb",
+      "Integrity": "y4Hn6O+1Abv7hh9Qnfo2E574AEQhENqWxpkvznzOb/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Op-lung-tu-tinh-mo_2.jpg"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dljar2er9i",
+      "Integrity": "sWR1W9jhyZMm05F16PzzuZc0vMsXMNWDPyRAlmmH12E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uebhi0szn9",
+      "Integrity": "+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Addtocart.js",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "js/Addtocart#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8dastvwmil",
+      "Integrity": "fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Addtocart.js"
     },
     {
       "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\ajax-loader.gif",
@@ -2115,6 +2325,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "js/Sosanh#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l889pw06qm",
+      "Integrity": "C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Sosanh.js"
     },
     {
       "Identity": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -3490,7 +3721,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4562"
+          "Value": "4799"
         },
         {
           "Name": "Content-Type",
@@ -3498,11 +3729,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t/KJ0cxMTXWGHG5+pZdjgc3fezy6hoXIdGMakA/hcFc=\""
+          "Value": "\"+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 05:45:47 GMT"
+          "Value": "Sun, 06 Apr 2025 15:58:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3512,12 +3743,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t/KJ0cxMTXWGHG5+pZdjgc3fezy6hoXIdGMakA/hcFc="
+          "Value": "sha256-+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU="
         }
       ]
     },
     {
-      "Route": "css/site.hap1f26nto.css",
+      "Route": "css/site.xilc1chn21.css",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3527,7 +3758,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4562"
+          "Value": "4799"
         },
         {
           "Name": "Content-Type",
@@ -3535,11 +3766,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t/KJ0cxMTXWGHG5+pZdjgc3fezy6hoXIdGMakA/hcFc=\""
+          "Value": "\"+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 05:45:47 GMT"
+          "Value": "Sun, 06 Apr 2025 15:58:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3549,7 +3780,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hap1f26nto"
+          "Value": "xilc1chn21"
         },
         {
           "Name": "label",
@@ -3557,7 +3788,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t/KJ0cxMTXWGHG5+pZdjgc3fezy6hoXIdGMakA/hcFc="
+          "Value": "sha256-+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU="
         }
       ]
     },
@@ -5946,6 +6177,88 @@
       ]
     },
     {
+      "Route": "images/1fc768ca974ed7aa495f561738fc8a48.71sv1qmb5z.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:24:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "71sv1qmb5z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1fc768ca974ed7aa495f561738fc8a48.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU="
+        }
+      ]
+    },
+    {
+      "Route": "images/1fc768ca974ed7aa495f561738fc8a48.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:24:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU="
+        }
+      ]
+    },
+    {
       "Route": "images/2_52721.jpg",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\2_52721.jpg",
       "Selectors": [],
@@ -7012,6 +7325,170 @@
       ]
     },
     {
+      "Route": "images/cu-sac-sikenai---2a5v_1661910493.26dvddbxnq.png",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-sikenai---2a5v_1661910493.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asWIQ1u7L4JSOdDD+tpJFdHiYUPk2MWktL+SYa5ZrMA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:24:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26dvddbxnq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cu-sac-sikenai---2a5v_1661910493.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-asWIQ1u7L4JSOdDD+tpJFdHiYUPk2MWktL+SYa5ZrMA="
+        }
+      ]
+    },
+    {
+      "Route": "images/cu-sac-sikenai---2a5v_1661910493.png",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-sikenai---2a5v_1661910493.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asWIQ1u7L4JSOdDD+tpJFdHiYUPk2MWktL+SYa5ZrMA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:24:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-asWIQ1u7L4JSOdDD+tpJFdHiYUPk2MWktL+SYa5ZrMA="
+        }
+      ]
+    },
+    {
+      "Route": "images/Designer.ispguv042u.png",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Designer.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "543610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kqCpyuZmLRc2nI+KT5blpRmTg2PKRdgSm57Jg/iHwcI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:17:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ispguv042u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Designer.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kqCpyuZmLRc2nI+KT5blpRmTg2PKRdgSm57Jg/iHwcI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Designer.png",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Designer.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "543610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kqCpyuZmLRc2nI+KT5blpRmTg2PKRdgSm57Jg/iHwcI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:17:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kqCpyuZmLRc2nI+KT5blpRmTg2PKRdgSm57Jg/iHwcI="
+        }
+      ]
+    },
+    {
       "Route": "images/images (1).jpg",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (1).jpg",
       "Selectors": [],
@@ -7750,6 +8227,252 @@
       ]
     },
     {
+      "Route": "images/mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.igrqm5igsa.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:26:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "igrqm5igsa"
+        },
+        {
+          "Name": "label",
+          "Value": "images/mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY="
+        }
+      ]
+    },
+    {
+      "Route": "images/mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:26:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY="
+        }
+      ]
+    },
+    {
+      "Route": "images/MYYU3.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\MYYU3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "267675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xoNbublug3QFao2iZdUKcXITy8HkKGOCmBZVvpmGSCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:18:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xoNbublug3QFao2iZdUKcXITy8HkKGOCmBZVvpmGSCM="
+        }
+      ]
+    },
+    {
+      "Route": "images/MYYU3.uasq24yub9.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\MYYU3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "267675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xoNbublug3QFao2iZdUKcXITy8HkKGOCmBZVvpmGSCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:18:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uasq24yub9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/MYYU3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xoNbublug3QFao2iZdUKcXITy8HkKGOCmBZVvpmGSCM="
+        }
+      ]
+    },
+    {
+      "Route": "images/ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.8wygn7htlv.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170580"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qFdyQ6SNrGNJLP2Pbljj8nBgk7FVasgGK3+zUy7XR50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:17:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wygn7htlv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qFdyQ6SNrGNJLP2Pbljj8nBgk7FVasgGK3+zUy7XR50="
+        }
+      ]
+    },
+    {
+      "Route": "images/ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170580"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qFdyQ6SNrGNJLP2Pbljj8nBgk7FVasgGK3+zUy7XR50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:17:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qFdyQ6SNrGNJLP2Pbljj8nBgk7FVasgGK3+zUy7XR50="
+        }
+      ]
+    },
+    {
       "Route": "images/op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
       "Selectors": [],
@@ -7828,6 +8551,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk="
+        }
+      ]
+    },
+    {
+      "Route": "images/Op-lung-tu-tinh-mo_2.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Op-lung-tu-tinh-mo_2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y4Hn6O+1Abv7hh9Qnfo2E574AEQhENqWxpkvznzOb/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:17:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y4Hn6O+1Abv7hh9Qnfo2E574AEQhENqWxpkvznzOb/0="
+        }
+      ]
+    },
+    {
+      "Route": "images/Op-lung-tu-tinh-mo_2.lo8hkx84fb.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Op-lung-tu-tinh-mo_2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y4Hn6O+1Abv7hh9Qnfo2E574AEQhENqWxpkvznzOb/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:17:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lo8hkx84fb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Op-lung-tu-tinh-mo_2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y4Hn6O+1Abv7hh9Qnfo2E574AEQhENqWxpkvznzOb/0="
+        }
+      ]
+    },
+    {
+      "Route": "images/tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.dljar2er9i.png",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWR1W9jhyZMm05F16PzzuZc0vMsXMNWDPyRAlmmH12E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:22:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dljar2er9i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWR1W9jhyZMm05F16PzzuZc0vMsXMNWDPyRAlmmH12E="
+        }
+      ]
+    },
+    {
+      "Route": "images/tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sWR1W9jhyZMm05F16PzzuZc0vMsXMNWDPyRAlmmH12E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:22:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sWR1W9jhyZMm05F16PzzuZc0vMsXMNWDPyRAlmmH12E="
+        }
+      ]
+    },
+    {
+      "Route": "images/tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:23:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io="
+        }
+      ]
+    },
+    {
+      "Route": "images/tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.uebhi0szn9.jpg",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:23:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uebhi0szn9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io="
+        }
+      ]
+    },
+    {
+      "Route": "js/Addtocart.8dastvwmil.js",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Addtocart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 14:29:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8dastvwmil"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Addtocart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk="
+        }
+      ]
+    },
+    {
+      "Route": "js/Addtocart.js",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Addtocart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 14:29:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk="
         }
       ]
     },
@@ -8648,6 +9699,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/Sosanh.js",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 14:50:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs="
+        }
+      ]
+    },
+    {
+      "Route": "js/Sosanh.l889pw06qm.js",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 14:50:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l889pw06qm"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Sosanh.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs="
         }
       ]
     },
@@ -13326,96 +14459,6 @@
       ]
     },
     {
-      "Route": "WebBanPhuKienDienThoai.a656irfxqd.bundle.scp.css",
-      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1140"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 02:52:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "a656irfxqd"
-        },
-        {
-          "Name": "label",
-          "Value": "WebBanPhuKienDienThoai.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
-        }
-      ]
-    },
-    {
-      "Route": "WebBanPhuKienDienThoai.a656irfxqd.styles.css",
-      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanPhuKienDienThoai.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1140"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 02:52:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "a656irfxqd"
-        },
-        {
-          "Name": "label",
-          "Value": "WebBanPhuKienDienThoai.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
-        }
-      ]
-    },
-    {
       "Route": "WebBanPhuKienDienThoai.bundle.scp.css",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
       "Selectors": [],
@@ -13426,7 +14469,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1140"
+          "Value": "2292"
         },
         {
           "Name": "Content-Type",
@@ -13434,11 +14477,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
+          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 02:52:54 GMT"
+          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13448,7 +14491,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
+          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
         }
       ]
     },
@@ -13463,7 +14506,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1140"
+          "Value": "2292"
         },
         {
           "Name": "Content-Type",
@@ -13471,11 +14514,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
+          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 02:52:54 GMT"
+          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13485,7 +14528,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
+          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
+        }
+      ]
+    },
+    {
+      "Route": "WebBanPhuKienDienThoai.zd691t0rek.bundle.scp.css",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zd691t0rek"
+        },
+        {
+          "Name": "label",
+          "Value": "WebBanPhuKienDienThoai.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
+        }
+      ]
+    },
+    {
+      "Route": "WebBanPhuKienDienThoai.zd691t0rek.styles.css",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanPhuKienDienThoai.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zd691t0rek"
+        },
+        {
+          "Name": "label",
+          "Value": "WebBanPhuKienDienThoai.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
         }
       ]
     }

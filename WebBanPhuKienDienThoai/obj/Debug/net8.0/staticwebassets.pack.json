@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
-      "PackagePath": "staticwebassets\\WebBanPhuKienDienThoai.a656irfxqd.bundle.scp.css"
+      "PackagePath": "staticwebassets\\WebBanPhuKienDienThoai.zd691t0rek.bundle.scp.css"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\ajax-loader.gif",
@@ -23,6 +23,10 @@
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\vendor.css",
       "PackagePath": "staticwebassets\\css\\vendor.css"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg",
+      "PackagePath": "staticwebassets\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\20230817.jpg",
@@ -61,8 +65,20 @@
       "PackagePath": "staticwebassets\\images\\Case-MBP13-Huex-Black-A.jpg"
     },
     {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Designer.png",
+      "PackagePath": "staticwebassets\\images\\Designer.png"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\MYYU3.jpg",
+      "PackagePath": "staticwebassets\\images\\MYYU3.jpg"
+    },
+    {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Macbook-2.jpg",
       "PackagePath": "staticwebassets\\images\\Macbook-2.jpg"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Op-lung-tu-tinh-mo_2.jpg",
+      "PackagePath": "staticwebassets\\images\\Op-lung-tu-tinh-mo_2.jpg"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\apple-airpods-max-1_1.webp",
@@ -79,6 +95,10 @@
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp",
       "PackagePath": "staticwebassets\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-sikenai---2a5v_1661910493.png",
+      "PackagePath": "staticwebassets\\images\\cu-sac-sikenai---2a5v_1661910493.png"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (1).jpg",
@@ -113,8 +133,28 @@
       "PackagePath": "staticwebassets\\images\\macbook_pro_13_inch_intel_m1.jpg"
     },
     {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg"
+    },
+    {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
       "PackagePath": "staticwebassets\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg",
+      "PackagePath": "staticwebassets\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png",
+      "PackagePath": "staticwebassets\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg",
+      "PackagePath": "staticwebassets\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Addtocart.js",
+      "PackagePath": "staticwebassets\\js\\Addtocart.js"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Gemini.js",
@@ -123,6 +163,10 @@
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Shearcgh.js",
       "PackagePath": "staticwebassets\\js\\Shearcgh.js"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
+      "PackagePath": "staticwebassets\\js\\Sosanh.js"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\ajax-loader.gif",

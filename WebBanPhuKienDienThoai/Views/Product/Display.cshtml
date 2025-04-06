@@ -79,7 +79,7 @@
                     <p><span class="product-detail-label">Giá:</span> @Model.Price.ToString("C")</p>
                     <p><span class="product-detail-label">Mô tả:</span> @Model.Description</p>
                     <p><span class="product-detail-label">Danh mục:</span> @(Model.Category?.Name)</p>
-
+                    <a asp-controller="ShoppingCart" asp-action="AddToCart" class="btn btn-dark add-to-cart-btn-global" data-product-id="@Model.Id">Add to Cart</a>
                     <div class="mt-4">
                         <a class="btn btn-primary" href="@Url.Action("Index", "Product")">
                             <i class="fas fa-arrow-left"></i> Back to List
