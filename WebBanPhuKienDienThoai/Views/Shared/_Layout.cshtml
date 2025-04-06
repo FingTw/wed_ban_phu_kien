@@ -86,7 +86,6 @@
                             </select>
                             <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
                         </form>
-
                     </div>
                 </div>
             </div>
@@ -100,7 +99,7 @@
     </div>
 
     <!-- Chat box -->
-    <div class="chat-icon" onclick="toggleChat()">💬</div>
+    <div class="chat-icon" onclick="toggleChat(event)">💬</div>
     <div class="chat-box" id="chatBox">
         <div class="chat-header">Gemini Chatbot</div>
         <div class="chat-messages" id="chatMessages">
