@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mVWswO1FeUGxz5MCAx1wqDLs2pKXc77YHGsZRCNavvY=",
+  "Hash": "oQ0v84GSpZZrPnOikx9+6yn1eyK4MqLcvk2oqSKzSk4=",
   "Source": "WebBanPhuKienDienThoai",
   "BasePath": "_content/WebBanPhuKienDienThoai",
   "Mode": "Default",
@@ -1695,6 +1695,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp"
+    },
+    {
+      "Identity": "C:\\Webmoinhat\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\desktop.jpg",
+      "SourceId": "WebBanPhuKienDienThoai",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Webmoinhat\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\",
+      "BasePath": "_content/WebBanPhuKienDienThoai",
+      "RelativePath": "images/desktop#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3uz05nmjrq",
+      "Integrity": "lUkdoOrDlPDeTR249eUw/EtqXybZPTouy2Q391g2Y/Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\desktop.jpg"
     },
     {
       "Identity": "C:\\Webmoinhat\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images.png",
@@ -3460,7 +3481,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 15:59:43 GMT"
+          "Value": "Sun, 06 Apr 2025 07:23:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3497,7 +3518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 15:59:43 GMT"
+          "Value": "Sun, 06 Apr 2025 07:23:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6966,6 +6987,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Vl3pd90lMrbdq2u3FSqbCKHB7wHVERt8N5PA8ZFw5tI="
+        }
+      ]
+    },
+    {
+      "Route": "images/desktop.3uz05nmjrq.jpg",
+      "AssetFile": "C:\\Webmoinhat\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\desktop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "338088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lUkdoOrDlPDeTR249eUw/EtqXybZPTouy2Q391g2Y/Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:21:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3uz05nmjrq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/desktop.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lUkdoOrDlPDeTR249eUw/EtqXybZPTouy2Q391g2Y/Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/desktop.jpg",
+      "AssetFile": "C:\\Webmoinhat\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\desktop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "338088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lUkdoOrDlPDeTR249eUw/EtqXybZPTouy2Q391g2Y/Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 07:21:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lUkdoOrDlPDeTR249eUw/EtqXybZPTouy2Q391g2Y/Q="
         }
       ]
     },

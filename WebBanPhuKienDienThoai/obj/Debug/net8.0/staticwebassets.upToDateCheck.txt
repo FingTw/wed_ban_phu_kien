@@ -16,6 +16,7 @@ wwwroot\images\broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36
 wwwroot\images\Case-MBP13-CrystalX.jpg
 wwwroot\images\Case-MBP13-Huex-Black-A.jpg
 wwwroot\images\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp
+wwwroot\images\desktop.jpg
 wwwroot\images\images.png
 wwwroot\images\iphone-16-blue-600x600.png
 wwwroot\images\lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600.jpg

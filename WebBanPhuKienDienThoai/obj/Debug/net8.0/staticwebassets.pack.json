@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp"
     },
     {
+      "Id": "C:\\Webmoinhat\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\desktop.jpg",
+      "PackagePath": "staticwebassets\\images\\desktop.jpg"
+    },
+    {
       "Id": "C:\\Webmoinhat\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images.png",
       "PackagePath": "staticwebassets\\images\\images.png"
     },
