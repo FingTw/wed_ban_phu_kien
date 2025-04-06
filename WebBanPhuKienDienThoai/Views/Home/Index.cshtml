@@ -1,9 +1,13 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
     ViewData["title"] = "Home Page";
     int numOfQuantity = 1;
 }
 
 @model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
+
 @section Scripts {
     <script>
         $(document).ready(function () {
@@ -34,8 +38,8 @@
                 if (selectedProducts.length > 0) {
                     compareSection.append(`
                         <div class="compare-actions">
-                            <button id="compare-now" class="btn btn-primary">So sánh ngay</button>
-                            <button id="clear-compare" class="btn btn-danger">Xóa tất cả</button>
+                            <button id="compare-now" class="btn btn-primary">@Localizer["Compare Now"]</button>
+                            <button id="clear-compare" class="btn btn-danger">@Localizer["Clear All"]</button>
                         </div>
                     `);
                 }
@@ -57,7 +61,7 @@
                     var productIds = selectedProducts.map(p => p.id).join(',');
                     window.location.href = '/ShoppingCart/CompareProducts?productIds=' + productIds;
                 } else {
-                    alert('Vui lòng chọn ít nhất một sản phẩm để so sánh!');
+                    alert('@Localizer["Please select at least one product to compare!"]');
                 }
             });
         });
@@ -70,8 +74,8 @@
             <div class="col-md-12 banner-container">
                 <img src="~/images/banner.jpg" alt="banner" class="banner-image">
                 <div class="col-md-6">
-                    <h1 class="display-4 fw-bold">Products</h1>
-                    <a href="@Url.Action("Index", "Product")" class="btn btn-dark mt-3">Shop Product</a>
+                    <h1 class="display-4 fw-bold">@Localizer["Products"]</h1>
+                    <a href="@Url.Action("Index", "Product")" class="btn btn-dark mt-3">@Localizer["Shop Product"]</a>
                 </div>
             </div>
         </div>
@@ -84,32 +88,32 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Free Delivery</h5>
-                        <p class="card-text">Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                        <h5 class="card-title">@Localizer["Free Delivery"]</h5>
+                        <p class="card-text">@Localizer["Free Delivery Description"]</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Quality Guarantee</h5>
-                        <p class="card-text">Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                        <h5 class="card-title">@Localizer["Quality Guarantee"]</h5>
+                        <p class="card-text">@Localizer["Quality Guarantee Description"]</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Daily Offers</h5>
-                        <p class="card-text">Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                        <h5 class="card-title">@Localizer["Daily Offers"]</h5>
+                        <p class="card-text">@Localizer["Daily Offers Description"]</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Secure Payment</h5>
-                        <p class="card-text">Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                        <h5 class="card-title">@Localizer["Secure Payment"]</h5>
+                        <p class="card-text">@Localizer["Secure Payment Description"]</p>
                     </div>
                 </div>
             </div>
@@ -120,15 +124,15 @@
 <section id="mobile-products" class="py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Mobile Products</h2>
-            <a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark">Go to Shop</a>
+            <h2>@Localizer["Mobile Products"]</h2>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark">@Localizer["Go to Shop"]</a>
         </div>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             @foreach (var item in Model.Take(4))
             {
                 <div class="col">
                     <div class="card h-100">
-                        <a asp-controller="Product" asp-action="Display" asp-route-id="@item.Id" >
+                        <a asp-controller="Product" asp-action="Display" asp-route-id="@item.Id">
                             <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
                         </a>
                         <div class="card-body">
@@ -137,9 +141,7 @@
                             </h5>
                             <p class="card-text">@item.Price.ToString("#,##0") VND</p>
                             <div class="d-flex align-items-center">
-                                @* <a href="@Url.Action("AddToCart", "ShoppingCart", new { productId = item.Id, quantity = 1 })"
-                                   class="btn btn-dark me-2">Add to Cart</a> *@
-                                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@item.Id, 1); return false;">Add to Cart</a>
+                                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@item.Id, 1); return false;">@Localizer["Add to Cart"]</a>
                                 <button class="compare btn btn-primary btn-sm"
                                         data-productid="@item.Id"
                                         data-name="@item.Name"
@@ -160,9 +162,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <h3>10% off</h3>
-                <h2 class="display-4 fw-bold">New Year Sale</h2>
-                <a asp-controller="Product" asp-action="Index" class="btn btn-dark mt-3">Shop Sale</a>
+                <h3>@Localizer["10% off"]</h3>
+                <h2 class="display-4 fw-bold">@Localizer["New Year Sale"]</h2>
+                <a asp-controller="Product" asp-action="Index" class="btn btn-dark mt-3">@Localizer["Shop Sale"]</a>
             </div>
             <div class="col-md-6">
                 <img src="~/images/46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg" alt="sale" class="img-fluid">
@@ -174,8 +176,8 @@
 <section id="latest-blog" class="py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Latest Posts</h2>
-            <a href="blog.html" class="btn btn-outline-dark">Read Blog</a>
+            <h2>@Localizer["Latest Posts"]</h2>
+            <a href="blog.html" class="btn btn-outline-dark">@Localizer["Read Blog"]</a>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -184,7 +186,7 @@
                     <div class="card-body">
                         <p class="text-muted">Feb 22, 2023 - Gadgets</p>
                         <h5 class="card-title">
-                            <a href="#">Miếng dán hoa hồng ảo thuật siêu mỏng cho macbooock</a>
+                            <a href="#">@Localizer["Post 1 Title"]</a>
                         </h5>
                     </div>
                 </div>
@@ -195,7 +197,7 @@
                     <div class="card-body">
                         <p class="text-muted">Feb 25, 2023 - Technology</p>
                         <h5 class="card-title">
-                            <a href="#">Case iphone chính hãn quả táo</a>
+                            <a href="#">@Localizer["Post 2 Title"]</a>
                         </h5>
                     </div>
                 </div>
@@ -206,7 +208,7 @@
                     <div class="card-body">
                         <p class="text-muted">Feb 22, 2023 - Camera</p>
                         <h5 class="card-title">
-                            <a href="#">Top 10 Miếng dáng màn hình macboock siêu cấp vipro</a>
+                            <a href="#">@Localizer["Post 3 Title"]</a>
                         </h5>
                     </div>
                 </div>
@@ -219,11 +221,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-                <h2>Subscribe Us Now</h2>
-                <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+                <h2>@Localizer["Subscribe Us Now"]</h2>
+                <p>@Localizer["Subscribe Description"]</p>
                 <form class="d-flex mt-3">
-                    <input type="email" class="form-control me-2" placeholder="Your email address">
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <input type="email" class="form-control me-2" placeholder="@Localizer["Your email address"]">
+                    <button type="submit" class="btn btn-primary">@Localizer["Subscribe"]</button>
                 </form>
             </div>
         </div>
@@ -239,11 +241,11 @@
             data: { productId: productId, quantity: quantity },
             success: function (response) {
                 if (response.success) {
-                    alert(response.message); // Hoặc cập nhật giao diện giỏ hàng
+                    alert(response.message);
                 }
             },
             error: function () {
-                alert("Có lỗi xảy ra!");
+                alert("@Localizer["An error occurred!"]");
             }
         });
     }

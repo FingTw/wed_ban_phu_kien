@@ -1,4 +1,7 @@
+﻿using System.Globalization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using WebBanPhuKienDienThoai.Models;
 using WebBanPhuKienDienThoai.Repositories;
@@ -6,6 +9,29 @@ using WebBanPhuKienDienThoai.Respository;
 using WebBanPhuKienDienThoai.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Thêm đoạn này để sử dụng localization
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization();
+
+//Thêm đoạn này để sử dụng localization 
+builder.Services.AddLocalization(options =>
+{
+    options.ResourcesPath = "Resources";
+});
+// Thêm đoạn này để sử dụng localization
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    var supportedCultures = new[]
+    {
+        new CultureInfo("en-US"),
+        new CultureInfo("vi-VN")
+    };
+    options.DefaultRequestCulture = new RequestCulture("vi-VN");
+    options.SupportedUICultures = supportedCultures;
+});
+
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<PayPalService>();
@@ -60,6 +86,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRequestLocalization();//Thêm dòng này để sử dụng localization
+
 app.UseStaticFiles();
 
 app.UseSession();

@@ -1,6 +1,11 @@
 ﻿@using WebBanPhuKienDienThoai.Extensions
 @using WebBanPhuKienDienThoai.Models
+@using Microsoft.AspNetCore.Localization
 @inject IHttpContextAccessor HttpContextAccessor
+@{
+    var cultureFeature = HttpContextAccessor.HttpContext?.Features.Get<IRequestCultureFeature>();
+    var currentCulture = cultureFeature?.RequestCulture.UICulture.Name ?? "vi-VN";// có cái này thì dropdown mới ko lỗi
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,6 +77,15 @@
                                 Cart (@itemCount)
                             </a>
                         </form>
+
+                        <form asp-controller="Home" asp-action="ChangeLanguage" method="post">
+                            <select name="culture" onchange="this.form.submit();">
+                                <option value="en-US" selected="@(currentCulture == "en-US" ? "selected" : null)">English</option>
+                                <option value="vi-VN" selected="@(currentCulture == "vi-VN" ? "selected" : null)">Tiếng Việt</option>
+
+                            </select>
+                            <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
+                        </form>
                     </div>
                 </div>
             </div>
@@ -85,7 +99,7 @@
     </div>
 
     <!-- Chat box -->
-    <div class="chat-icon" onclick="toggleChat()">💬</div>
+    <div class="chat-icon" onclick="toggleChat(event)">💬</div>
     <div class="chat-box" id="chatBox">
         <div class="chat-header">Gemini Chatbot</div>
         <div class="chat-messages" id="chatMessages">
