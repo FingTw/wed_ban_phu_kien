@@ -4,60 +4,164 @@
 }
 
 <h2 class="mb-4">Danh Sách Sản Phẩm</h2>
-<!-- Grid hiển thị sản phẩm -->
-<div class="product-grid">
-    @foreach (var product in Model)
-    {
-        <div class="card product-card">
-            <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
-            <div class="card-body">
-                <h5 class="card-title">@product.Name</h5>
-                <p class="card-text">
-                    <strong>Price:</strong> @product.Price.ToString("C")<br />
-                    <strong>Description:</strong> @product.Description<br />
-                    <strong>Category:</strong> @(product.Category?.Name ?? "N/A")<br />
-                    <strong>Device available:</strong> @(product.DeviceType?.Name ?? "N/A")
-                </p>
-                <a class="btn btn-sm btn-info" asp-action="Display" asp-route-id="@product.Id">View</a>
+
+<!-- Container chính chia thành 2 phần -->
+<div class="main-container">
+    <!-- Phần lọc sản phẩm (1/3 bên trái) -->
+    <div class="filter-section">
+        <h4>Lọc Sản Phẩm</h4>
+        <form asp-action="Index" method="get">
+            <!-- Lọc theo danh mục -->
+            <div class="mb-3">
+                <label for="categoryId" class="form-label">Danh mục</label>
+                <select id="categoryId" name="categoryId" class="form-select">
+                    <option value="">Tất cả</option>
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <option value="@category.Id" selected="@(category.Id == ViewBag.CategoryId ? "selected" : null)">@category.Name</option>
+                    }
+                </select>
             </div>
+
+            <!-- Lọc theo loại thiết bị -->
+            <div class="mb-3">
+                <label for="deviceTypeId" class="form-label">Loại thiết bị</label>
+                <select id="deviceTypeId" name="deviceTypeId" class="form-select">
+                    <option value="">Tất cả</option>
+                    @foreach (var device in ViewBag.DeviceTypes)
+                    {
+                        <option value="@device.Id" selected="@(device.Id == ViewBag.DeviceTypeId ? "selected" : null)">@device.Name</option>
+                    }
+                </select>
+            </div>
+
+            <!-- Thanh trượt lọc theo giá -->
+            <div class="mb-3">
+                <label class="form-label">Khoảng giá</label>
+                <input type="range" class="form-range" id="minPrice" name="minPrice"
+                       min="@ViewBag.MinPrice" max="@ViewBag.MaxPrice" value="@(ViewBag.MinPrice ?? 0)"
+                       oninput="document.getElementById('minPriceValue').innerText = this.value" />
+                <span>Giá tối thiểu: <span id="minPriceValue">@ViewBag.MinPrice</span> VND</span>
+
+                <input type="range" class="form-range" id="maxPrice" name="maxPrice"
+                       min="@ViewBag.MinPrice" max="@ViewBag.MaxPrice" value="@(ViewBag.MaxPrice ?? 1000000)"
+                       oninput="document.getElementById('maxPriceValue').innerText = this.value" />
+                <span>Giá tối đa: <span id="maxPriceValue">@ViewBag.MaxPrice</span> VND</span>
+            </div>
+
+            <!-- Nút áp dụng bộ lọc -->
+            <button type="submit" class="btn btn-primary">Áp dụng</button>
+        </form>
+    </div>
+
+    <!-- Phần danh sách sản phẩm (2/3 bên phải) -->
+    <div class="product-section">
+        <div class="product-grid">
+            @* @foreach (var product in Model.Where(p => p.Stock > 0))
+            {
+                <div class="card product-card">
+                    <a asp-action="Display" asp-route-id="@product.Id">
+                    <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
+                    </a>
+                    <div class="card-body">
+                        
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">
+                            <strong>Price:</strong> @product.Price.ToString("C")<br />
+                            <strong>Description:</strong> @product.Description<br />
+                            <strong>Category:</strong> @(product.Category?.Name ?? "N/A")<br />
+                            <strong>Device available:</strong> @(product.DeviceType?.Name ?? "N/A")
+                        </p>
+                        <a class="btn btn-sm btn-info" asp-action="Display" asp-route-id="@product.Id">View</a>
+                        <a href="#" class="btn btn-dark me-2" onclick="addToCart(@product.Id, 1); return false;">Add to Cart</a>
+
+                    </div>
+                </div>
+            } *@
+            @foreach (var product in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@product.ImageUrl" class="card-img-top p-3" alt="Product Image"
+                             style="height: 250px; object-fit: cover; border-radius: 15px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-dark fw-bold">@product.Name</h5>
+                            <p class="card-text text-muted">
+                                <strong>Category:</strong> @product.Category?.Name
+                            </p>
+                            <p class="card-text text-danger fw-bold">
+                                @product.Price.ToString("C")
+                            </p>
+                            <p class="card-text text-truncate" style="max-width: 100%;">
+                                @product.Description
+                            </p>
+                        </div>
+                        <div class="card-footer text-center bg-white">
+                            <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-outline-primary w-100">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
-    }
+        <div id="laod-triggier" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </div>
 </div>
 
-<!-- CSS riêng cho grid layout -->
+
+
+<!-- CSS cập nhật -->
 <style>
+    .main-container {
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .filter-section {
+        flex: 1;
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .product-section {
+        flex: 2;
+    }
+
     .product-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
         gap: 20px;
-        padding: 20px;
-        margin: 0 auto;
-        max-width: 1400px; 
-        justify-content: center; 
+        justify-content: center;
     }
 
     .product-card {
         background: #fff;
-        border: 1px solid #ddd; 
+        border: 1px solid #ddd;
         border-radius: 8px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        height: 450px; 
+        height: 450px;
     }
 
     .product-image {
         width: 100%;
-        height: 200px; 
+        height: 200px;
         object-fit: cover;
     }
 
     .card-body {
         padding: 15px;
-        flex-grow: 1; 
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
     .card-title {
@@ -65,7 +169,7 @@
         margin-bottom: 10px;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
     }
 
     .card-text {
@@ -74,11 +178,36 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 4; 
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
     }
 
     .btn {
-        align-self: flex-start; 
+        align-self: flex-start;
+    }
+
+    .form-range {
+        width: 100%;
+        margin: 10px 0;
     }
 </style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/page.js"></script>
+<script>
+    function addToCart(productId, quantity) {
+        $.ajax({
+            url: '@Url.Action("AddToCart", "ShoppingCart")',
+            type: 'POST',
+            data: { productId: productId, quantity: quantity },
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message); // Hoặc cập nhật giao diện giỏ hàng
+                }
+            },
+            error: function () {
+                alert("Có lỗi xảy ra!");
+            }
+        });
+    }
+</script>

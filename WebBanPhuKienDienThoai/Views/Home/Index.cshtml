@@ -1,4 +1,127 @@
-﻿@model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["title"] = "Home Page";
+    int numOfQuantity = 1;
+}
+
+@model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var selectedProducts = [];
+
+            $('.compare').on('click', function () {
+                var productId = $(this).data('productid');
+                var productName = $(this).data('name');
+                var productImage = $(this).data('image');
+                if (!selectedProducts.some(p => p.id === productId)) {
+                    selectedProducts.push({ id: productId, name: productName, image: productImage });
+                    updateCompareSection();
+                }
+            });
+
+            function updateCompareSection() {
+                var compareSection = $('#compare-section');
+                compareSection.empty();
+                selectedProducts.forEach(function (product, index) {
+                    compareSection.append(`
+                        <div class="compare-item">
+                            <img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;" />
+                            <span>${product.name}</span>
+                            <button class="remove-compare" data-index="${index}">×</button>
+                        </div>
+                    `);
+                });
+                if (selectedProducts.length > 0) {
+                    compareSection.append(`
+                        <div class="compare-actions">
+                            <button id="compare-now" class="btn btn-primary">@Localizer["Compare Now"]</button>
+                            <button id="clear-compare" class="btn btn-danger">@Localizer["Clear All"]</button>
+                        </div>
+                    `);
+                }
+            }
+
+            $(document).on('click', '.remove-compare', function () {
+                var index = $(this).data('index');
+                selectedProducts.splice(index, 1);
+                updateCompareSection();
+            });
+
+            $(document).on('click', '#clear-compare', function () {
+                selectedProducts = [];
+                updateCompareSection();
+            });
+
+            $(document).on('click', '#compare-now', function () {
+                if (selectedProducts.length > 0) {
+                    var productIds = selectedProducts.map(p => p.id).join(',');
+                    window.location.href = '/ShoppingCart/CompareProducts?productIds=' + productIds;
+                } else {
+                    alert('@Localizer["Please select at least one product to compare!"]');
+                }
+            });
+        });
+                // Hàm lấy token (cần @Html.AntiForgeryToken() trong _Layout.cshtml)
+        function getAntiForgeryToken() {
+            return $('input[name="__RequestVerificationToken"]').val();
+        }
+
+        // Bắt sự kiện click chung cho các nút Add to Cart
+        // Sử dụng class 'add-to-cart-btn-global' hoặc class bạn đã dùng ở _Layout
+        $(document).on('click', '.add-to-cart-btn-global', function(e) {
+            e.preventDefault(); // Ngăn thẻ <a> điều hướng
+            var productId = $(this).data('product-id');
+            var quantity = 1; // Mặc định số lượng là 1
+            var $button = $(this); // Lưu lại button để disable nếu cần
+
+            if (!productId) return; // Thoát nếu không có productId
+
+            $button.prop('disabled', true).text('Adding...'); // (Tùy chọn) Disable nút
+
+            $.ajax({
+                url: '@Url.Action("AddToCart", "ShoppingCart")', // URL tới Action
+                type: 'POST',
+                // Gửi dạng form-urlencoded để tương thích ValidateAntiForgeryToken
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                data: {
+                    __RequestVerificationToken: getAntiForgeryToken(), // << GỬI TOKEN
+                    productId: productId,
+                    quantity: quantity
+                },
+                dataType: 'json', // Mong đợi JSON
+                success: function (response) {
+                    if (response.success) {
+                        // Cập nhật số lượng trên header (nếu có và action trả về count)
+                        if (typeof response.count !== 'undefined') {
+                            $('#cart-count').text(response.count); // Cập nhật số trên nút Cart màu vàng
+                        }
+
+                        // Hiển thị thông báo
+                        alert(response.message);
+
+                        // Tải lại trang SAU KHI người dùng nhấn OK trên alert
+                        window.location.reload();
+
+                    } else {
+                        // Xử lý lỗi trả về từ server
+                        alert("Lỗi: " + response.message);
+                        $button.prop('disabled', false).text('Add to Cart'); // Kích hoạt lại nút nếu lỗi
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error, xhr.responseText);
+                    alert("Có lỗi xảy ra khi thêm sản phẩm!");
+                    $button.prop('disabled', false).text('Add to Cart'); // Kích hoạt lại nút nếu lỗi
+                }
+                // Không cần complete vì trang sẽ reload nếu thành công
+            });
+        });
+    </script>
+}
 
 <section class="bg-light py-5">
     <div class="container">
@@ -6,8 +129,8 @@
             <div class="col-md-12 banner-container">
                 <img src="~/images/banner.jpg" alt="banner" class="banner-image">
                 <div class="col-md-6">
-                    <h1 class="display-4 fw-bold">Products</h1>
-                    <a href="@Url.Action("Index", "Product")" class="btn btn-dark mt-3">Shop Product</a>
+                    <h1 class="display-4 fw-bold">@Localizer["Products"]</h1>
+                    <a href="@Url.Action("Index", "Product")" class="btn btn-dark mt-3">@Localizer["Shop Product"]</a>
                 </div>
             </div>
         </div>
@@ -20,32 +143,32 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Free Delivery</h5>
-                        <p class="card-text">Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                        <h5 class="card-title">@Localizer["Free Delivery"]</h5>
+                        <p class="card-text">@Localizer["Free Delivery Description"]</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Quality Guarantee</h5>
-                        <p class="card-text">Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                        <h5 class="card-title">@Localizer["Quality Guarantee"]</h5>
+                        <p class="card-text">@Localizer["Quality Guarantee Description"]</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Daily Offers</h5>
-                        <p class="card-text">Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                        <h5 class="card-title">@Localizer["Daily Offers"]</h5>
+                        <p class="card-text">@Localizer["Daily Offers Description"]</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Secure Payment</h5>
-                        <p class="card-text">Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                        <h5 class="card-title">@Localizer["Secure Payment"]</h5>
+                        <p class="card-text">@Localizer["Secure Payment Description"]</p>
                     </div>
                 </div>
             </div>
@@ -56,27 +179,37 @@
 <section id="mobile-products" class="py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Mobile Products</h2>
-            <a href="shop.html" class="btn btn-outline-dark">Go to Shop</a>
+            <h2>@Localizer["Mobile Products"]</h2>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark">@Localizer["Go to Shop"]</a>
         </div>
         <div class="row row-cols-1 row-cols-md-4 g-4">
-            @foreach (var item in Model)
+            @foreach (var item in Model.Take(4))
             {
                 <div class="col">
                     <div class="card h-100">
-                        <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
+                        <a asp-controller="Product" asp-action="Display" asp-route-id="@item.Id">
+                            <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">
                                 <a href="@Url.Action("Display", "Product", new { id = item.Id })">@item.Name</a>
                             </h5>
                             <p class="card-text">@item.Price.ToString("#,##0") VND</p>
-                            <a href="@Url.Action("AddToCart", "ShoppingCart", new { productID = item.Id })"
-                               class="btn btn-dark">Add to Cart</a>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@item.Id, 1); return false;">@Localizer["Add to Cart"]</a>
+                                <button class="compare btn btn-primary btn-sm"
+                                        data-productid="@item.Id"
+                                        data-name="@item.Name"
+                                        data-image="@item.ImageUrl">
+                                    +
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             }
         </div>
+        <div id="compare-section" class="mt-4 d-flex align-items-center flex-wrap gap-3"></div>
     </div>
 </section>
 
@@ -84,9 +217,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <h3>10% off</h3>
-                <h2 class="display-4 fw-bold">New Year Sale</h2>
-                <a asp-controller="Product" asp-action="Index" class="btn btn-dark mt-3">Shop Sale</a>
+                <h3>@Localizer["10% off"]</h3>
+                <h2 class="display-4 fw-bold">@Localizer["New Year Sale"]</h2>
+                <a asp-controller="Product" asp-action="Index" class="btn btn-dark mt-3">@Localizer["Shop Sale"]</a>
             </div>
             <div class="col-md-6">
                 <img src="~/images/46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg" alt="sale" class="img-fluid">
@@ -95,42 +228,42 @@
     </div>
 </section>
 
-<section class="py-5">
+<section id="latest-blog" class="py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Latest Posts</h2>
-            <a href="blog.html" class="btn btn-outline-dark">Read Blog</a>
+            <h2>@Localizer["Latest Posts"]</h2>
+            <a href="blog.html" class="btn btn-outline-dark">@Localizer["Read Blog"]</a>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="images/post-item1.jpg" class="card-img-top" alt="post">
+                    <img src="~/images/Case-MBP13-CrystalX.jpg" class="card-img-top" alt="post">
                     <div class="card-body">
                         <p class="text-muted">Feb 22, 2023 - Gadgets</p>
                         <h5 class="card-title">
-                            <a href="#">Get some cool gadgets in 2023</a>
+                            <a href="#">@Localizer["Post 1 Title"]</a>
                         </h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="images/post-item2.jpg" class="card-img-top" alt="post">
+                    <img src="~/images/op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg" class="card-img-top" alt="post">
                     <div class="card-body">
                         <p class="text-muted">Feb 25, 2023 - Technology</p>
                         <h5 class="card-title">
-                            <a href="#">Technology Hack You Won't Get</a>
+                            <a href="#">@Localizer["Post 2 Title"]</a>
                         </h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="images/post-item3.jpg" class="card-img-top" alt="post">
+                    <img src="~/images/macbook-air-m3-15-silver-2tmobile.jpg" class="card-img-top" alt="post">
                     <div class="card-body">
                         <p class="text-muted">Feb 22, 2023 - Camera</p>
                         <h5 class="card-title">
-                            <a href="#">Top 10 Small Camera In The World</a>
+                            <a href="#">@Localizer["Post 3 Title"]</a>
                         </h5>
                     </div>
                 </div>
@@ -143,13 +276,32 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-                <h2>Subscribe Us Now</h2>
-                <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+                <h2>@Localizer["Subscribe Us Now"]</h2>
+                <p>@Localizer["Subscribe Description"]</p>
                 <form class="d-flex mt-3">
-                    <input type="email" class="form-control me-2" placeholder="Your email address">
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <input type="email" class="form-control me-2" placeholder="@Localizer["Your email address"]">
+                    <button type="submit" class="btn btn-primary">@Localizer["Subscribe"]</button>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function addToCart(productId, quantity) {
+        $.ajax({
+            url: '@Url.Action("AddToCart", "ShoppingCart")',
+            type: 'POST',
+            data: { productId: productId, quantity: quantity },
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message);
+                }
+            },
+            error: function () {
+                alert("@Localizer["An error occurred!"]");
+            }
+        });
+    }
+</script>

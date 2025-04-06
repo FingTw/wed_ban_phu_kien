@@ -13,7 +13,7 @@
     // Xử lý sự kiện input
     searchInput.addEventListener('input', async function () {
         const query = searchInput.value.trim();
-        if (query.length < 3) {
+        if (query.length < 1) {
             searchResults.style.display = 'none';
             searchResults.innerHTML = '';
             selectedIndex = -1;

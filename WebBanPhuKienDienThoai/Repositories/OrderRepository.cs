@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;    
+﻿using Microsoft.EntityFrameworkCore;
 using WebBanPhuKienDienThoai.Models;
 
 namespace WebBanPhuKienDienThoai.Repositories
@@ -14,12 +14,19 @@ namespace WebBanPhuKienDienThoai.Repositories
 
         public async Task<IEnumerable<Order>> GetAllAsync()
         {
-            return await _context.Orders.Include(o => o.ApplicationUser).Include(o => o.OrderDetails).ThenInclude(od => od.Product).ToListAsync();
+            return await _context.Orders
+                .Include(o => o.ApplicationUser)
+                .Include(o => o.OrderDetails)
+                .ThenInclude(od => od.Product)
+                .ToListAsync();
         }
 
         public async Task<Order> GetByIdAsync(int id)
         {
-            return await _context.Orders.Include(o => o.ApplicationUser).Include(o => o.OrderDetails).ThenInclude(od => od.Product)
+            return await _context.Orders
+                .Include(o => o.ApplicationUser)
+                .Include(o => o.OrderDetails)
+                .ThenInclude(od => od.Product)
                 .FirstOrDefaultAsync(o => o.Id == id);
         }
 

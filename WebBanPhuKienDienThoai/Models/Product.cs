@@ -7,7 +7,7 @@ namespace WebBanPhuKienDienThoai.Models
         public int Id { get; set; }
         [Required, StringLength(100)]
         public string Name { get; set; }
-        [Range(0.01, 10000.00)]
+        [Range(1000, 1000000000)]
         public decimal Price { get; set; }
         public string Description { get; set; }
         public int Stock { get; set; }

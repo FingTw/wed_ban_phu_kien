@@ -1,6 +1,10 @@
-﻿function toggleChat() {
+﻿function toggleChat(event) {
     const chatBox = document.getElementById('chatBox');
-    chatBox.style.display = chatBox.style.display === 'flex' ? 'none' : 'flex';
+    // Chỉ mở khung chat nếu đang ẩn
+    if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+        chatBox.style.display = 'flex';
+    }
+    event.stopPropagation(); // Ngăn sự kiện nhấp vào icon lan ra document
 }
 
 function addMessage(content, isUser) {
@@ -48,3 +52,17 @@ async function sendMessage() {
         addMessage('Lỗi: ' + error.message, false);
     }
 }
+
+// Đóng khung chat khi nhấp bất kỳ đâu ngoài chatBox
+document.addEventListener('click', function (event) {
+    const chatBox = document.getElementById('chatBox');
+    // Nếu khung chat đang hiển thị và nhấp không nằm trong chatBox thì đóng
+    if (chatBox.style.display === 'flex' && !chatBox.contains(event.target)) {
+        chatBox.style.display = 'none';
+    }
+});
+
+// Ngăn sự kiện click trong chatBox lan ra ngoài
+document.getElementById('chatBox').addEventListener('click', function (event) {
+    event.stopPropagation();
+});

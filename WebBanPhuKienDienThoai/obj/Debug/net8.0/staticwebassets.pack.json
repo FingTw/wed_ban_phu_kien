@@ -65,12 +65,24 @@
       "PackagePath": "staticwebassets\\images\\Macbook-2.jpg"
     },
     {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\apple-airpods-max-1_1.webp",
+      "PackagePath": "staticwebassets\\images\\apple-airpods-max-1_1.webp"
+    },
+    {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\banner.jpg",
       "PackagePath": "staticwebassets\\images\\banner.jpg"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36c72-9bc9-410a-b349-1ca8ed4994bc.webp",
       "PackagePath": "staticwebassets\\images\\broshop-op-jcpal-macbook-pro-16-inch-2021-ultra-thin-case-1-dcd36c72-9bc9-410a-b349-1ca8ed4994bc.webp"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp",
+      "PackagePath": "staticwebassets\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images\\images (1).jpg"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images.png",
@@ -127,6 +139,10 @@
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\modernizr.js",
       "PackagePath": "staticwebassets\\js\\modernizr.js"
+    },
+    {
+      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\page.js",
+      "PackagePath": "staticwebassets\\js\\page.js"
     },
     {
       "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\plugins.js",

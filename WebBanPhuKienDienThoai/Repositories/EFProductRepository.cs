@@ -12,6 +12,28 @@ namespace WebBanPhuKienDienThoai.Respository
             _context = context;
         }
 
+        public async Task<IEnumerable<Product>> FilterAsync(int? categoryId, int? deviceTypeId, decimal? minPrice, decimal? maxPrice)
+        {
+            var query = _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .AsQueryable();
+
+            if (categoryId.HasValue)
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+
+            if (deviceTypeId.HasValue)
+                query = query.Where(p => p.DeviceTypeId == deviceTypeId.Value);
+
+            if (minPrice.HasValue)
+                query = query.Where(p => p.Price >= minPrice.Value);
+
+            if (maxPrice.HasValue)
+                query = query.Where(p => p.Price <= maxPrice.Value);
+
+            return await query.ToListAsync();
+        }
+
         public async Task<IEnumerable<Product>> GetByCategoryIdAsync(int categoryId)
         {
             return await _context.Products.Where(p => p.CategoryId == categoryId).ToListAsync();
@@ -33,7 +55,7 @@ namespace WebBanPhuKienDienThoai.Respository
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task AddAsync(Product product , List<ProductImage> productImages)
+        public async Task AddAsync(Product product, List<ProductImage> productImages)
         {
             _context.Products.Add(product);
             foreach (var image in productImages)
@@ -84,5 +106,33 @@ namespace WebBanPhuKienDienThoai.Respository
                 })
                 .ToList();
         }
+        public async Task<IEnumerable<Product>> GetProductsByIdsAsync(int[] productIds)
+        {
+            return await _context.Products
+                .Where(p => productIds.Contains(p.Id))
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .Include(p => p.Images)
+                .ToListAsync();
+        }
+        public async Task<List<Product>> getPaginatedProducts(int pageNumber, int pageSize)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+        }
+
+        public async Task<List<Product>> GetProductsByCategoryId(int categoryId)
+        {
+            return await _context.Products
+                .Where(p => p.CategoryId == categoryId)
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .ToListAsync();
+        }
     }
+
 }

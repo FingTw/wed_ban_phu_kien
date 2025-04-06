@@ -1,9 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-@model WebBanPhuKienDienThoai.Models.Order
+﻿@model WebBanPhuKienDienThoai.Models.Order
 <h2>Order #@Model.Id Details</h2>
 <div>
     <p><strong>User:</strong> @Model.ApplicationUser.UserName</p>
@@ -28,10 +23,11 @@
                     <td>@item.Product?.Name</td>
                     <td>@item.Quantity</td>
                     <td>@item.Price.ToString("#,##0") VNĐ</td>
-                    <td>@(item.Quantity * item.Price).ToString("#,##0") VNĐ</td>
+                    <td>@((item.Quantity * item.Price).ToString("#,##0")) VNĐ</td>
                 </tr>
             }
         </tbody>
     </table>
     <a asp-action="Index" class="btn btn-secondary">Back</a>
+    <a asp-action="ExportInvoice" asp-route-id="@Model.Id" class="btn btn-success">Xuất hóa đơn</a>
 </div>
