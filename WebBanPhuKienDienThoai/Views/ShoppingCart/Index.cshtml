@@ -66,6 +66,41 @@
                     }
                 });
             }
+            
+            function updateQuantity(button, change) {
+        const input = button.closest('.input-group').querySelector('.quantity-input');
+                let currentValue = parseInt(input.value);
+                const stock = parseInt(input.getAttribute('max'));
+
+                // Cập nhật giá trị số lượng
+                currentValue += change;
+
+                // Cập nhật lại giá trị trong input
+                if (currentValue >= 1 && currentValue <= stock) {
+                    input.value = currentValue;
+                }
+
+                // Vô hiệu hóa nút "-" nếu giá trị bằng 1
+                button.closest('.input-group').querySelector('.quantity-decrease').disabled = (currentValue === 1);
+                
+                // Vô hiệu hóa nút "+" nếu giá trị bằng stock
+                button.closest('.input-group').querySelector('.quantity-increase').disabled = (currentValue === stock);
+            }
+
+            // Vô hiệu hóa nút khi trang web load
+            document.addEventListener("DOMContentLoaded", function() {
+                const inputs = document.querySelectorAll('.quantity-input');
+                inputs.forEach(input => {
+                    const currentValue = parseInt(input.value);
+                    const stock = parseInt(input.getAttribute('max'));
+
+                    // Vô hiệu hóa nút "-" nếu giá trị bằng 1
+                    input.closest('.input-group').querySelector('.quantity-decrease').disabled = (currentValue === 1);
+                    
+                    // Vô hiệu hóa nút "+" nếu giá trị bằng stock
+                    input.closest('.input-group').querySelector('.quantity-increase').disabled = (currentValue === stock);
+                });
+            });
 
             function removeFromCart(productId) {
                 $.ajax({

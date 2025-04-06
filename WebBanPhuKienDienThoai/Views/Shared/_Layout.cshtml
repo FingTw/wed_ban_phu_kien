@@ -62,16 +62,22 @@
 
                         <partial name="_LoginPartial" />
 
-                        <form class="d-flex ms-3">
-                            @{
-                                var cart = HttpContextAccessor.HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-                                var itemCount = cart.Items.Sum(i => i.Quantity);
+                        @{
+                            var cart = Context.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+                            var totalItems = cart.Items.Sum(i => i.Quantity);
+                        }
+
+                        <button class="btn btn-warning position-relative shadow-lg px-4 py-2" 
+                                type="button" 
+                                onclick="window.location.href='/ShoppingCart/Index'">
+                            <i class="bi-cart-fill me-1"></i> Cart
+                            @if (totalItems > 0)
+                            {
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    @totalItems
+                                </span>
                             }
-                            <a asp-controller="ShoppingCart" asp-action="Index" class="btn btn-outline-dark">
-                                <i class="bi-cart-fill me-1"></i>
-                                Cart (@itemCount)
-                            </a>
-                        </form>
+                        </button>
                     </div>
                 </div>
             </div>
