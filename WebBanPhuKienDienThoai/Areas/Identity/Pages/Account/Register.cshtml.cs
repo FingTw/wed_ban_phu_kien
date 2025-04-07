@@ -106,29 +106,12 @@ namespace WebBanPhuKienDienThoai.Areas.Identity.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
 
-            public string ? Role { get; set; }
-            [ValidateNever]
-            public IEnumerable<SelectListItem> Rolelist { get; set; }
+
         }
 
 
         public async Task OnGetAsync(string returnUrl = null)
         {
-            if (!_roleManager.RoleExistsAsync(SD.Role_Customer).GetAwaiter().GetResult())
-            {
-                _roleManager.CreateAsync(new IdentityRole(SD.Role_Customer)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(SD.Role_Company)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(SD.Role_Employee)).GetAwaiter().GetResult();
-            }
-            Input = new()
-            {
-                Rolelist = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
-                {
-                    Text = i,
-                    Value = i
-                })
-            };
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
@@ -136,16 +119,18 @@ namespace WebBanPhuKienDienThoai.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
+            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, FullName = Input.FullName };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    await _userManager.AddToRoleAsync(user, "User"); // Thêm vai trò m?c ??nh cho ng??i dùng m?i
+                    // Assign the "Customer" role to the new user
+                    await _userManager.AddToRoleAsync(user, SD.Role_Customer);
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var callbackUrl = Url.Page(
@@ -164,16 +149,6 @@ namespace WebBanPhuKienDienThoai.Areas.Identity.Pages.Account
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        _logger.LogInformation("User created a new account with password.");
-
-                        // Ki?m tra vai trò c?a ng??i dùng
-                        if (await _userManager.IsInRoleAsync(user, "Admin"))
-                        {
-                            // N?u là admin, ?i?u h??ng ??n area Admin
-                            return RedirectToAction("Index", "Home", new { area = "Admin" });
-                        }
-
-                        // N?u không ph?i admin, gi? nguyên logic ?i?u h??ng hi?n t?i
                         return LocalRedirect(returnUrl);
                     }
                 }

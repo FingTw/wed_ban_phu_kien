@@ -33,6 +33,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 });
 
 
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<PayPalService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -82,6 +83,14 @@ builder.Services.AddHttpClient();
 builder.Services.AddScoped<IGeminiService, GeminiService>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+    await DataInitializer.SeedData(services);
+}
 
 if (!app.Environment.IsDevelopment())
 {
