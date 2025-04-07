@@ -74,5 +74,16 @@ public class ProductController : Controller
 
         return RedirectToAction("Display", new { id = productId });
     }
+
+    public async Task<IActionResult> LoadMoreProduct(int page = 1, int pageSize = 6)
+    {
+        var products = await _productRepository.getPaginatedProducts(page, pageSize);
+        if(!products.Any())
+        {
+            return Content("");
+        }    
+         return PartialView("_ProductPartial", products);
+
+    }
 }
 

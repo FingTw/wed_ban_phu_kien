@@ -54,45 +54,14 @@
     </div>
 
     <!-- Phần danh sách sản phẩm (2/3 bên phải) -->
-    <div class="product-section">
-        <div class="product-grid">
-         
-            @foreach (var product in Model.Where(p => p.Stock > 0))
-            {
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <img src="@product.ImageUrl" class="card-img-top p-3 img-hover-zoom" alt="Product Image"
-                             style="height: 250px; object-fit: cover; border-radius: 15px;">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-dark fw-bold">@product.Name</h5>
-                            <p class="card-text text-muted">
-                                <strong>Category:</strong> @product.Category?.Name
-                            </p>
-                            <p class="card-text text-danger fw-bold">
-                                @product.Price.ToString("C")
-                            </p>
-                            <p class="card-text text-truncate" style="max-width: 100%;">
-                                @product.Description
-                            </p>
-                            <div>
-                                @for (int i = 1; i <= 5; i++)
-                                {
-                                    <span class="fa fa-star @(i <= product.AverageRating ? "checked" : "")"></span>
-                                }
-                                <span>@product.Ratings.Count() ratings</span>
-                            </div>
-                        </div>
-                        <div class="card-footer text-center bg-white">
-                            <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-outline-primary w-100">
-                                View Details
-                            </a>
-                            <a asp-controller="ShoppingCart" asp-action="AddToCart" class="btn btn-dark add-to-cart-btn-global" data-product-id="@product.Id">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            }
+    <div class="product-section ">
+
+        <div id="compare-section" class="mt-4 d-flex align-items-center flex-wrap gap-3"></div>
+
+        <div id="product-container" class="product-grid ">
+
         </div>
-        <div id="laod-triggier" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        <div id="load-trigger"></div>
     </div>
 </div>
 
@@ -178,10 +147,13 @@
         margin: 10px 0;
     }
 
+    .fa-star.checked {
+        color: orange;
+    }
+
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="~/js/page.js"></script>
 <script>
     function addToCart(productId, quantity) {
         $.ajax({
@@ -198,4 +170,48 @@
             }
         });
     }
+
+    let page = 1;
+    let isLoading = false;
+    let hasMoreProducts = true;
+    let observer = null;
+
+    function loadProducts() {
+        if (isLoading || !hasMoreProducts) return;
+        isLoading = true;
+
+        $.ajax({
+            url: '@Url.Action("LoadMoreProduct", "Product")',
+            type: 'GET',
+            data: { page: page },
+            success: function (data) {
+                if (data.trim() === '') {
+                    hasMoreProducts = false;
+                    if (observer) observer.disconnect();
+                } else {
+                    $('#product-container').append(data);
+                    page++;
+                }
+                isLoading = false;
+            },
+            error: function () {
+                isLoading = false;
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        loadProducts(); // Tải trang đầu tiên
+
+        let trigger = document.getElementById('load-trigger');
+        if (trigger) {
+            observer = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting) {
+                    loadProducts();
+                }
+            }, { threshold: 1.0 });
+            observer.observe(trigger);
+        }
+    });
+
 </script>

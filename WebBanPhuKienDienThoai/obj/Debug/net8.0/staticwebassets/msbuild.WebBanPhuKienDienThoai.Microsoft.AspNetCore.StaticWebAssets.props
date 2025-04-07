@@ -786,8 +786,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rj1optxtej</Fingerprint>
-      <Integrity>17pucSiU+b875hvx2Dpx9smG6eqlYKDBc5ee/4h/BNw=</Integrity>
+      <Fingerprint>vzjaqzsoi0</Fingerprint>
+      <Integrity>uwkEogGGxVtBwK4mGp+zyY1NcvmDaw0hfxnd+dzzU4A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\page.js'))</OriginalItemSpec>
@@ -876,8 +876,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l889pw06qm</Fingerprint>
-      <Integrity>C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs=</Integrity>
+      <Fingerprint>6rrquaetyd</Fingerprint>
+      <Integrity>/oq7WH6yU4HwCW9NebPEAJe+LIv06S9ZwVWEIT7HLno=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Sosanh.js'))</OriginalItemSpec>

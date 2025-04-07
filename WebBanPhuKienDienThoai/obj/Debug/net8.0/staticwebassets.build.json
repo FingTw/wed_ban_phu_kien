@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zHl5CHybJ+FMESKmmMDFKIZkm9KQS8uynSaZZtdgHL4=",
+  "Hash": "H6NJ3U4e6RmwSQ7MNn3wgLk2x/cAm0R99FX++EWNiJM=",
   "Source": "WebBanPhuKienDienThoai",
   "BasePath": "_content/WebBanPhuKienDienThoai",
   "Mode": "Default",
@@ -2236,8 +2236,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rj1optxtej",
-      "Integrity": "17pucSiU+b875hvx2Dpx9smG6eqlYKDBc5ee/4h/BNw=",
+      "Fingerprint": "vzjaqzsoi0",
+      "Integrity": "uwkEogGGxVtBwK4mGp+zyY1NcvmDaw0hfxnd+dzzU4A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\page.js"
@@ -2341,8 +2341,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l889pw06qm",
-      "Integrity": "C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs=",
+      "Fingerprint": "6rrquaetyd",
+      "Integrity": "/oq7WH6yU4HwCW9NebPEAJe+LIv06S9ZwVWEIT7HLno=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Sosanh.js"
@@ -9303,7 +9303,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1208"
+          "Value": "1149"
         },
         {
           "Name": "Content-Type",
@@ -9311,11 +9311,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"17pucSiU+b875hvx2Dpx9smG6eqlYKDBc5ee/4h/BNw=\""
+          "Value": "\"uwkEogGGxVtBwK4mGp+zyY1NcvmDaw0hfxnd+dzzU4A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 06:54:17 GMT"
+          "Value": "Mon, 07 Apr 2025 13:47:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9325,12 +9325,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-17pucSiU+b875hvx2Dpx9smG6eqlYKDBc5ee/4h/BNw="
+          "Value": "sha256-uwkEogGGxVtBwK4mGp+zyY1NcvmDaw0hfxnd+dzzU4A="
         }
       ]
     },
     {
-      "Route": "js/page.rj1optxtej.js",
+      "Route": "js/page.vzjaqzsoi0.js",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\page.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9340,7 +9340,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1208"
+          "Value": "1149"
         },
         {
           "Name": "Content-Type",
@@ -9348,11 +9348,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"17pucSiU+b875hvx2Dpx9smG6eqlYKDBc5ee/4h/BNw=\""
+          "Value": "\"uwkEogGGxVtBwK4mGp+zyY1NcvmDaw0hfxnd+dzzU4A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 06:54:17 GMT"
+          "Value": "Mon, 07 Apr 2025 13:47:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9362,7 +9362,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rj1optxtej"
+          "Value": "vzjaqzsoi0"
         },
         {
           "Name": "label",
@@ -9370,7 +9370,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-17pucSiU+b875hvx2Dpx9smG6eqlYKDBc5ee/4h/BNw="
+          "Value": "sha256-uwkEogGGxVtBwK4mGp+zyY1NcvmDaw0hfxnd+dzzU4A="
         }
       ]
     },
@@ -9703,6 +9703,51 @@
       ]
     },
     {
+      "Route": "js/Sosanh.6rrquaetyd.js",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2415"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/oq7WH6yU4HwCW9NebPEAJe+LIv06S9ZwVWEIT7HLno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 13:00:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6rrquaetyd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Sosanh.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/oq7WH6yU4HwCW9NebPEAJe+LIv06S9ZwVWEIT7HLno="
+        }
+      ]
+    },
+    {
       "Route": "js/Sosanh.js",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
       "Selectors": [],
@@ -9713,7 +9758,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2443"
+          "Value": "2415"
         },
         {
           "Name": "Content-Type",
@@ -9721,11 +9766,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs=\""
+          "Value": "\"/oq7WH6yU4HwCW9NebPEAJe+LIv06S9ZwVWEIT7HLno=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:50:43 GMT"
+          "Value": "Mon, 07 Apr 2025 13:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9735,52 +9780,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs="
-        }
-      ]
-    },
-    {
-      "Route": "js/Sosanh.l889pw06qm.js",
-      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2443"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:50:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l889pw06qm"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Sosanh.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-C7WsHOjk73SowKeLFrilszCyLS65F/pzRsMm7/vtIXs="
+          "Value": "sha256-/oq7WH6yU4HwCW9NebPEAJe+LIv06S9ZwVWEIT7HLno="
         }
       ]
     },

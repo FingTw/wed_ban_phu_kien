@@ -9,7 +9,7 @@ function loadProducts() {
     isLoading = true;
 
     $.ajax({
-        url: '@Url.Action("LoadMoreProducts", "Home")',
+        url: '@Url.Action("LoadMoreProduct", "Product")',
         type: 'GET',
         data: { page: page },
         success: function (data) {
@@ -24,7 +24,6 @@ function loadProducts() {
         },
         error: function () {
             isLoading = false;
-            console.error('Lỗi khi tải sản phẩm.');
         }
     });
 }

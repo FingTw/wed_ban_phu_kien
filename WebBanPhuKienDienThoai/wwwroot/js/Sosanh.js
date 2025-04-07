@@ -26,8 +26,8 @@
         if (selectedProducts.length > 0) {
             compareSection.append(`
                         <div class="compare-actions">
-                            <button id="compare-now" class="btn btn-primary">@Localizer["Compare Now"]</button>
-                            <button id="clear-compare" class="btn btn-danger">@Localizer["Clear All"]</button>
+                            <button id="compare-now" class="btn btn-primary">Compare Now</button>
+                            <button id="clear-compare" class="btn btn-danger">Clear All</button>
                         </div>
                     `);
         }
