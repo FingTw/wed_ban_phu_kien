@@ -31,25 +31,17 @@ public class ProductController : Controller
         ViewBag.Categories = await _categoryRepository.GetAllAsync();
         ViewBag.DeviceTypes = await _deviceTypeRepository.GetAllAsync();
 
-        var allProducts = await _productRepository.GetAllAsync();
-        var defaultMinPrice = allProducts.Any() ? allProducts.Min(p => p.Price) : 0;
-        var defaultMaxPrice = allProducts.Any() ? allProducts.Max(p => p.Price) : 1000000;
-
         ViewBag.CategoryId = categoryId;
         ViewBag.DeviceTypeId = deviceTypeId;
-        ViewBag.MinPrice = defaultMinPrice;
-        ViewBag.MaxPrice = defaultMaxPrice;
-        ViewBag.SelectedMinPrice = minPrice.HasValue ? minPrice.Value : defaultMinPrice;
-        ViewBag.SelectedMaxPrice = maxPrice.HasValue ? maxPrice.Value : defaultMaxPrice;
 
-        var filteredProducts = await _productRepository.FilterAsync(categoryId, deviceTypeId,
-            minPrice.HasValue ? minPrice : null,
-            maxPrice.HasValue ? maxPrice : null);
+        // L?y giá min và max ?? thi?t l?p thanh tr??t
+        ViewBag.MinPrice = 0;
+        ViewBag.MaxPrice = 10000000;
 
-        Console.WriteLine($"CategoryId: {categoryId}, DeviceTypeId: {deviceTypeId}, MinPrice: {minPrice}, MaxPrice: {maxPrice}");
-        Console.WriteLine($"Filtered products count: {filteredProducts.Count()}");
-
+        // L?c s?n ph?m
+        var filteredProducts = await _productRepository.FilterAsync(categoryId, deviceTypeId, minPrice, maxPrice);
         return View(filteredProducts);
+
     }
 
     public async Task<IActionResult> Display(int id)

@@ -35,7 +35,6 @@
                 </select>
             </div>
 
-            <!-- Thanh trượt lọc theo giá -->
             <div class="mb-3">
                 <label class="form-label">Khoảng giá</label>
                 <input type="range" class="form-range" id="minPrice" name="minPrice"
@@ -44,7 +43,7 @@
                 <span>Giá tối thiểu: <span id="minPriceValue">@ViewBag.MinPrice</span> VND</span>
 
                 <input type="range" class="form-range" id="maxPrice" name="maxPrice"
-                       min="@ViewBag.MinPrice" max="@ViewBag.MaxPrice" value="@(ViewBag.MaxPrice ?? 1000000)"
+                       min="@ViewBag.MinPrice" max="@ViewBag.MaxPrice" value="@(ViewBag.MaxPrice ?? 10000000)"
                        oninput="document.getElementById('maxPriceValue').innerText = this.value" />
                 <span>Giá tối đa: <span id="maxPriceValue">@ViewBag.MaxPrice</span> VND</span>
             </div>
