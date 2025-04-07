@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using WebBanPhuKienDienThoai.Controllers;
 using WebBanPhuKienDienThoai.Models;
 using WebBanPhuKienDienThoai.Repositories;
 using WebBanPhuKienDienThoai.Respository;
@@ -76,6 +77,8 @@ builder.Services.AddScoped<IDiscountRepository, EFDiscountRepository>();
 builder.Services.AddScoped<IRatingRepository, EFRatingRepository>();
 builder.Services.AddScoped<ICommentRepository, EFCommentRepository>();
 
+// Đăng ký UserManager
+builder.Services.AddScoped<UserManager<ApplicationUser>>();
 
 builder.Services.AddRazorPages();
 

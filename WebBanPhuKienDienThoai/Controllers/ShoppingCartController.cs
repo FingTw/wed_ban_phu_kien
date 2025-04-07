@@ -116,56 +116,8 @@ namespace WebBanPhuKienDienThoai.Controllers
             return View("OrderCompleted", order.Id);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Checkout(Order order)
-        //{
-        //    var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-        //    if (cart == null || !cart.Items.Any())
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
 
-        //    var user = await _userManager.GetUserAsync(User);
-        //    order.UserId = user.Id;
-        //    order.OrderDate = DateTime.UtcNow;
-        //    order.OrderDetails = cart.Items.Select(i => new OrderDetail
-        //    {
-        //        ProductId = i.ProductId,
-        //        Quantity = i.Quantity,
-        //        Price = i.Price
-        //    }).ToList();
-        //    order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
-
-        //    var discountCode = HttpContext.Session.GetString("DiscountCode");
-        //    if (!string.IsNullOrEmpty(discountCode))
-        //    {
-        //        var discount = await _context.DiscountCodes
-        //            .FirstOrDefaultAsync(d => d.Code == discountCode && d.ExpiryDate >= DateTime.Now && d.UsageCount < d.UsageLimit);
-        //        if (discount != null)
-        //        {
-        //            decimal discountAmount = 0;
-        //            if (discount.DiscountPercent.HasValue)
-        //            {
-        //                discountAmount = order.TotalPrice * (decimal)(discount.DiscountPercent.Value / 100);
-        //            }
-        //            else if (discount.DiscountAmount.HasValue)
-        //            {
-        //                discountAmount = discount.DiscountAmount.Value;
-        //            }
-        //            order.TotalPrice -= discountAmount;
-        //            discount.UsageCount++;
-        //            _context.Update(discount);
-        //        }
-        //    }
-
-        //    _context.Orders.Add(order);
-        //    await _context.SaveChangesAsync();
-        //    HttpContext.Session.Remove("Cart");
-        //    HttpContext.Session.Remove("DiscountCode");
-        //    return View("OrderCompleted", order.Id);
-        //}
-
-
+        [AllowAnonymous]
         public async Task<IActionResult> AddToCart(int productId, int quantity)
         {
             var product = await _productRepository.GetByIdAsync(productId);
