@@ -57,28 +57,8 @@
     <!-- Phần danh sách sản phẩm (2/3 bên phải) -->
     <div class="product-section">
         <div class="product-grid">
-            @* @foreach (var product in Model.Where(p => p.Stock > 0))
-            {
-                <div class="card product-card">
-                    <a asp-action="Display" asp-route-id="@product.Id">
-                    <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
-                    </a>
-                    <div class="card-body">
-                        
-                        <h5 class="card-title">@product.Name</h5>
-                        <p class="card-text">
-                            <strong>Price:</strong> @product.Price.ToString("C")<br />
-                            <strong>Description:</strong> @product.Description<br />
-                            <strong>Category:</strong> @(product.Category?.Name ?? "N/A")<br />
-                            <strong>Device available:</strong> @(product.DeviceType?.Name ?? "N/A")
-                        </p>
-                        <a class="btn btn-sm btn-info" asp-action="Display" asp-route-id="@product.Id">View</a>
-                        <a href="#" class="btn btn-dark me-2" onclick="addToCart(@product.Id, 1); return false;">Add to Cart</a>
-
-                    </div>
-                </div>
-            } *@
-            @foreach (var product in Model)
+         
+            @foreach (var product in Model.Where(p => p.Stock > 0))
             {
                 <div class="col">
                     <div class="card h-100 shadow-sm">
@@ -95,6 +75,13 @@
                             <p class="card-text text-truncate" style="max-width: 100%;">
                                 @product.Description
                             </p>
+                            <div>
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    <span class="fa fa-star @(i <= product.AverageRating ? "checked" : "")"></span>
+                                }
+                                <span>@product.Ratings.Count() ratings</span>
+                            </div>
                         </div>
                         <div class="card-footer text-center bg-white">
                             <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-outline-primary w-100">
@@ -191,6 +178,7 @@
         width: 100%;
         margin: 10px 0;
     }
+
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

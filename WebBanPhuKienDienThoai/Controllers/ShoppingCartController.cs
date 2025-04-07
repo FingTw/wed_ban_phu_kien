@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using WebBanPhuKienDienThoai.Extensions;
 using WebBanPhuKienDienThoai.Models;
 
@@ -334,5 +335,31 @@ namespace WebBanPhuKienDienThoai.Controllers
             HttpContext.Session.Remove("Cart");
             return Json(new { success = true, itemCount = 0 });
         }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> AddRating(int productId, int stars, string review)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized();
+            }
+
+            var rating = new Rating
+            {
+                ProductId = productId,
+                UserId = userId,
+                Stars = stars,
+                Review = review,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            await _context.Ratings.AddAsync(rating);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("OrderHistory");
+        }
     }
+
 }

@@ -72,6 +72,10 @@ builder.Services.AddScoped<IDeviceTypeRepository, EFDeviceTypeRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IDiscountRepository, EFDiscountRepository>();
 
+builder.Services.AddScoped<IRatingRepository, EFRatingRepository>();
+builder.Services.AddScoped<ICommentRepository, EFCommentRepository>();
+
+
 builder.Services.AddRazorPages();
 
 builder.Services.AddHttpClient();

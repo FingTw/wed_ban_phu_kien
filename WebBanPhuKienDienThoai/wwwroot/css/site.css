@@ -95,6 +95,12 @@ body {
         transform: scale(1.1); /* Phóng to ảnh lên 110% khi hover */
     }
 
+
+.fa-star.checked {
+    color: orange;
+}
+
+
 .chat-icon {
     position: fixed;
     bottom: 20px;

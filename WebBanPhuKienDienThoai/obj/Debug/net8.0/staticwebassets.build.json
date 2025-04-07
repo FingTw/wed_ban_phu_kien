@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PRxU8K6tNymCYBVed0qRLdGVoZkxqicaANxCTWgt6+M=",
+  "Hash": "zHl5CHybJ+FMESKmmMDFKIZkm9KQS8uynSaZZtdgHL4=",
   "Source": "WebBanPhuKienDienThoai",
   "BasePath": "_content/WebBanPhuKienDienThoai",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "zd691t0rek",
-      "Integrity": "aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=",
+      "Fingerprint": "a656irfxqd",
+      "Integrity": "TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanPhuKienDienThoai.styles.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "zd691t0rek",
-      "Integrity": "aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=",
+      "Fingerprint": "a656irfxqd",
+      "Integrity": "TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xilc1chn21",
-      "Integrity": "+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU=",
+      "Fingerprint": "du9yyfs8xi",
+      "Integrity": "VSSQ5Ai1CUVFb1bXAk22kxztLM3SxLMWTBUe7XzXlKQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -3721,7 +3721,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4799"
+          "Value": "4848"
         },
         {
           "Name": "Content-Type",
@@ -3729,11 +3729,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU=\""
+          "Value": "\"VSSQ5Ai1CUVFb1bXAk22kxztLM3SxLMWTBUe7XzXlKQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 15:58:22 GMT"
+          "Value": "Mon, 07 Apr 2025 05:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3743,12 +3743,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU="
+          "Value": "sha256-VSSQ5Ai1CUVFb1bXAk22kxztLM3SxLMWTBUe7XzXlKQ="
         }
       ]
     },
     {
-      "Route": "css/site.xilc1chn21.css",
+      "Route": "css/site.du9yyfs8xi.css",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3758,7 +3758,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4799"
+          "Value": "4848"
         },
         {
           "Name": "Content-Type",
@@ -3766,11 +3766,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU=\""
+          "Value": "\"VSSQ5Ai1CUVFb1bXAk22kxztLM3SxLMWTBUe7XzXlKQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 15:58:22 GMT"
+          "Value": "Mon, 07 Apr 2025 05:33:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3780,7 +3780,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xilc1chn21"
+          "Value": "du9yyfs8xi"
         },
         {
           "Name": "label",
@@ -3788,7 +3788,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+Rgw8QbQERg1rekZ5CnOuNhWsRwqh0BsMfuaQAkRWxU="
+          "Value": "sha256-VSSQ5Ai1CUVFb1bXAk22kxztLM3SxLMWTBUe7XzXlKQ="
         }
       ]
     },
@@ -14459,6 +14459,96 @@
       ]
     },
     {
+      "Route": "WebBanPhuKienDienThoai.a656irfxqd.bundle.scp.css",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 03:13:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a656irfxqd"
+        },
+        {
+          "Name": "label",
+          "Value": "WebBanPhuKienDienThoai.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
+        }
+      ]
+    },
+    {
+      "Route": "WebBanPhuKienDienThoai.a656irfxqd.styles.css",
+      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanPhuKienDienThoai.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 03:13:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a656irfxqd"
+        },
+        {
+          "Name": "label",
+          "Value": "WebBanPhuKienDienThoai.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
+        }
+      ]
+    },
+    {
       "Route": "WebBanPhuKienDienThoai.bundle.scp.css",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
       "Selectors": [],
@@ -14469,7 +14559,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2292"
+          "Value": "1140"
         },
         {
           "Name": "Content-Type",
@@ -14477,11 +14567,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
+          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
+          "Value": "Mon, 07 Apr 2025 03:13:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14491,7 +14581,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
+          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
         }
       ]
     },
@@ -14506,7 +14596,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2292"
+          "Value": "1140"
         },
         {
           "Name": "Content-Type",
@@ -14514,11 +14604,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
+          "Value": "\"TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
+          "Value": "Mon, 07 Apr 2025 03:13:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14528,97 +14618,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
-        }
-      ]
-    },
-    {
-      "Route": "WebBanPhuKienDienThoai.zd691t0rek.bundle.scp.css",
-      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zd691t0rek"
-        },
-        {
-          "Name": "label",
-          "Value": "WebBanPhuKienDienThoai.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
-        }
-      ]
-    },
-    {
-      "Route": "WebBanPhuKienDienThoai.zd691t0rek.styles.css",
-      "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanPhuKienDienThoai.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 16:49:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zd691t0rek"
-        },
-        {
-          "Name": "label",
-          "Value": "WebBanPhuKienDienThoai.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aYJ8LvfkXuKzkBRNUUonJtJDTfuoHVOoa0ZCeqmssaQ="
+          "Value": "sha256-TtJoarzpdur6MW6UOC7DU7f5n8VKq1uUMp2b+ZzklC0="
         }
       ]
     }
