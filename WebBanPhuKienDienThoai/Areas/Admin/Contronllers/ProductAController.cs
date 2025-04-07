@@ -11,7 +11,7 @@ using WebBanPhuKienDienThoai.Respository;
 namespace WebBanPhuKienDienThoai.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+    [Authorize(Roles = SD.Role_Admin + "," + SD.Role_Employee)]
     public class ProductAController : Controller
     {
         private readonly IProductRepository _productRepository;

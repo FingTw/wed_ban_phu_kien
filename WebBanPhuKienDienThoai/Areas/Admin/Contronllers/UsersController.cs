@@ -43,6 +43,10 @@ namespace WebBanPhuKienDienThoai.Controllers
             return new List<string>(await _userManager.GetRolesAsync(user));
         }
 
+        [Area("Admin")]
+        [Authorize(Roles = "Admin")]
+
+
         public async Task<IActionResult> Delete(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
@@ -57,21 +61,31 @@ namespace WebBanPhuKienDienThoai.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var user = await _userManager.FindByIdAsync(id);
-            if (user != null)
+            if (string.IsNullOrEmpty(id))
             {
-                var result = await _userManager.DeleteAsync(user);
-                if (result.Succeeded)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
+                return BadRequest("User ID is required.");
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+            {
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
+                return View("Delete", user); // Hiển thị lại view với lỗi
             }
+
             return RedirectToAction(nameof(Index));
         }
+
+
 
         public async Task<IActionResult> ManageRoles(string id)
         {

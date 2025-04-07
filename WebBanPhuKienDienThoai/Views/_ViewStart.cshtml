@@ -11,6 +11,11 @@
         {
             layout = "_AdminLayout";
         }
+        else if (user != null && await UserManager.IsInRoleAsync(user, "Employee"))
+        {
+            layout = "_LayoutEmployee";
+        }
+        
         // Thêm các vai trò khác nếu cần
     }
     Layout = layout;
