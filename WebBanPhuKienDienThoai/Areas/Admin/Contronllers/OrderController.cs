@@ -118,7 +118,7 @@ namespace WebBanPhuKienDienThoai.Areas.Admin.Controllers
                     .SetFontSize(20));
 
                 document.Add(new Paragraph($"Mã đơn hàng: {order.Id}"));
-                document.Add(new Paragraph($"Khách hàng: {order.ApplicationUser?.UserName}"));
+                document.Add(new Paragraph($"Khách hàng: {order.User?.UserName}"));
                 document.Add(new Paragraph($"Ngày đặt: {order.OrderDate:dd/MM/yyyy HH:mm}"));
                 document.Add(new Paragraph($"Địa chỉ giao hàng: {order.ShippingAddress}"));
                 if (!string.IsNullOrEmpty(order.Notes))

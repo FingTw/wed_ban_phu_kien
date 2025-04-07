@@ -15,7 +15,7 @@ namespace WebBanPhuKienDienThoai.Repositories
         public async Task<IEnumerable<Order>> GetAllAsync()
         {
             return await _context.Orders
-                .Include(o => o.ApplicationUser)
+                .Include(o => o.User)
                 .Include(o => o.OrderDetails)
                 .ThenInclude(od => od.Product)
                 .ToListAsync();
@@ -24,7 +24,7 @@ namespace WebBanPhuKienDienThoai.Repositories
         public async Task<Order> GetByIdAsync(int id)
         {
             return await _context.Orders
-                .Include(o => o.ApplicationUser)
+                .Include(o => o.User)
                 .Include(o => o.OrderDetails)
                 .ThenInclude(od => od.Product)
                 .FirstOrDefaultAsync(o => o.Id == id);

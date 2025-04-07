@@ -660,6 +660,9 @@ namespace WebBanPhuKienDienThoai.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<decimal?>("DiscountAmount")
                         .HasColumnType("decimal(18,2)");
 
@@ -668,6 +671,9 @@ namespace WebBanPhuKienDienThoai.Migrations
 
                     b.Property<DateTime>("ExpiryDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("UsageCount")
                         .HasColumnType("int");
@@ -688,14 +694,29 @@ namespace WebBanPhuKienDienThoai.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<decimal>("DiscountAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("DiscountCodeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Notes")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("PaymentMethod")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ShippingAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -707,6 +728,8 @@ namespace WebBanPhuKienDienThoai.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DiscountCodeId");
 
                     b.HasIndex("UserId");
 
@@ -794,6 +817,9 @@ namespace WebBanPhuKienDienThoai.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -802,6 +828,8 @@ namespace WebBanPhuKienDienThoai.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
 
                     b.HasIndex("ProductId");
 
@@ -889,13 +917,19 @@ namespace WebBanPhuKienDienThoai.Migrations
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>
                 {
-                    b.HasOne("WebBanPhuKienDienThoai.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("WebBanPhuKienDienThoai.Models.DiscountCode", "DiscountCode")
+                        .WithMany("Orders")
+                        .HasForeignKey("DiscountCodeId");
+
+                    b.HasOne("WebBanPhuKienDienThoai.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ApplicationUser");
+                    b.Navigation("DiscountCode");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.OrderDetail", b =>
@@ -936,6 +970,10 @@ namespace WebBanPhuKienDienThoai.Migrations
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.ProductImage", b =>
                 {
+                    b.HasOne("WebBanPhuKienDienThoai.Models.Order", null)
+                        .WithMany("Images")
+                        .HasForeignKey("OrderId");
+
                     b.HasOne("WebBanPhuKienDienThoai.Models.Product", "Product")
                         .WithMany("Images")
                         .HasForeignKey("ProductId")
@@ -961,8 +999,15 @@ namespace WebBanPhuKienDienThoai.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.DiscountCode", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>
                 {
+                    b.Navigation("Images");
+
                     b.Navigation("OrderDetails");
                 });
 

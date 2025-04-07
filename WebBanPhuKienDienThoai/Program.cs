@@ -10,17 +10,16 @@ using WebBanPhuKienDienThoai.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Thêm đoạn này để sử dụng localization
+// Cấu hình localization
 builder.Services.AddControllersWithViews()
     .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
     .AddDataAnnotationsLocalization();
 
-//Thêm đoạn này để sử dụng localization 
 builder.Services.AddLocalization(options =>
 {
     options.ResourcesPath = "Resources";
 });
-// Thêm đoạn này để sử dụng localization
+
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
     var supportedCultures = new[]
@@ -32,7 +31,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedUICultures = supportedCultures;
 });
 
-
+// Cấu hình MVC và services
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<PayPalService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -66,12 +65,12 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
 
+// Dependency Injection
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 builder.Services.AddScoped<IDeviceTypeRepository, EFDeviceTypeRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IDiscountRepository, EFDiscountRepository>();
-
 builder.Services.AddRazorPages();
 
 builder.Services.AddHttpClient();
@@ -79,6 +78,7 @@ builder.Services.AddScoped<IGeminiService, GeminiService>();
 
 var app = builder.Build();
 
+// Middleware pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -86,15 +86,10 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseRequestLocalization();//Thêm dòng này để sử dụng localization
-
+app.UseRequestLocalization();
 app.UseStaticFiles();
-
 app.UseSession();
-
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
