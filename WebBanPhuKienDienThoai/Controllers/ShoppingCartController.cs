@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using WebBanPhuKienDienThoai.Extensions;
 using WebBanPhuKienDienThoai.Models;
+using WebBanPhuKienDienThoai.Services;
 
 namespace WebBanPhuKienDienThoai.Controllers
 {
@@ -14,13 +15,16 @@ namespace WebBanPhuKienDienThoai.Controllers
         private readonly IProductRepository _productRepository;
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly PayPalService _payPalService;
 
-        public ShoppingCartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager, IProductRepository productRepository)
+        public ShoppingCartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager, IProductRepository productRepository, PayPalService payPalService)
         {
             _productRepository = productRepository;
             _context = context;
             _userManager = userManager;
+            _payPalService = payPalService;
         }
+
 
         public async Task<IActionResult> Checkout()
         {
@@ -70,7 +74,7 @@ namespace WebBanPhuKienDienThoai.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Checkout(Order order)
+        public async Task<IActionResult> Checkout(Order order, string paymentMethod)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
             if (cart == null || !cart.Items.Any())
@@ -113,8 +117,21 @@ namespace WebBanPhuKienDienThoai.Controllers
 
             HttpContext.Session.Remove("Cart");
             HttpContext.Session.Remove("DiscountCode");
+
+            // Nếu người dùng chọn phương thức thanh toán PayPal
+            if (paymentMethod == "PayPal")
+            {
+                // Tạo PayPal Order và chuyển hướng đến PayPalController
+                var returnUrl = Url.Action("PaymentSuccess", "Paypal", null, Request.Scheme);
+                var cancelUrl = Url.Action("PaymentCancel", "Paypal", null, Request.Scheme);
+
+                // Chuyển hướng đến action CreatePayment trong PayPalController
+                return RedirectToAction("CreatePayment", "Paypal", new { orderId = order.Id, totalPrice = order.TotalPrice, returnUrl, cancelUrl });
+            }
+
             return View("OrderCompleted", order.Id);
         }
+
 
 
         [AllowAnonymous]

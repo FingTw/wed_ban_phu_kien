@@ -36,7 +36,10 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.Configure<PayPalConfig>(builder.Configuration.GetSection("PayPal"));
 builder.Services.AddSingleton<PayPalService>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

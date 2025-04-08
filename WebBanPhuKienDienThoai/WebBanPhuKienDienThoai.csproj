@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="itext7" Version="9.1.0" />
     <PackageReference Include="itext7.bouncy-castle-adapter" Version="9.1.0" />
+    <PackageReference Include="Microsoft.AspNet.WebHooks.Receivers.Paypal" Version="1.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />

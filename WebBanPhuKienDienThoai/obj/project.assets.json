@@ -790,6 +790,91 @@
           "itext.bouncy-castle-adapter": "9.1.0"
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.2"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebHooks.Common/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.2"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebHooks.Receivers/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.2",
+          "Microsoft.AspNet.WebHooks.Common": "1.2.2"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Receivers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Receivers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebHooks.Receivers.Paypal/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.2",
+          "Microsoft.AspNet.WebHooks.Common": "1.2.2",
+          "Microsoft.AspNet.WebHooks.Receivers": "1.2.2",
+          "Newtonsoft.Json": "6.0.6",
+          "PayPal": "1.5.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Receivers.Paypal.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Receivers.Paypal.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/2.3.0": {
         "type": "package",
         "dependencies": {
@@ -5918,6 +6003,74 @@
         "gnu-agpl-v3.0.md",
         "itext7.bouncy-castle-adapter.9.1.0.nupkg.sha512",
         "itext7.bouncy-castle-adapter.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.2": {
+      "sha512": "YVq+s0WeXrPxJk57CoElbtMYf95j76uJcW6nue3Cs4eIer9sgUp4rasSo0gALX3ls1Zf2jMceOLik9X/sJyrwA==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.2.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.2": {
+      "sha512": "P5boFqqGDq1XF7PVz1U4ju85wQLT0Pb5BbuiWy72cOmWXJKCCNqL+av6omi30knp62hpmfw+3rSCm+Nmt5zRgQ==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.core/5.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/web.config.transform",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml",
+        "microsoft.aspnet.webapi.core.5.2.2.nupkg.sha512",
+        "microsoft.aspnet.webapi.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebHooks.Common/1.2.2": {
+      "sha512": "WkzgJPYjVPXEhu2vQIZ5GkNX3pSLHMf1Er8tFY69gqikVu8f0+X0ntserOlDSMQ0FbqQZ02EFXXpPt0BomZyZg==",
+      "type": "package",
+      "path": "microsoft.aspnet.webhooks.common/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.AspNet.WebHooks.Common.dll",
+        "lib/net45/Microsoft.AspNet.WebHooks.Common.xml",
+        "microsoft.aspnet.webhooks.common.1.2.2.nupkg.sha512",
+        "microsoft.aspnet.webhooks.common.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebHooks.Receivers/1.2.2": {
+      "sha512": "VNWY54+y27B3Nv1BF7zw7+TTTfTlQrKybJ+KbN2gbyF8CB5Z4NGLym1GrX2v+bsEjR5glwBms63sBqVzSUlCIg==",
+      "type": "package",
+      "path": "microsoft.aspnet.webhooks.receivers/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.AspNet.WebHooks.Receivers.dll",
+        "lib/net45/Microsoft.AspNet.WebHooks.Receivers.xml",
+        "microsoft.aspnet.webhooks.receivers.1.2.2.nupkg.sha512",
+        "microsoft.aspnet.webhooks.receivers.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebHooks.Receivers.Paypal/1.2.2": {
+      "sha512": "tTZH7rggyY8A5u+Sgo82tXme/O38ExEPUS2KjBzs+9ntpsgUvHNTEwOmj8P/nQL1oZx2mZTzpD9hCVRccEhOxA==",
+      "type": "package",
+      "path": "microsoft.aspnet.webhooks.receivers.paypal/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.AspNet.WebHooks.Receivers.Paypal.dll",
+        "lib/net45/Microsoft.AspNet.WebHooks.Receivers.Paypal.xml",
+        "microsoft.aspnet.webhooks.receivers.paypal.1.2.2.nupkg.sha512",
+        "microsoft.aspnet.webhooks.receivers.paypal.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.3.0": {
@@ -13674,6 +13827,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.AspNet.WebHooks.Receivers.Paypal >= 1.2.2",
       "Microsoft.AspNetCore.Authentication.Facebook >= 8.0.3",
       "Microsoft.AspNetCore.Authentication.Google >= 8.0.3",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.11",
@@ -13740,6 +13894,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.AspNet.WebHooks.Receivers.Paypal": {
+            "target": "Package",
+            "version": "[1.2.2, )"
+          },
           "Microsoft.AspNetCore.Authentication.Facebook": {
             "target": "Package",
             "version": "[8.0.3, )"
@@ -13826,10 +13984,54 @@
   },
   "logs": [
     {
-      "code": "Undefined",
+      "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Package 'Microsoft.AspNet.WebApi.Client 5.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Client",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebHooks.Common 1.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebHooks.Common",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebHooks.Receivers 1.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebHooks.Receivers",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebHooks.Receivers.Paypal 1.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebHooks.Receivers.Paypal",
+      "targetGraphs": [
+        "net8.0"
+      ]
     },
     {
       "code": "NU1701",

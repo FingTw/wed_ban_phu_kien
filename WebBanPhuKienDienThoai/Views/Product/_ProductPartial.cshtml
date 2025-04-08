@@ -10,9 +10,9 @@
     <div class="col">
         <div class="card h-100 shadow-sm">
             <a asp-controller="Product" asp-action="Display" asp-route-id="@product.Id">
-            <img src="@product.ImageUrl" class="card-img-top p-3 img-hover-zoom" alt="Product Image"
-                 style="height: 250px; object-fit: cover; border-radius: 15px;">
-                 </a>
+                <img src="@product.ImageUrl" class="card-img-top p-3 img-hover-zoom" alt="Product Image"
+                     style="height: 250px; object-fit: cover; border-radius: 15px;">
+            </a>
             <div class="card-body text-center">
                 <h5 class="card-title text-dark fw-bold">@product.Name</h5>
                 <p class="card-text text-muted">
@@ -36,11 +36,37 @@
                 <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-outline-primary w-100">
                     View Details
                 </a>
-                <a class="compare btn btn-primary " data-productid="@product.Id" data-name="@product.Name" data-image="@product.ImageUrl">
+                <a class="compare btn btn-primary" data-productid="@product.Id" data-name="@product.Name" data-image="@product.ImageUrl">
                     +
                 </a>
-                <a asp-controller="ShoppingCart" asp-action="AddToCart" class="btn btn-dark add-to-cart-btn-global" data-product-id="@product.Id">Add to cart</a>
+                <a href="#" class="btn btn-dark add-to-cart-btn-global px-4" data-product-id="@product.Id">Add to Cart</a>
+
             </div>
         </div>
     </div>
+}
+<script>
+    function addToCart(productId, quantity) {
+        $.ajax({
+            url: '@Url.Action("AddToCart", "ShoppingCart")',
+            type: 'POST',
+            data: { productId: productId, quantity: quantity },
+            success: function (response) {
+                if (response.success) {
+                    alert("Đã thêm vào giỏ hàng!");
+                } else {
+                    alert("Thêm thất bại: " + response.message);
+                }
+            },
+            error: function () {
+                alert("Có lỗi xảy ra!");
+            }
+        });
     }
+
+    $(document).on("click", ".add-to-cart-btn-global", function (e) {
+        e.preventDefault();
+        const productId = $(this).data("product-id");
+        addToCart(productId, 1);
+    });
+</script>

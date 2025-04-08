@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
 @{
     ViewData["Title"] = "Products";
+    int numOfQuantity = 1;
 }
 
 <h2 class="mb-4">Danh Sách Sản Phẩm</h2>
@@ -152,24 +153,9 @@
     }
 
 </style>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    function addToCart(productId, quantity) {
-        $.ajax({
-            url: '@Url.Action("AddToCart", "ShoppingCart")',
-            type: 'POST',
-            data: { productId: productId, quantity: quantity },
-            success: function (response) {
-                if (response.success) {
-                    alert(response.message); // Hoặc cập nhật giao diện giỏ hàng
-                }
-            },
-            error: function () {
-                alert("Có lỗi xảy ra!");
-            }
-        });
-    }
+    
 
     let page = 1;
     let isLoading = false;

@@ -1,69 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Options;
 using PayPal.Api;
+using WebBanPhuKienDienThoai.Models;
 
-namespace WebBanPhuKienDienThoai.Services
+public class PayPalService
 {
-    public class PayPalService
+    private readonly PayPalConfig _payPalConfig;
+
+    public PayPalService(IOptions<PayPalConfig> payPalConfig)
     {
-        private readonly IConfiguration _configuration;
+        _payPalConfig = payPalConfig.Value;
+    }
 
-        public PayPalService(IConfiguration configuration)
+    public async Task<string> CreatePayment(decimal totalPrice, string returnUrl, string cancelUrl)
+    {
+        var config = new Dictionary<string, string> { { "mode", _payPalConfig.Mode } };
+        var accessToken = new OAuthTokenCredential(_payPalConfig.ClientId, _payPalConfig.ClientSecret, config).GetAccessToken();
+        var apiContext = new APIContext(accessToken) { Config = config };
+
+        var payer = new Payer() { payment_method = "paypal" };
+        var redirectUrls = new RedirectUrls()
         {
-            _configuration = configuration;
-        }
+            cancel_url = cancelUrl,
+            return_url = returnUrl
+        };
 
-        private APIContext GetAPIContext()
+        var transactionList = new List<Transaction>
+    {
+        new Transaction()
         {
-            var config = new Dictionary<string, string>
-            {
-                { "mode", _configuration["PayPal:Mode"] }
-            };
-
-            string clientId = _configuration["PayPal:ClientId"];
-            string secret = _configuration["PayPal:Secret"];
-
-            var accessToken = new OAuthTokenCredential(clientId, secret, config).GetAccessToken();
-            return new APIContext(accessToken) { Config = config };
+            amount = new Amount() { currency = "USD", total = totalPrice.ToString("F2") },
+            description = $"Thanh toán đơn hàng"
         }
+    };
 
-        public string CreatePayment(decimal amount, string returnUrl, string cancelUrl)
+        var payment = new Payment()
         {
-            var apiContext = GetAPIContext();
+            intent = "sale",
+            payer = payer,
+            transactions = transactionList,
+            redirect_urls = redirectUrls
+        };
 
-            var payment = new Payment
-            {
-                intent = "sale",
-                payer = new Payer { payment_method = "paypal" },
-                transactions = new List<Transaction>
-                {
-                    new Transaction
-                    {
-                        amount = new Amount { total = amount.ToString("F2"), currency = "USD" },
-                        description = "Thanh toán đơn hàng"
-                    }
-                },
-                redirect_urls = new RedirectUrls
-                {
-                    return_url = returnUrl,
-                    cancel_url = cancelUrl
-                }
-            };
+        var createdPayment = await Task.Run(() => payment.Create(apiContext)); // Đẩy vào Task.Run
+        var approvalUrl = createdPayment.links.First(l => l.rel.ToLower() == "approval_url").href;
 
-            var createdPayment = payment.Create(apiContext);
-            return createdPayment.GetApprovalUrl();
-        }
+        return approvalUrl;
+    }
+    public bool ExecutePayment(string paymentId, string payerId)
+    {
+        var config = new Dictionary<string, string> { { "mode", _payPalConfig.Mode } };
+        var accessToken = new OAuthTokenCredential(_payPalConfig.ClientId, _payPalConfig.ClientSecret, config).GetAccessToken();
+        var apiContext = new APIContext(accessToken) { Config = config };
 
-        public bool ExecutePayment(string paymentId, string payerId)
-        {
-            var apiContext = GetAPIContext();
-            var payment = new Payment() { id = paymentId };
-            var paymentExecution = new PaymentExecution() { payer_id = payerId };
-            var executedPayment = payment.Execute(apiContext, paymentExecution);
+        var payment = new Payment() { id = paymentId };
+        var executedPayment = payment.Execute(apiContext, new PaymentExecution() { payer_id = payerId });
 
-            return executedPayment.state.ToLower() == "approved";
-        }
+        return executedPayment.state.ToLower() == "approved";
     }
 }
