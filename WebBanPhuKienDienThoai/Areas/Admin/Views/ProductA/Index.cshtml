@@ -16,7 +16,7 @@
                 <th>Price</th>
                 <th>Description</th>
                 <th>Category</th>
-                <th>Device Type</th>
+                <th>Stock</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -31,7 +31,7 @@
                     <td>@product.Price.ToString("#,##0") VNĐ</td>
                     <td>@product.Description</td>
                     <td>@(product.Category?.Name ?? "N/A")</td>
-                    <td>@(product.DeviceType?.Name ?? "N/A")</td>
+                    <td>@(product.Stock.ToString() ?? "N/A")</td>
                     <td>
                         <a class="btn btn-sm btn-info" asp-area="Admin" asp-action="Display" asp-route-id="@product.Id">View</a>
                         <a class="btn btn-sm btn-warning" asp-area="Admin" asp-action="Update" asp-route-id="@product.Id">Edit</a>

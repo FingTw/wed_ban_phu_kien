@@ -1,50 +1,107 @@
 ﻿@model WebBanPhuKienDienThoai.Models.ShoppingCart
 
-<section class="py-5">
+<style>
+    .cart-table th, .cart-table td {
+        vertical-align: middle;
+    }
+
+    .cart-table .quantity-input {
+        width: 70px;
+    }
+
+    .btn-action {
+        transition: all 0.3s ease;
+    }
+
+        .btn-action:hover {
+            transform: scale(1.05);
+        }
+
+    .discount-form .btn {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .discount-form .form-control {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .tfoot-total {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+</style>
+
+<section class="py-5 bg-light">
     <div class="container px-4 px-lg-5">
-        <h2 class="fw-bold mb-4 text-center">Giỏ hàng của bạn</h2>
+        <h2 class="fw-bold mb-4 text-center text-dark">Giỏ hàng của bạn</h2>
 
         @if (Model.Items == null || !Model.Items.Any())
         {
-            <div class="alert alert-info text-center">
-                Giỏ hàng của bạn đang trống. <a asp-controller="Home" asp-action="Index" class="alert-link">Tiếp tục mua sắm</a>.
+            <div class="alert alert-info text-center shadow-sm">
+                Giỏ hàng của bạn đang trống.
+                <a asp-controller="Home" asp-action="Index" class="alert-link text-primary fw-bold">
+                    <i class="bi bi-cart-plus me-1"></i> Tiếp tục mua sắm
+                </a>.
             </div>
         }
         else
         {
-            <div class="table-responsive">
-                <table class="table table-hover align-middle">
+            <div class="table-responsive shadow-sm rounded">
+                <table class="table table-hover align-middle cart-table bg-white">
+                    <div class="input-group mb-3 discount-form w-50 mx-auto">
+                        <form asp-action="ApplyDiscount" method="post" class="input-group">
+                            <input type="text" id="discountCode" name="discountCode" class="form-control" placeholder="Nhập mã giảm giá" />
+                            <button type="submit" id="apply-discount" class="btn btn-danger">
+                                <i class="bi bi-tag-fill me-1"></i> Áp dụng
+                            </button>
+                        </form>
+                        @if (TempData["DiscountSuccess"] != null)
+                        {
+                            <div class="text-success mt-2 w-100 text-center">
+                                @TempData["DiscountSuccess"]
+                            </div>
+                        }
+                        @if (TempData["DiscountError"] != null)
+                        {
+                            <div class="text-danger mt-2 w-100 text-center">
+                                @TempData["DiscountError"]
+                            </div>
+                        }
+                    </div>
                     <thead class="table-light">
                         <tr>
-                            <th>Sản phẩm</th>
-                            <th>Số lượng</th>
-                            <th>Giá</th>
-                            <th>Tổng</th>
-                            <th>Hành động</th>
+                            <th scope="col">Sản phẩm</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Tổng</th>
+                            <th scope="col">Hành động</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var item in Model.Items)
                         {
                             <tr data-productid="@item.ProductId">
-                                <td>@item.Name</td>
+                                <td class="fw-medium text-dark">@item.Name</td>
                                 <td>
-                                    <div class="input-group w-50">
-                                        <input type="number" class="form-control quantity-input text-center" data-productid="@item.ProductId" value="@item.Quantity" min="1" />
-                                       
-                                    </div>
+                                    <form asp-action="UpdateCart" method="post" class="input-group w-100 justify-content-center">
+                                        <input type="hidden" name="productId" value="@item.ProductId" />
+                                        <input type="number" name="quantity" class="form-control quantity-input text-center border-primary" value="@item.Quantity" min="1" onchange="this.form.submit()" />
+                                    </form>
                                 </td>
-                                <td>@item.Price.ToString("#,##0") VNĐ</td>
-                                <td class="item-total">@((item.Price * item.Quantity).ToString("#,##0")) VNĐ</td>
+                                <td class="text-muted">@item.Price.ToString("#,##0") VNĐ</td>
+                                <td class="item-total fw-semibold text-dark">@((item.Price * item.Quantity).ToString("#,##0")) VNĐ</td>
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-outline-danger me-2 remove-item" data-productid="@item.ProductId">
-                                        <i class="bi bi-trash"></i> Xóa
-                                    </a>
+                                    <form asp-action="RemoveFromCart" method="post" class="d-inline">
+                                        <input type="hidden" name="productId" value="@item.ProductId" />
+                                        <button type="submit" class="btn btn-sm btn-outline-danger btn-action">
+                                            <i class="bi bi-trash-fill"></i> Xóa
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         }
                     </tbody>
-                    <tfoot>
+                    <tfoot class="tfoot-total">
                         @{
                             var totalPrice = Model.Items.Sum(item => item.Price * item.Quantity);
                             var discount = TempData["DiscountAmount"] != null ? (decimal)TempData["DiscountAmount"] : 0;
@@ -52,53 +109,39 @@
                             TempData.Keep("DiscountAmount");
                         }
                         <tr>
-                            <td colspan="3" class="text-end">Tổng tiền sản phẩm:</td>
-                            <td id="total-price">@totalPrice.ToString("#,##0") VNĐ</td>
+                            <td colspan="3" class="text-end text-muted">Tổng tiền sản phẩm:</td>
+                            <td class="text-dark">@totalPrice.ToString("#,##0") VNĐ</td>
                             <td></td>
                         </tr>
                         @if (discount > 0)
                         {
                             <tr>
-                                <td colspan="3" class="text-end">Số tiền đã giảm:</td>
-                                <td id="discount-amount">@discount.ToString("#,##0") VNĐ</td>
+                                <td colspan="3" class="text-end text-success">Số tiền đã giảm:</td>
+                                <td class="text-success">@discount.ToString("#,##0") VNĐ</td>
                                 <td></td>
                             </tr>
-                            <tr class="fw-bold">
-                                <td colspan="3" class="text-end">Tổng tiền:</td>
-                                <td id="final-price">@finalPrice.ToString("#,##0") VNĐ</td>
+                            <tr class="text-primary">
+                                <td colspan="3" class="text-end">Tổng tiền thanh toán:</td>
+                                <td>@finalPrice.ToString("#,##0") VNĐ</td>
                                 <td></td>
                             </tr>
                         }
                     </tfoot>
                 </table>
             </div>
-
             <div class="row mt-4">
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <input type="text" id="discountCode" class="form-control" placeholder="Nhập mã giảm giá" />
-                        <button id="apply-discount" class="btn btn-outline-danger">Áp dụng</button>
-                    </div>
-                    <div id="discount-message" class="mt-2">
-                        @if (TempData["DiscountSuccess"] != null)
-                        {
-                            <div class="alert alert-success">@TempData["DiscountSuccess"]</div>
-                        }
-                        @if (TempData["DiscountError"] != null)
-                        {
-                            <div class="alert alert-danger">@TempData["DiscountError"]</div>
-                        }
-                    </div>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary me-2">
-                        <i class="bi bi-arrow-left"></i> Tiếp tục mua sắm
+                <div class="col-md-12 text-end">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-action me-2">
+                        <i class="bi bi-arrow-left me-1"></i> Tiếp tục mua sắm
                     </a>
-                    <a href="#" id="clear-cart" class="btn btn-danger me-2">Xóa giỏ hàng</a>
-                    <a asp-controller="ShoppingCart" asp-action="Checkout" class="btn btn-primary">
-                        Thanh toán <i class="bi bi-arrow-right"></i>
+                    <form asp-action="ClearCart" method="post" class="d-inline">
+                        <button type="submit" id="clear-cart" class="btn btn-danger btn-action me-2">
+                            <i class="bi bi-cart-x me-1"></i> Xóa giỏ hàng
+                        </button>
+                    </form>
+                    <a asp-controller="ShoppingCart" asp-action="Checkout" class="btn btn-primary btn-action">
+                        Thanh toán <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-
                 </div>
             </div>
         }

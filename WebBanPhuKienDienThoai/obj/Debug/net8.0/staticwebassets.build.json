@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H6NJ3U4e6RmwSQ7MNn3wgLk2x/cAm0R99FX++EWNiJM=",
+  "Hash": "z+QcaPpEIbWbAs9wlSDUaFYVSKVYszZP68uiJPl20uE=",
   "Source": "WebBanPhuKienDienThoai",
   "BasePath": "_content/WebBanPhuKienDienThoai",
   "Mode": "Default",
@@ -2110,8 +2110,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8dastvwmil",
-      "Integrity": "fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk=",
+      "Fingerprint": "5nd3pz2oc7",
+      "Integrity": "0ayTClhGagMKL1MCNKK10urQSx14x1cxoTUjxSME4D8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Addtocart.js"
@@ -8801,7 +8801,7 @@
       ]
     },
     {
-      "Route": "js/Addtocart.8dastvwmil.js",
+      "Route": "js/Addtocart.5nd3pz2oc7.js",
       "AssetFile": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Addtocart.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8811,7 +8811,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6160"
+          "Value": "6523"
         },
         {
           "Name": "Content-Type",
@@ -8819,11 +8819,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk=\""
+          "Value": "\"0ayTClhGagMKL1MCNKK10urQSx14x1cxoTUjxSME4D8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:29:20 GMT"
+          "Value": "Tue, 08 Apr 2025 09:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8833,7 +8833,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8dastvwmil"
+          "Value": "5nd3pz2oc7"
         },
         {
           "Name": "label",
@@ -8841,7 +8841,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk="
+          "Value": "sha256-0ayTClhGagMKL1MCNKK10urQSx14x1cxoTUjxSME4D8="
         }
       ]
     },
@@ -8856,7 +8856,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6160"
+          "Value": "6523"
         },
         {
           "Name": "Content-Type",
@@ -8864,11 +8864,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk=\""
+          "Value": "\"0ayTClhGagMKL1MCNKK10urQSx14x1cxoTUjxSME4D8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:29:20 GMT"
+          "Value": "Tue, 08 Apr 2025 09:44:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8878,7 +8878,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fLzmDMqd3yEAFeahhM8qNL6Fpd9ZnO/UxiChsN7Ubxk="
+          "Value": "sha256-0ayTClhGagMKL1MCNKK10urQSx14x1cxoTUjxSME4D8="
         }
       ]
     },

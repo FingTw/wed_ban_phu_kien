@@ -12,14 +12,13 @@ namespace WebBanPhuKienDienThoai.Controllers
             _payPalService = payPalService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> CreatePayment(int orderId, decimal totalPrice, string returnUrl, string cancelUrl)
+        public IActionResult CreatePayment()
         {
-            // Tạo payment cho PayPal và lấy approvalUrl
-            var paypalOrderId = await _payPalService.CreatePayment(totalPrice, returnUrl, cancelUrl);
+            string returnUrl = Url.Action("PaymentSuccess", "PayPal", null, Request.Scheme);
+            string cancelUrl = Url.Action("PaymentCancel", "PayPal", null, Request.Scheme);
 
-            // Chuyển hướng người dùng tới PayPal
-            return Redirect($"https://www.paypal.com/checkoutnow?token={paypalOrderId}");
+            string approvalUrl = _payPalService.CreatePayment(10.00m, returnUrl, cancelUrl);
+            return Redirect(approvalUrl);
         }
 
         public IActionResult PaymentSuccess(string paymentId, string PayerID)

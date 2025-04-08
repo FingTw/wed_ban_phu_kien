@@ -1,8 +1,10 @@
-﻿@*
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
+@inject IViewLocalizer Localizer
 @model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
 
 @foreach (var product in Model.Where(p => p.Stock > 0))
@@ -39,34 +41,10 @@
                 <a class="compare btn btn-primary" data-productid="@product.Id" data-name="@product.Name" data-image="@product.ImageUrl">
                     +
                 </a>
-                <a href="#" class="btn btn-dark add-to-cart-btn-global px-4" data-product-id="@product.Id">Add to Cart</a>
+                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@product.Id, 1); return false;">@Localizer["Add to Cart"]</a>
 
             </div>
         </div>
     </div>
 }
-<script>
-    function addToCart(productId, quantity) {
-        $.ajax({
-            url: '@Url.Action("AddToCart", "ShoppingCart")',
-            type: 'POST',
-            data: { productId: productId, quantity: quantity },
-            success: function (response) {
-                if (response.success) {
-                    alert("Đã thêm vào giỏ hàng!");
-                } else {
-                    alert("Thêm thất bại: " + response.message);
-                }
-            },
-            error: function () {
-                alert("Có lỗi xảy ra!");
-            }
-        });
-    }
 
-    $(document).on("click", ".add-to-cart-btn-global", function (e) {
-        e.preventDefault();
-        const productId = $(this).data("product-id");
-        addToCart(productId, 1);
-    });
-</script>

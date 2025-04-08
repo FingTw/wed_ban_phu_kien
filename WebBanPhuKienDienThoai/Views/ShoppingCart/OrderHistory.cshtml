@@ -1,58 +1,66 @@
 ﻿@using System.Security.Claims
 @model IEnumerable<WebBanPhuKienDienThoai.Models.Order>
 
-<h2>Lịch sử đơn hàng</h2>
+<h2 class="my-4 text-center">🧾 Lịch sử đơn hàng</h2>
 
 @if (!Model.Any())
 {
-    <p>Bạn chưa có đơn hàng nào.</p>
+    <div class="alert alert-info text-center">
+        Bạn chưa có đơn hàng nào.
+    </div>
 }
 else
 {
     <div class="accordion" id="orderHistoryAccordion">
         @foreach (var order in Model)
         {
-            <div class="accordion-item">
+            <div class="accordion-item mb-3 shadow-sm border rounded">
                 <h2 class="accordion-header" id="heading-@order.Id">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@order.Id" aria-expanded="true" aria-controls="collapse-@order.Id">
-                        Đơn hàng #@order.Id - @order.OrderDate.ToString("dd/MM/yyyy")
+                    <button class="accordion-button fw-semibold bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@order.Id" aria-expanded="true" aria-controls="collapse-@order.Id">
+                        🛒 Đơn hàng #@order.Id - @order.OrderDate.ToString("dd/MM/yyyy")
                     </button>
                 </h2>
                 <div id="collapse-@order.Id" class="accordion-collapse collapse" aria-labelledby="heading-@order.Id" data-bs-parent="#orderHistoryAccordion">
                     <div class="accordion-body">
-                        <h5>Chi tiết đơn hàng</h5>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Sản phẩm</th>
-                                    <th>Số lượng</th>
-                                    <th>Giá</th>
-                                    <th>Tổng</th>
-                                    <th>Đánh giá</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in order.OrderDetails)
-                                {
+                        <h5 class="mb-3">🧾 Chi tiết đơn hàng</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered align-middle">
+                                <thead class="table-light text-center">
                                     <tr>
-                                        <td>@item.Product.Name</td>
-                                        <td>@item.Quantity</td>
-                                        <td>@item.Price.ToString("#,##0") VNĐ</td>
-                                        <td>@((item.Price * item.Quantity).ToString("#,##0")) VNĐ</td>
-                                        <td>
-                                            @if (item.Product.Ratings.Any(r => r.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier)))
-                                            {
-                                                <span>Đã đánh giá</span>
-                                            }
-                                            else
-                                            {
-                                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ratingModal-@item.ProductId">Đánh giá</button>
-                                            }
-                                        </td>
+                                        <th>Sản phẩm</th>
+                                        <th>Số lượng</th>
+                                        <th>Giá</th>
+                                        <th>Tổng</th>
+                                        <th>Đánh giá</th>
                                     </tr>
-                                }
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in order.OrderDetails)
+                                    {
+                                        <tr>
+                                            <td>@item.Product.Name</td>
+                                            <td class="text-center">@item.Quantity</td>
+                                            <td>@item.Price.ToString("#,##0") VNĐ</td>
+                                            <td>@((item.Price * item.Quantity).ToString("#,##0")) VNĐ</td>
+                                            <td class="text-center">
+                                                @if (item.Product.Ratings.Any(r => r.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier)))
+                                                {
+                                                    <span class="badge bg-success">
+                                                        <i class="bi bi-check-circle"></i> Đã đánh giá
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ratingModal-@item.ProductId">
+                                                        <i class="bi bi-star-fill"></i> Đánh giá
+                                                    </button>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,17 +74,19 @@ else
     @foreach (var item in order.OrderDetails)
     {
         <div class="modal fade" id="ratingModal-@item.ProductId" tabindex="-1" aria-labelledby="ratingModalLabel-@item.ProductId" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ratingModalLabel-@item.ProductId">Đánh giá sản phẩm @item.Product.Name</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content shadow">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="ratingModalLabel-@item.ProductId">
+                            <i class="bi bi-star-half"></i> Đánh giá sản phẩm: @item.Product.Name
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form asp-action="AddRating" method="post">
                             <input type="hidden" name="productId" value="@item.ProductId" />
                             <div class="mb-3">
-                                <label for="stars" class="form-label">Số sao</label>
+                                <label class="form-label">Số sao</label>
                                 <select name="stars" class="form-select" required>
                                     @for (int i = 1; i <= 5; i++)
                                     {
@@ -85,10 +95,14 @@ else
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="review" class="form-label">Nhận xét</label>
-                                <textarea name="review" class="form-control" rows="3" required></textarea>
+                                <label class="form-label">Nhận xét</label>
+                                <textarea name="review" class="form-control" rows="3" placeholder="Viết nhận xét của bạn..." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-success">
+                                    <i class="bi bi-send-fill"></i> Gửi đánh giá
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>

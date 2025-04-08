@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebBanPhuKienDienThoai.Models;
 
 namespace WebBanPhuKienDienThoai.Controllers
@@ -21,9 +22,13 @@ namespace WebBanPhuKienDienThoai.Controllers
         public async Task<IActionResult> AddRating(int productId, int stars)
         {
             var user = await _userManager.GetUserAsync(User);
-            if (user == null)
+            if (user == null) return Unauthorized();
+
+            bool alreadyRated = await _context.Ratings.AnyAsync(r => r.ProductId == productId && r.UserId == user.Id);
+            if (alreadyRated)
             {
-                return Unauthorized();
+                TempData["Message"] = "Bạn đã đánh giá sản phẩm này rồi.";
+                return RedirectToAction("Display", "Product", new { id = productId });
             }
 
             var rating = new Rating
@@ -37,7 +42,9 @@ namespace WebBanPhuKienDienThoai.Controllers
             _context.Ratings.Add(rating);
             await _context.SaveChangesAsync();
 
+            TempData["Message"] = "Đánh giá đã được gửi. Cảm ơn bạn!";
             return RedirectToAction("Display", "Product", new { id = productId });
         }
+
     }
 }

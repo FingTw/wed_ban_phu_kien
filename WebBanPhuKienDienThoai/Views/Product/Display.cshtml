@@ -1,9 +1,10 @@
+@using Microsoft.AspNetCore.Mvc.Localization
 @model WebBanPhuKienDienThoai.Models.Product
 
 @{
     ViewData["Title"] = "Product Details";
 }
-
+@inject IViewLocalizer Localizer
 <style>
     /* Custom styles to complement Bootstrap */
     .product-detail-background {
@@ -82,7 +83,7 @@
                             <p class="card-text"><strong>Mô tả:</strong> @Model.Description</p>
                             <p class="card-text"><strong>Danh mục:</strong> @(Model.Category?.Name)</p>
                             <div class="d-flex gap-2">
-                                <a asp-controller="ShoppingCart" asp-action="AddToCart" class="btn btn-danger add-to-cart-btn-global" data-product-id="@Model.Id">
+                                <a href="#" onclick="addToCart(@Model.Id, 1); return false;" @Localizer["Add to Cart"] class="btn btn-danger add-to-cart-btn-global" >
                                     <i class="fas fa-cart-plus"></i> Add to Cart
                                 </a>
                                 <a class="btn btn-primary" href="@Url.Action("Index", "Product")">
