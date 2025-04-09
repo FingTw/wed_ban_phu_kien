@@ -86,6 +86,9 @@
                                 <a href="#" onclick="addToCart(@Model.Id, 1); return false;" @Localizer["Add to Cart"] class="btn btn-danger add-to-cart-btn-global" >
                                     <i class="fas fa-cart-plus"></i> Add to Cart
                                 </a>
+                                
+                                @* <a href="#" class="btn btn-dark me-2" onclick="addToCart(@Model.Id, 1); return false;">@Localizer["Add to Cart"]</a> *@
+
                                 <a class="btn btn-primary" href="@Url.Action("Index", "Product")">
                                     <i class="fas fa-arrow-left"></i> Back to List
                                 </a>

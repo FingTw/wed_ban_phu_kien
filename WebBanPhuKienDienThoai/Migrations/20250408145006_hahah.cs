@@ -5,7 +5,7 @@
 namespace WebBanPhuKienDienThoai.Migrations
 {
     /// <inheritdoc />
-    public partial class iiiip : Migration
+    public partial class hahah : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

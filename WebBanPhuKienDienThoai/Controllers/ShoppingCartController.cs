@@ -25,6 +25,18 @@ namespace WebBanPhuKienDienThoai.Controllers
             _payPalService = payPalService;
         }
 
+        public IActionResult Index()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var discount = HttpContext.Session.GetObjectFromJson<decimal>("DiscountAmount", 0m);
+            var viewModel = new ShoppingCartViewModel
+            {
+                Cart = cart,
+                TotalPrice = cart.Items.Sum(item => item.Price * item.Quantity),
+                Discount = discount
+            };
+            return View(viewModel);
+        }
 
         public async Task<IActionResult> Checkout()
         {
@@ -65,7 +77,7 @@ namespace WebBanPhuKienDienThoai.Controllers
                         discountAmount = discount.DiscountAmount.Value;
                     }
                     order.TotalPrice -= discountAmount;
-                    TempData["DiscountAmount"] = discountAmount;
+                    HttpContext.Session.SetObjectAsJson("DiscountAmount", discountAmount); // Dùng Session
                     TempData["DiscountSuccess"] = $"Đã áp dụng mã giảm giá: {(discount.DiscountPercent.HasValue ? $"{discount.DiscountPercent}%" : $"{discount.DiscountAmount:N0} VNĐ")}";
                 }
             }
@@ -102,7 +114,11 @@ namespace WebBanPhuKienDienThoai.Controllers
             }).ToList();
             order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
 
-            // Xử lý discount...
+            var discount = HttpContext.Session.GetObjectFromJson<decimal>("DiscountAmount", 0m); // Lấy từ Session
+            if (discount > 0)
+            {
+                order.TotalPrice -= discount;
+            }
 
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
@@ -117,22 +133,17 @@ namespace WebBanPhuKienDienThoai.Controllers
 
             HttpContext.Session.Remove("Cart");
             HttpContext.Session.Remove("DiscountCode");
+            HttpContext.Session.Remove("DiscountAmount"); // Xóa discount sau khi hoàn tất
 
-            // Nếu người dùng chọn phương thức thanh toán PayPal
             if (paymentMethod == "PayPal")
             {
-                // Tạo PayPal Order và chuyển hướng đến PayPalController
                 var returnUrl = Url.Action("PaymentSuccess", "Paypal", null, Request.Scheme);
                 var cancelUrl = Url.Action("PaymentCancel", "Paypal", null, Request.Scheme);
-
-                // Chuyển hướng đến action CreatePayment trong PayPalController
                 return RedirectToAction("CreatePayment", "Paypal", new { orderId = order.Id, totalPrice = order.TotalPrice, returnUrl, cancelUrl });
             }
 
             return View("OrderCompleted", order.Id);
         }
-
-
 
         [AllowAnonymous]
         public async Task<IActionResult> AddToCart(int productId, int quantity)
@@ -155,12 +166,11 @@ namespace WebBanPhuKienDienThoai.Controllers
                 Name = product.Name,
                 Price = product.Price,
                 Quantity = quantity,
-                 Stock = product.Stock
+                Stock = product.Stock
             };
             cart.AddItem(cartItem);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
 
-            // Tính tổng tiền của sản phẩm vừa thêm
             decimal itemTotal = product.Price * totalQuantity;
             return Json(new
             {
@@ -171,21 +181,14 @@ namespace WebBanPhuKienDienThoai.Controllers
                 itemTotal = itemTotal
             });
         }
+
         public IActionResult GetCartSummary()
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
             var totalPrice = cart.Items.Sum(item => item.Price * item.Quantity);
-            var discount = TempData["DiscountAmount"] != null ? (decimal)TempData["DiscountAmount"] : 0;
-            TempData.Keep("DiscountAmount");
+            var discount = HttpContext.Session.GetObjectFromJson<decimal>("DiscountAmount", 0m); // Lấy từ Session
             return Json(new { totalPrice, discount });
         }
-
-        public IActionResult Index()
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-            return View(cart);
-        }
-
 
         [AllowAnonymous]
         public async Task<IActionResult> CompareProducts(string productIds)
@@ -246,13 +249,23 @@ namespace WebBanPhuKienDienThoai.Controllers
                         {
                             discountAmount = discount.DiscountAmount.Value;
                         }
-                        TempData["DiscountAmount"] = discountAmount;
+                        HttpContext.Session.SetObjectAsJson("DiscountAmount", discountAmount);
                         HttpContext.Session.SetString("DiscountCode", discount.Code);
                         TempData["DiscountSuccess"] = $"Đã áp dụng mã giảm giá: {(discount.DiscountPercent.HasValue ? $"{discount.DiscountPercent}%" : $"{discount.DiscountAmount:N0} VNĐ")}";
                     }
                 }
             }
-            return RedirectToAction("Index");
+
+            // Tạo ShoppingCartViewModel để trả về
+            var updatedCart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var updatedDiscount = HttpContext.Session.GetObjectFromJson<decimal>("DiscountAmount", 0m);
+            var viewModel = new ShoppingCartViewModel
+            {
+                Cart = updatedCart,
+                TotalPrice = updatedCart.Items.Sum(item => item.Price * item.Quantity),
+                Discount = updatedDiscount
+            };
+            return View("Index", viewModel);
         }
         private async Task<Product> GetProductFromDatabase(int productId)
         {
@@ -268,7 +281,16 @@ namespace WebBanPhuKienDienThoai.Controllers
                 cart.RemoveItem(productId);
                 HttpContext.Session.SetObjectAsJson("Cart", cart);
             }
-            return RedirectToAction("Index");
+
+            // Tạo ShoppingCartViewModel để trả về
+            var discount = HttpContext.Session.GetObjectFromJson<decimal>("DiscountAmount", 0m);
+            var viewModel = new ShoppingCartViewModel
+            {
+                Cart = cart,
+                TotalPrice = cart.Items.Sum(item => item.Price * item.Quantity),
+                Discount = discount
+            };
+            return View("Index", viewModel);
         }
 
         [HttpPost]
@@ -296,13 +318,23 @@ namespace WebBanPhuKienDienThoai.Controllers
                     }
                 }
             }
-            return RedirectToAction("Index");
+
+            // Tạo ShoppingCartViewModel để trả về
+            var discount = HttpContext.Session.GetObjectFromJson<decimal>("DiscountAmount", 0m);
+            var viewModel = new ShoppingCartViewModel
+            {
+                Cart = cart,
+                TotalPrice = cart.Items.Sum(item => item.Price * item.Quantity),
+                Discount = discount
+            };
+            return View("Index", viewModel);
         }
 
         [HttpPost]
         public IActionResult ClearCart()
         {
             HttpContext.Session.Remove("Cart");
+            HttpContext.Session.Remove("DiscountAmount"); // Xóa discount khi xóa giỏ hàng
             return Json(new { success = true, itemCount = 0 });
         }
 
@@ -331,5 +363,4 @@ namespace WebBanPhuKienDienThoai.Controllers
             return RedirectToAction("OrderHistory");
         }
     }
-
 }

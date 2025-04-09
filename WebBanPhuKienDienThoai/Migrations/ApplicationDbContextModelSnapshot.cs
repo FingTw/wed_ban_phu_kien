@@ -691,6 +691,9 @@ namespace WebBanPhuKienDienThoai.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<decimal?>("DiscountAmount")
                         .HasColumnType("decimal(18,2)");
 
@@ -699,6 +702,9 @@ namespace WebBanPhuKienDienThoai.Migrations
 
                     b.Property<DateTime>("ExpiryDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("UsageCount")
                         .HasColumnType("int");
@@ -719,6 +725,9 @@ namespace WebBanPhuKienDienThoai.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("DiscountCodeId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Notes")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -738,6 +747,8 @@ namespace WebBanPhuKienDienThoai.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DiscountCodeId");
 
                     b.HasIndex("UserId");
 
@@ -973,6 +984,10 @@ namespace WebBanPhuKienDienThoai.Migrations
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>
                 {
+                    b.HasOne("WebBanPhuKienDienThoai.Models.DiscountCode", null)
+                        .WithMany("Orders")
+                        .HasForeignKey("DiscountCodeId");
+
                     b.HasOne("WebBanPhuKienDienThoai.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
@@ -1069,6 +1084,11 @@ namespace WebBanPhuKienDienThoai.Migrations
                     b.Navigation("DeviceTypeCategories");
 
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.DiscountCode", b =>
+                {
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>

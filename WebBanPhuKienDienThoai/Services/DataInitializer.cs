@@ -37,16 +37,39 @@ namespace WebBanPhuKienDienThoai.Services
                 var random = new Random();
                 var products = new List<Product>();
 
+                // Đường dẫn thư mục chứa ảnh mẫu
+                var imageSourceDir = Path.Combine(Directory.GetCurrentDirectory(), "SeedData", "Images");
+                var imageDestDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+
+                // Lấy danh sách file ảnh mẫu
+                var sampleImages = Directory.GetFiles(imageSourceDir, "*.jpg").Select(Path.GetFileName).ToList();
+                if (!sampleImages.Any())
+                {
+                    sampleImages.Add("default.jpg"); // Ảnh mặc định nếu không có ảnh mẫu
+                }
+
                 for (int i = 1; i <= 50; i++)
                 {
+                    // Chọn ngẫu nhiên một ảnh mẫu
+                    var sampleImage = sampleImages[random.Next(0, sampleImages.Count)];
+                    var sourcePath = Path.Combine(imageSourceDir, sampleImage);
+                    var destFileName = Guid.NewGuid().ToString() + Path.GetExtension(sampleImage);
+                    var destPath = Path.Combine(imageDestDir, destFileName);
+
+                    // Sao chép file ảnh vào wwwroot/images
+                    if (File.Exists(sourcePath))
+                    {
+                        File.Copy(sourcePath, destPath, true);
+                    }
+
                     products.Add(new Product
                     {
                         Name = $"Product {i}",
                         Price = random.Next(10000, 1000000),
                         Description = $"Description for product {i}",
                         Stock = random.Next(1, 100),
-                        ImageUrl = "~/images/iphone-16-blue-600x600.png",
-                        CategoryId = random.Next(1, 11), 
+                        ImageUrl = "/images/" + destFileName, // Đường dẫn tương đối
+                        CategoryId = random.Next(1, 11),
                         DeviceTypeId = random.Next(1, 6),
                         CreatedAt = DateTime.UtcNow
                     });

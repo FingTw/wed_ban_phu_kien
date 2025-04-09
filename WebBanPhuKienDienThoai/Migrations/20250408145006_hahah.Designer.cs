@@ -12,8 +12,8 @@ using WebBanPhuKienDienThoai.Models;
 namespace WebBanPhuKienDienThoai.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250325083321_initialOrderss")]
-    partial class initialOrderss
+    [Migration("20250408145006_hahah")]
+    partial class hahah
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -315,6 +315,37 @@ namespace WebBanPhuKienDienThoai.Migrations
                             Description = "Giúp giữ điện thoại ổn định khi xem phim, livestream.",
                             Name = "Giá đỡ điện thoại"
                         });
+                });
+
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.DeviceType", b =>
@@ -651,6 +682,38 @@ namespace WebBanPhuKienDienThoai.Migrations
                         });
                 });
 
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.DiscountCode", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("DiscountAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<double?>("DiscountPercent")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UsageCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsageLimit")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DiscountCodes");
+                });
+
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -779,6 +842,40 @@ namespace WebBanPhuKienDienThoai.Migrations
                     b.ToTable("ProductImages");
                 });
 
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Rating", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Review")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Stars")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Ratings");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -828,6 +925,25 @@ namespace WebBanPhuKienDienThoai.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Comment", b =>
+                {
+                    b.HasOne("WebBanPhuKienDienThoai.Models.Product", "Product")
+                        .WithMany("Comments")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebBanPhuKienDienThoai.Models.ApplicationUser", "User")
+                        .WithMany("Comments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.DeviceType", b =>
@@ -916,6 +1032,32 @@ namespace WebBanPhuKienDienThoai.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Rating", b =>
+                {
+                    b.HasOne("WebBanPhuKienDienThoai.Models.Product", "Product")
+                        .WithMany("Ratings")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebBanPhuKienDienThoai.Models.ApplicationUser", "User")
+                        .WithMany("Ratings")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("WebBanPhuKienDienThoai.Models.ApplicationUser", b =>
+                {
+                    b.Navigation("Comments");
+
+                    b.Navigation("Ratings");
+                });
+
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Category", b =>
                 {
                     b.Navigation("DeviceTypeCategories");
@@ -939,7 +1081,11 @@ namespace WebBanPhuKienDienThoai.Migrations
 
             modelBuilder.Entity("WebBanPhuKienDienThoai.Models.Product", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Images");
+
+                    b.Navigation("Ratings");
                 });
 #pragma warning restore 612, 618
         }

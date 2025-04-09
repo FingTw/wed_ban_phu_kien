@@ -1,4 +1,5 @@
-﻿@model WebBanPhuKienDienThoai.Models.ShoppingCart
+﻿@using WebBanPhuKienDienThoai.Extensions
+@model WebBanPhuKienDienThoai.Models.ShoppingCartViewModel
 
 <style>
     .cart-table th, .cart-table td {
@@ -35,7 +36,7 @@
     <div class="container px-4 px-lg-5">
         <h2 class="fw-bold mb-4 text-center text-dark">Giỏ hàng của bạn</h2>
 
-        @if (Model.Items == null || !Model.Items.Any())
+        @if (Model.Cart == null || !Model.Cart.Items.Any())
         {
             <div class="alert alert-info text-center shadow-sm">
                 Giỏ hàng của bạn đang trống.
@@ -78,7 +79,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model.Items)
+                        @foreach (var item in Model.Cart.Items)
                         {
                             <tr data-productid="@item.ProductId">
                                 <td class="fw-medium text-dark">@item.Name</td>
@@ -102,27 +103,21 @@
                         }
                     </tbody>
                     <tfoot class="tfoot-total">
-                        @{
-                            var totalPrice = Model.Items.Sum(item => item.Price * item.Quantity);
-                            var discount = TempData["DiscountAmount"] != null ? (decimal)TempData["DiscountAmount"] : 0;
-                            var finalPrice = totalPrice - discount;
-                            TempData.Keep("DiscountAmount");
-                        }
                         <tr>
                             <td colspan="3" class="text-end text-muted">Tổng tiền sản phẩm:</td>
-                            <td class="text-dark">@totalPrice.ToString("#,##0") VNĐ</td>
+                            <td class="text-dark">@Model.TotalPrice.ToString("#,##0") VNĐ</td>
                             <td></td>
                         </tr>
-                        @if (discount > 0)
+                        @if (Model.Discount > 0)
                         {
                             <tr>
                                 <td colspan="3" class="text-end text-success">Số tiền đã giảm:</td>
-                                <td class="text-success">@discount.ToString("#,##0") VNĐ</td>
+                                <td class="text-success">@Model.Discount.ToString("#,##0") VNĐ</td>
                                 <td></td>
                             </tr>
                             <tr class="text-primary">
                                 <td colspan="3" class="text-end">Tổng tiền thanh toán:</td>
-                                <td>@finalPrice.ToString("#,##0") VNĐ</td>
+                                <td>@Model.FinalPrice.ToString("#,##0") VNĐ</td>
                                 <td></td>
                             </tr>
                         }

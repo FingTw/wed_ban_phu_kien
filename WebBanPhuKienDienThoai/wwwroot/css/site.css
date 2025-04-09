@@ -60,6 +60,10 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-image: url('~\images\bgbody.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .floating-dot {

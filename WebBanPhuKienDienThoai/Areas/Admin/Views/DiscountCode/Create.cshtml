@@ -1,34 +1,109 @@
-﻿@model WebBanPhuKienDienThoai.Models.DiscountCode
+﻿
 
-<h2>Create Discount Code</h2>
+@model WebBanPhuKienDienThoai.Models.DiscountCode
 
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="Code" class="control-label"></label>
-        <input asp-for="Code" class="form-control" />
-        <span asp-validation-for="Code" class="text-danger"></span>
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">Tạo mã giảm giá mới</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Code" class="control-label">Mã giảm giá</label>
+                            <div class="input-group">
+                                <input asp-for="Code" class="form-control" required />
+                                <button type="button" id="generateCodeBtn" class="btn btn-outline-secondary">
+                                    <i class="bi bi-arrow-repeat"></i> Tạo mã
+                                </button>
+                            </div>
+                            <span asp-validation-for="Code" class="text-danger"></span>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="DiscountAmount" class="control-label">Số tiền giảm (VNĐ)</label>
+                                    <input asp-for="DiscountAmount" class="form-control" placeholder="Nhập số tiền giảm" />
+                                    <span asp-validation-for="DiscountAmount" class="text-danger"></span>
+                                    <small class="form-text text-muted">Nhập số tiền cố định được giảm</small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="DiscountPercent" class="control-label">Phần trăm giảm (%)</label>
+                                    <input asp-for="DiscountPercent" class="form-control" placeholder="Nhập % giảm" />
+                                    <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+                                    <small class="form-text text-muted">Nhập phần trăm giảm giá</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="bi bi-exclamation-triangle"></i> Chỉ nhập một trong hai: Số tiền giảm HOẶC Phần trăm giảm
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="ExpiryDate" class="control-label">Hạn sử dụng</label>
+                                    <input asp-for="ExpiryDate" class="form-control" type="datetime-local" required />
+                                    <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="UsageLimit" class="control-label">Số lần sử dụng tối đa</label>
+                                    <input asp-for="UsageLimit" class="form-control" min="1" value="1" required />
+                                    <span asp-validation-for="UsageLimit" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4 d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Quay lại
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-save"></i> Lưu
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label asp-for="DiscountPercent" class="control-label"></label>
-        <input asp-for="DiscountPercent" class="form-control" />
-        <span asp-validation-for="DiscountPercent" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="DiscountAmount" class="control-label"></label>
-        <input asp-for="DiscountAmount" class="form-control" />
-        <span asp-validation-for="DiscountAmount" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="ExpiryDate" class="control-label"></label>
-        <input asp-for="ExpiryDate" type="date" class="form-control" />
-        <span asp-validation-for="ExpiryDate" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="UsageLimit" class="control-label"></label>
-        <input asp-for="UsageLimit" type="number" class="form-control" min="1" />
-        <span asp-validation-for="UsageLimit" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <button type="submit" value="Create" class="btn btn-primary">Create</button>
-    </div>
-</form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function() {
+            // Tạo mã ngẫu nhiên
+            $("#generateCodeBtn").click(function() {
+                $.get("/Admin/DiscountCode/GenerateCode", function(data) {
+                    $("#Code").val(data.code);
+                });
+            });
+
+            // Kiểm tra chỉ nhập một trong hai trường
+            $("#DiscountAmount, #DiscountPercent").on("input", function() {
+                const amountField = $("#DiscountAmount");
+                const percentField = $("#DiscountPercent");
+
+                if ($(this).attr("id") === "DiscountAmount" && $(this).val() !== "") {
+                    percentField.val("");
+                } else if ($(this).attr("id") === "DiscountPercent" && $(this).val() !== "") {
+                    amountField.val("");
+                }
+            });
+        });
+    </script>
+}

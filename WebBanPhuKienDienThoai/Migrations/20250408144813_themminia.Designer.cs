@@ -12,8 +12,8 @@ using WebBanPhuKienDienThoai.Models;
 namespace WebBanPhuKienDienThoai.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250407050234_dahgia")]
-    partial class dahgia
+    [Migration("20250408144813_themminia")]
+    partial class themminia
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
