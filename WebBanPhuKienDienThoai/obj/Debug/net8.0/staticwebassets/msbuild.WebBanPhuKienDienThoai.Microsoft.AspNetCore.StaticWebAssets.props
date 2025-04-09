@@ -108,6 +108,168 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0347-gia-do-dien-thoai-nhom-at-1-js618.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\059d1a09-21bc-4845-8a5d-5ff3dbed36c1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/059d1a09-21bc-4845-8a5d-5ff3dbed36c1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>igrqm5igsa</Fingerprint>
+      <Integrity>gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\059d1a09-21bc-4845-8a5d-5ff3dbed36c1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\091a5302-8321-4ba8-8c83-7d1d603edda6.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/091a5302-8321-4ba8-8c83-7d1d603edda6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oxg3uulbiu</Fingerprint>
+      <Integrity>hGEa5GhE/oD4nmjRIbzhvA4td+iQW6BVSJg6QpTvat0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\091a5302-8321-4ba8-8c83-7d1d603edda6.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f0e4241-57f7-49ac-a624-887d0a5eb41a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/0f0e4241-57f7-49ac-a624-887d0a5eb41a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xgt4imt2k5</Fingerprint>
+      <Integrity>MShkIKuaz5MSCToSdM8p2VxvNrMeE3g18txE1Dpu/80=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f0e4241-57f7-49ac-a624-887d0a5eb41a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f1d1859-0abd-47f8-a378-fccaa540aedd.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/0f1d1859-0abd-47f8-a378-fccaa540aedd.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xgt4imt2k5</Fingerprint>
+      <Integrity>MShkIKuaz5MSCToSdM8p2VxvNrMeE3g18txE1Dpu/80=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f1d1859-0abd-47f8-a378-fccaa540aedd.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f6a7420-5dcf-479c-bb5a-08ad701daafb.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/0f6a7420-5dcf-479c-bb5a-08ad701daafb.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>71sv1qmb5z</Fingerprint>
+      <Integrity>VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f6a7420-5dcf-479c-bb5a-08ad701daafb.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1b338bdb-4799-4513-b31f-57ba96b5e131.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/1b338bdb-4799-4513-b31f-57ba96b5e131.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yikzf3wjji</Fingerprint>
+      <Integrity>qm11sYk7QkdD2ZO+H3N2KaMAIDpgBizekL8FIUuX1lg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1b338bdb-4799-4513-b31f-57ba96b5e131.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1cd43a57-1632-4560-9dbc-d0f5df622976.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/1cd43a57-1632-4560-9dbc-d0f5df622976.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xgt4imt2k5</Fingerprint>
+      <Integrity>MShkIKuaz5MSCToSdM8p2VxvNrMeE3g18txE1Dpu/80=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1cd43a57-1632-4560-9dbc-d0f5df622976.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1de48678-f614-4afa-acbd-563d829338d4.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/1de48678-f614-4afa-acbd-563d829338d4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8wygn7htlv</Fingerprint>
+      <Integrity>qFdyQ6SNrGNJLP2Pbljj8nBgk7FVasgGK3+zUy7XR50=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1de48678-f614-4afa-acbd-563d829338d4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1ed4788d-b5e2-4b3d-a69f-33f089ceec01.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/1ed4788d-b5e2-4b3d-a69f-33f089ceec01.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0ngpxf6msf</Fingerprint>
+      <Integrity>hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1ed4788d-b5e2-4b3d-a69f-33f089ceec01.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1fc768ca974ed7aa495f561738fc8a48.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>WebBanPhuKienDienThoai</SourceId>
@@ -125,6 +287,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1fc768ca974ed7aa495f561738fc8a48.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\223a0481-7dd0-4bc2-af2e-26314889ba93.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/223a0481-7dd0-4bc2-af2e-26314889ba93.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>71sv1qmb5z</Fingerprint>
+      <Integrity>VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\223a0481-7dd0-4bc2-af2e-26314889ba93.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\25fb97aa-0a59-49f9-8ff1-1070c6fab548.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/25fb97aa-0a59-49f9-8ff1-1070c6fab548.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xmrczf8oeg</Fingerprint>
+      <Integrity>6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\25fb97aa-0a59-49f9-8ff1-1070c6fab548.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\26692e6b-1207-4f2d-8f48-53a04f9883d2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/26692e6b-1207-4f2d-8f48-53a04f9883d2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>uebhi0szn9</Fingerprint>
+      <Integrity>+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\26692e6b-1207-4f2d-8f48-53a04f9883d2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\278407c7-2af9-45b7-bc6f-c2cc819a3fe6.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/278407c7-2af9-45b7-bc6f-c2cc819a3fe6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0ngpxf6msf</Fingerprint>
+      <Integrity>hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\278407c7-2af9-45b7-bc6f-c2cc819a3fe6.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2_52721.jpg'))">
       <SourceType>Package</SourceType>
@@ -144,6 +378,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2_52721.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\30a7f791-c05e-4a56-a0f6-543ad17a230e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/30a7f791-c05e-4a56-a0f6-543ad17a230e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xmrczf8oeg</Fingerprint>
+      <Integrity>6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\30a7f791-c05e-4a56-a0f6-543ad17a230e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\34f63cc6-a958-4168-9454-6aa1b9f9aefa.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/34f63cc6-a958-4168-9454-6aa1b9f9aefa.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aoz4y9n0x0</Fingerprint>
+      <Integrity>miMWYxIMq6JaJ3D1+BwhREJrRH0maQGC+d6OkvK27Es=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\34f63cc6-a958-4168-9454-6aa1b9f9aefa.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\356765977343_online_img.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>WebBanPhuKienDienThoai</SourceId>
@@ -161,6 +431,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\356765977343_online_img.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3f26c319-df22-49ce-b869-b149687074d1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/3f26c319-df22-49ce-b869-b149687074d1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>37k39oyy8z</Fingerprint>
+      <Integrity>/zGhfNS6l5dqIcYiOrAnWIqTfngN9EekbE4WvOBEGiE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3f26c319-df22-49ce-b869-b149687074d1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\44eb6773-17b4-4873-afa4-a78b60c4a8ca.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/44eb6773-17b4-4873-afa4-a78b60c4a8ca.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0h6sxi9p4f</Fingerprint>
+      <Integrity>xCidDfZ7V7dfhQca6sftaLa/yECLbTHxfiALmUySIAM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\44eb6773-17b4-4873-afa4-a78b60c4a8ca.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg'))">
       <SourceType>Package</SourceType>
@@ -180,6 +486,222 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4713e01b-aa63-47a2-80eb-5568cebabd77.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/4713e01b-aa63-47a2-80eb-5568cebabd77.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>71sv1qmb5z</Fingerprint>
+      <Integrity>VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4713e01b-aa63-47a2-80eb-5568cebabd77.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4a39bb07-2319-4987-b1d6-e32cb50e8593.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/4a39bb07-2319-4987-b1d6-e32cb50e8593.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xgt4imt2k5</Fingerprint>
+      <Integrity>MShkIKuaz5MSCToSdM8p2VxvNrMeE3g18txE1Dpu/80=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4a39bb07-2319-4987-b1d6-e32cb50e8593.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\51166aa2-b456-4380-9dbd-4f3ae0d3cadd.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/51166aa2-b456-4380-9dbd-4f3ae0d3cadd.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0ngpxf6msf</Fingerprint>
+      <Integrity>hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\51166aa2-b456-4380-9dbd-4f3ae0d3cadd.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\52618cac-2a9f-4a2f-84e1-115e51fac267.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/52618cac-2a9f-4a2f-84e1-115e51fac267.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>71sv1qmb5z</Fingerprint>
+      <Integrity>VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\52618cac-2a9f-4a2f-84e1-115e51fac267.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\52894e0e-81f5-4953-84a8-6d347332e1bc.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/52894e0e-81f5-4953-84a8-6d347332e1bc.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xod4jnj1n5</Fingerprint>
+      <Integrity>r8LpTIUyaD69HCkXmUiRIVfccY1T2Ghxn8EaORlBfCk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\52894e0e-81f5-4953-84a8-6d347332e1bc.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\545f65a7-0a40-4fa4-9eda-1cc475568c72.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/545f65a7-0a40-4fa4-9eda-1cc475568c72.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8wygn7htlv</Fingerprint>
+      <Integrity>qFdyQ6SNrGNJLP2Pbljj8nBgk7FVasgGK3+zUy7XR50=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\545f65a7-0a40-4fa4-9eda-1cc475568c72.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\568d6a81-9569-4246-8e6d-f046862d013f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/568d6a81-9569-4246-8e6d-f046862d013f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>uebhi0szn9</Fingerprint>
+      <Integrity>+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\568d6a81-9569-4246-8e6d-f046862d013f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\57e079ef-435e-4fb4-ade8-ee5faa635536.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/57e079ef-435e-4fb4-ade8-ee5faa635536.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>uebhi0szn9</Fingerprint>
+      <Integrity>+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\57e079ef-435e-4fb4-ade8-ee5faa635536.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\59a336f6-05cc-479c-ba79-16ee1ea94ef8.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/59a336f6-05cc-479c-ba79-16ee1ea94ef8.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wgno7s8x9b</Fingerprint>
+      <Integrity>MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\59a336f6-05cc-479c-ba79-16ee1ea94ef8.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5c23b6b7-211c-4d35-86b2-83dd3a7c197b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/5c23b6b7-211c-4d35-86b2-83dd3a7c197b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>11475dnc3k</Fingerprint>
+      <Integrity>2wboKQgSh7qaTkyXV4l0yvWo221Iu3meDDWfyB1W40M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5c23b6b7-211c-4d35-86b2-83dd3a7c197b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\753f25d8-2c97-49b6-aad6-1f01f9deee12.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/753f25d8-2c97-49b6-aad6-1f01f9deee12.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0h6sxi9p4f</Fingerprint>
+      <Integrity>xCidDfZ7V7dfhQca6sftaLa/yECLbTHxfiALmUySIAM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\753f25d8-2c97-49b6-aad6-1f01f9deee12.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7f0da7b7-d878-40ea-a78a-347d9163adc8.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/7f0da7b7-d878-40ea-a78a-347d9163adc8.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oxg3uulbiu</Fingerprint>
+      <Integrity>hGEa5GhE/oD4nmjRIbzhvA4td+iQW6BVSJg6QpTvat0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7f0da7b7-d878-40ea-a78a-347d9163adc8.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>WebBanPhuKienDienThoai</SourceId>
@@ -198,6 +720,78 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\861f81b7-4f81-4f3f-9b57-4bc9794587be.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/861f81b7-4f81-4f3f-9b57-4bc9794587be.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xod4jnj1n5</Fingerprint>
+      <Integrity>r8LpTIUyaD69HCkXmUiRIVfccY1T2Ghxn8EaORlBfCk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\861f81b7-4f81-4f3f-9b57-4bc9794587be.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\98cbb8da-65b8-4d75-9e5f-36a2e2ccdb8e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/98cbb8da-65b8-4d75-9e5f-36a2e2ccdb8e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ongvqupird</Fingerprint>
+      <Integrity>7Pf3YbSdciOzW5EPHgMMv6LfO4TbzhyU7x+G/kwhZ8g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\98cbb8da-65b8-4d75-9e5f-36a2e2ccdb8e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9f5fb16f-207f-4ccd-b389-109327c2035e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/9f5fb16f-207f-4ccd-b389-109327c2035e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>uebhi0szn9</Fingerprint>
+      <Integrity>+tliOlazMrrpjdESdXvNsrdHW7FLZUe94ZfZTCY0/Io=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9f5fb16f-207f-4ccd-b389-109327c2035e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a12614f3-fefa-4e8b-93a2-99c21024a76a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/a12614f3-fefa-4e8b-93a2-99c21024a76a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aoz4y9n0x0</Fingerprint>
+      <Integrity>miMWYxIMq6JaJ3D1+BwhREJrRH0maQGC+d6OkvK27Es=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a12614f3-fefa-4e8b-93a2-99c21024a76a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\apple-airpods-max-1_1.webp'))">
       <SourceType>Package</SourceType>
       <SourceId>WebBanPhuKienDienThoai</SourceId>
@@ -215,6 +809,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\apple-airpods-max-1_1.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b490b0f1-14cf-4cc1-b47b-4e5c86b04d56.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/b490b0f1-14cf-4cc1-b47b-4e5c86b04d56.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>igrqm5igsa</Fingerprint>
+      <Integrity>gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b490b0f1-14cf-4cc1-b47b-4e5c86b04d56.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b7f61a83-1e4e-44d5-bf50-fdb1899cabe5.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/b7f61a83-1e4e-44d5-bf50-fdb1899cabe5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>11475dnc3k</Fingerprint>
+      <Integrity>2wboKQgSh7qaTkyXV4l0yvWo221Iu3meDDWfyB1W40M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b7f61a83-1e4e-44d5-bf50-fdb1899cabe5.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\banner.jpg'))">
       <SourceType>Package</SourceType>
@@ -252,6 +882,114 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\bgbody.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c155b055-b436-48d7-a81f-b1413ec00440.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/c155b055-b436-48d7-a81f-b1413ec00440.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wgno7s8x9b</Fingerprint>
+      <Integrity>MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c155b055-b436-48d7-a81f-b1413ec00440.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c304c1de-4a32-40d1-87fe-dd4279b141f6.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/c304c1de-4a32-40d1-87fe-dd4279b141f6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aoz4y9n0x0</Fingerprint>
+      <Integrity>miMWYxIMq6JaJ3D1+BwhREJrRH0maQGC+d6OkvK27Es=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c304c1de-4a32-40d1-87fe-dd4279b141f6.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c8dfa270-a112-47cc-9b65-cd04f7ee5d5f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/c8dfa270-a112-47cc-9b65-cd04f7ee5d5f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ongvqupird</Fingerprint>
+      <Integrity>7Pf3YbSdciOzW5EPHgMMv6LfO4TbzhyU7x+G/kwhZ8g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c8dfa270-a112-47cc-9b65-cd04f7ee5d5f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cab3bf75-06a4-4f6a-be90-3b6518d6d355.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/cab3bf75-06a4-4f6a-be90-3b6518d6d355.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0ngpxf6msf</Fingerprint>
+      <Integrity>hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cab3bf75-06a4-4f6a-be90-3b6518d6d355.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cd0f2ffe-52d5-42cb-946e-04d916a32ca2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/cd0f2ffe-52d5-42cb-946e-04d916a32ca2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>37k39oyy8z</Fingerprint>
+      <Integrity>/zGhfNS6l5dqIcYiOrAnWIqTfngN9EekbE4WvOBEGiE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cd0f2ffe-52d5-42cb-946e-04d916a32ca2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cf8068ef-b1ee-49ad-85b4-0ae7309ed78a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/cf8068ef-b1ee-49ad-85b4-0ae7309ed78a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>igrqm5igsa</Fingerprint>
+      <Integrity>gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cf8068ef-b1ee-49ad-85b4-0ae7309ed78a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp'))">
       <SourceType>Package</SourceType>
       <SourceId>WebBanPhuKienDienThoai</SourceId>
@@ -288,6 +1026,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cu-sac-sikenai---2a5v_1661910493.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d81f54e8-956b-4a44-9184-f4db75db61e5.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/d81f54e8-956b-4a44-9184-f4db75db61e5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0ngpxf6msf</Fingerprint>
+      <Integrity>hKIETTky1cOh1fUz8+kpfUPDwNvKfnnMcVsj9GM+N28=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d81f54e8-956b-4a44-9184-f4db75db61e5.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\db0e56ae-3dc8-4d1d-a175-ed96f92396c1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/db0e56ae-3dc8-4d1d-a175-ed96f92396c1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wgno7s8x9b</Fingerprint>
+      <Integrity>MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\db0e56ae-3dc8-4d1d-a175-ed96f92396c1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Designer.png'))">
       <SourceType>Package</SourceType>
       <SourceId>WebBanPhuKienDienThoai</SourceId>
@@ -305,6 +1079,132 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Designer.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e42747b7-f071-46b3-9775-21775de71bed.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/e42747b7-f071-46b3-9775-21775de71bed.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wgno7s8x9b</Fingerprint>
+      <Integrity>MFyNgeoiJR+Zx4Ic3UGv3Eab1d1Ja86SvFmx02Dyirk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e42747b7-f071-46b3-9775-21775de71bed.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\eb60a52a-a938-41ad-ae1d-a6a87ad6ae0a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/eb60a52a-a938-41ad-ae1d-a6a87ad6ae0a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>71sv1qmb5z</Fingerprint>
+      <Integrity>VffxyZjt1+2YgXTgWdTnqddkPQ727+EU9cMGYND0GUU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\eb60a52a-a938-41ad-ae1d-a6a87ad6ae0a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\eeaa6e11-ca00-4b6f-a469-46f4f7ec795e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/eeaa6e11-ca00-4b6f-a469-46f4f7ec795e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ongvqupird</Fingerprint>
+      <Integrity>7Pf3YbSdciOzW5EPHgMMv6LfO4TbzhyU7x+G/kwhZ8g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\eeaa6e11-ca00-4b6f-a469-46f4f7ec795e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f366f73f-dcee-4d54-bc01-ad5188987e62.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/f366f73f-dcee-4d54-bc01-ad5188987e62.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>37k39oyy8z</Fingerprint>
+      <Integrity>/zGhfNS6l5dqIcYiOrAnWIqTfngN9EekbE4WvOBEGiE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f366f73f-dcee-4d54-bc01-ad5188987e62.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f5a1a316-cdc7-472f-b8ad-dc7cfb326bad.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/f5a1a316-cdc7-472f-b8ad-dc7cfb326bad.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>igrqm5igsa</Fingerprint>
+      <Integrity>gjfjvIfhck0KLWugICAr8UhPCHK8hTq2hhrvdky9eeY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f5a1a316-cdc7-472f-b8ad-dc7cfb326bad.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fc547f84-cd98-4949-9d82-8970ecd9779b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/fc547f84-cd98-4949-9d82-8970ecd9779b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xod4jnj1n5</Fingerprint>
+      <Integrity>r8LpTIUyaD69HCkXmUiRIVfccY1T2Ghxn8EaORlBfCk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fc547f84-cd98-4949-9d82-8970ecd9779b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\feb5ac85-b642-40bc-9b54-78656076a39c.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebBanPhuKienDienThoai</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebBanPhuKienDienThoai</BasePath>
+      <RelativePath>images/feb5ac85-b642-40bc-9b54-78656076a39c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xmrczf8oeg</Fingerprint>
+      <Integrity>6TVGsU66KGUrCyf9ZfJN16FIwVcvRGeY/XcMRnleIlg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\feb5ac85-b642-40bc-9b54-78656076a39c.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\images (1).jpg'))">
       <SourceType>Package</SourceType>

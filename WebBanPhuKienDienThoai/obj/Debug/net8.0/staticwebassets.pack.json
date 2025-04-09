@@ -1,407 +1,607 @@
 {
   "Files": [
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanPhuKienDienThoai.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebBanPhuKienDienThoai.a656irfxqd.bundle.scp.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\ajax-loader.gif",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\css\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\vendor.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\css\\vendor.css",
       "PackagePath": "staticwebassets\\css\\vendor.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\0347-gia-do-dien-thoai-nhom-at-1-js618.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\0347-gia-do-dien-thoai-nhom-at-1-js618.jpg",
       "PackagePath": "staticwebassets\\images\\0347-gia-do-dien-thoai-nhom-at-1-js618.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\059d1a09-21bc-4845-8a5d-5ff3dbed36c1.jpg",
+      "PackagePath": "staticwebassets\\images\\059d1a09-21bc-4845-8a5d-5ff3dbed36c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\091a5302-8321-4ba8-8c83-7d1d603edda6.jpg",
+      "PackagePath": "staticwebassets\\images\\091a5302-8321-4ba8-8c83-7d1d603edda6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\0f0e4241-57f7-49ac-a624-887d0a5eb41a.jpg",
+      "PackagePath": "staticwebassets\\images\\0f0e4241-57f7-49ac-a624-887d0a5eb41a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\0f1d1859-0abd-47f8-a378-fccaa540aedd.jpg",
+      "PackagePath": "staticwebassets\\images\\0f1d1859-0abd-47f8-a378-fccaa540aedd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\0f6a7420-5dcf-479c-bb5a-08ad701daafb.jpg",
+      "PackagePath": "staticwebassets\\images\\0f6a7420-5dcf-479c-bb5a-08ad701daafb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1b338bdb-4799-4513-b31f-57ba96b5e131.jpg",
+      "PackagePath": "staticwebassets\\images\\1b338bdb-4799-4513-b31f-57ba96b5e131.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1cd43a57-1632-4560-9dbc-d0f5df622976.jpg",
+      "PackagePath": "staticwebassets\\images\\1cd43a57-1632-4560-9dbc-d0f5df622976.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1de48678-f614-4afa-acbd-563d829338d4.jpg",
+      "PackagePath": "staticwebassets\\images\\1de48678-f614-4afa-acbd-563d829338d4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1ed4788d-b5e2-4b3d-a69f-33f089ceec01.jpg",
+      "PackagePath": "staticwebassets\\images\\1ed4788d-b5e2-4b3d-a69f-33f089ceec01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg",
       "PackagePath": "staticwebassets\\images\\1fc768ca974ed7aa495f561738fc8a48.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\2_52721.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\223a0481-7dd0-4bc2-af2e-26314889ba93.jpg",
+      "PackagePath": "staticwebassets\\images\\223a0481-7dd0-4bc2-af2e-26314889ba93.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\25fb97aa-0a59-49f9-8ff1-1070c6fab548.jpg",
+      "PackagePath": "staticwebassets\\images\\25fb97aa-0a59-49f9-8ff1-1070c6fab548.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\26692e6b-1207-4f2d-8f48-53a04f9883d2.jpg",
+      "PackagePath": "staticwebassets\\images\\26692e6b-1207-4f2d-8f48-53a04f9883d2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\278407c7-2af9-45b7-bc6f-c2cc819a3fe6.jpg",
+      "PackagePath": "staticwebassets\\images\\278407c7-2af9-45b7-bc6f-c2cc819a3fe6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\2_52721.jpg",
       "PackagePath": "staticwebassets\\images\\2_52721.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\356765977343_online_img.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\30a7f791-c05e-4a56-a0f6-543ad17a230e.jpg",
+      "PackagePath": "staticwebassets\\images\\30a7f791-c05e-4a56-a0f6-543ad17a230e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\34f63cc6-a958-4168-9454-6aa1b9f9aefa.jpg",
+      "PackagePath": "staticwebassets\\images\\34f63cc6-a958-4168-9454-6aa1b9f9aefa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\356765977343_online_img.jpg",
       "PackagePath": "staticwebassets\\images\\356765977343_online_img.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\3f26c319-df22-49ce-b869-b149687074d1.jpg",
+      "PackagePath": "staticwebassets\\images\\3f26c319-df22-49ce-b869-b149687074d1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\44eb6773-17b4-4873-afa4-a78b60c4a8ca.jpg",
+      "PackagePath": "staticwebassets\\images\\44eb6773-17b4-4873-afa4-a78b60c4a8ca.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg",
       "PackagePath": "staticwebassets\\images\\46116_laptop_lenovo_v15_g3_iap_82tt005svn____2_.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\4713e01b-aa63-47a2-80eb-5568cebabd77.jpg",
+      "PackagePath": "staticwebassets\\images\\4713e01b-aa63-47a2-80eb-5568cebabd77.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\4a39bb07-2319-4987-b1d6-e32cb50e8593.jpg",
+      "PackagePath": "staticwebassets\\images\\4a39bb07-2319-4987-b1d6-e32cb50e8593.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\51166aa2-b456-4380-9dbd-4f3ae0d3cadd.jpg",
+      "PackagePath": "staticwebassets\\images\\51166aa2-b456-4380-9dbd-4f3ae0d3cadd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\52618cac-2a9f-4a2f-84e1-115e51fac267.jpg",
+      "PackagePath": "staticwebassets\\images\\52618cac-2a9f-4a2f-84e1-115e51fac267.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\52894e0e-81f5-4953-84a8-6d347332e1bc.jpg",
+      "PackagePath": "staticwebassets\\images\\52894e0e-81f5-4953-84a8-6d347332e1bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\545f65a7-0a40-4fa4-9eda-1cc475568c72.jpg",
+      "PackagePath": "staticwebassets\\images\\545f65a7-0a40-4fa4-9eda-1cc475568c72.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\568d6a81-9569-4246-8e6d-f046862d013f.jpg",
+      "PackagePath": "staticwebassets\\images\\568d6a81-9569-4246-8e6d-f046862d013f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\57e079ef-435e-4fb4-ade8-ee5faa635536.jpg",
+      "PackagePath": "staticwebassets\\images\\57e079ef-435e-4fb4-ade8-ee5faa635536.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\59a336f6-05cc-479c-ba79-16ee1ea94ef8.jpg",
+      "PackagePath": "staticwebassets\\images\\59a336f6-05cc-479c-ba79-16ee1ea94ef8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\5c23b6b7-211c-4d35-86b2-83dd3a7c197b.jpg",
+      "PackagePath": "staticwebassets\\images\\5c23b6b7-211c-4d35-86b2-83dd3a7c197b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\753f25d8-2c97-49b6-aad6-1f01f9deee12.jpg",
+      "PackagePath": "staticwebassets\\images\\753f25d8-2c97-49b6-aad6-1f01f9deee12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\7f0da7b7-d878-40ea-a78a-347d9163adc8.jpg",
+      "PackagePath": "staticwebassets\\images\\7f0da7b7-d878-40ea-a78a-347d9163adc8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg",
       "PackagePath": "staticwebassets\\images\\8588_56249_man_hinh_hp_series_7_pro_724pu_8y2f7aa_1.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Designer.png",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\861f81b7-4f81-4f3f-9b57-4bc9794587be.jpg",
+      "PackagePath": "staticwebassets\\images\\861f81b7-4f81-4f3f-9b57-4bc9794587be.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\98cbb8da-65b8-4d75-9e5f-36a2e2ccdb8e.jpg",
+      "PackagePath": "staticwebassets\\images\\98cbb8da-65b8-4d75-9e5f-36a2e2ccdb8e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\9f5fb16f-207f-4ccd-b389-109327c2035e.jpg",
+      "PackagePath": "staticwebassets\\images\\9f5fb16f-207f-4ccd-b389-109327c2035e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Designer.png",
       "PackagePath": "staticwebassets\\images\\Designer.png"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\MYYU3.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\MYYU3.jpg",
       "PackagePath": "staticwebassets\\images\\MYYU3.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Op-lung-tu-tinh-mo_2.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\Op-lung-tu-tinh-mo_2.jpg",
       "PackagePath": "staticwebassets\\images\\Op-lung-tu-tinh-mo_2.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\apple-airpods-max-1_1.webp",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\a12614f3-fefa-4e8b-93a2-99c21024a76a.jpg",
+      "PackagePath": "staticwebassets\\images\\a12614f3-fefa-4e8b-93a2-99c21024a76a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\apple-airpods-max-1_1.webp",
       "PackagePath": "staticwebassets\\images\\apple-airpods-max-1_1.webp"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\banner.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\b490b0f1-14cf-4cc1-b47b-4e5c86b04d56.jpg",
+      "PackagePath": "staticwebassets\\images\\b490b0f1-14cf-4cc1-b47b-4e5c86b04d56.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\b7f61a83-1e4e-44d5-bf50-fdb1899cabe5.jpg",
+      "PackagePath": "staticwebassets\\images\\b7f61a83-1e4e-44d5-bf50-fdb1899cabe5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\banner.jpg",
       "PackagePath": "staticwebassets\\images\\banner.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\bgbody.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\bgbody.jpg",
       "PackagePath": "staticwebassets\\images\\bgbody.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\c155b055-b436-48d7-a81f-b1413ec00440.jpg",
+      "PackagePath": "staticwebassets\\images\\c155b055-b436-48d7-a81f-b1413ec00440.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\c304c1de-4a32-40d1-87fe-dd4279b141f6.jpg",
+      "PackagePath": "staticwebassets\\images\\c304c1de-4a32-40d1-87fe-dd4279b141f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\c8dfa270-a112-47cc-9b65-cd04f7ee5d5f.jpg",
+      "PackagePath": "staticwebassets\\images\\c8dfa270-a112-47cc-9b65-cd04f7ee5d5f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cab3bf75-06a4-4f6a-be90-3b6518d6d355.jpg",
+      "PackagePath": "staticwebassets\\images\\cab3bf75-06a4-4f6a-be90-3b6518d6d355.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cd0f2ffe-52d5-42cb-946e-04d916a32ca2.jpg",
+      "PackagePath": "staticwebassets\\images\\cd0f2ffe-52d5-42cb-946e-04d916a32ca2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cf8068ef-b1ee-49ad-85b4-0ae7309ed78a.jpg",
+      "PackagePath": "staticwebassets\\images\\cf8068ef-b1ee-49ad-85b4-0ae7309ed78a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp",
       "PackagePath": "staticwebassets\\images\\cu-sac-laptop-ugreen-4c1a-300w-cd333-90903b-.webp"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-sikenai---2a5v_1661910493.png",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\cu-sac-sikenai---2a5v_1661910493.png",
       "PackagePath": "staticwebassets\\images\\cu-sac-sikenai---2a5v_1661910493.png"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (1).jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\d81f54e8-956b-4a44-9184-f4db75db61e5.jpg",
+      "PackagePath": "staticwebassets\\images\\d81f54e8-956b-4a44-9184-f4db75db61e5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\db0e56ae-3dc8-4d1d-a175-ed96f92396c1.jpg",
+      "PackagePath": "staticwebassets\\images\\db0e56ae-3dc8-4d1d-a175-ed96f92396c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\e42747b7-f071-46b3-9775-21775de71bed.jpg",
+      "PackagePath": "staticwebassets\\images\\e42747b7-f071-46b3-9775-21775de71bed.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\eb60a52a-a938-41ad-ae1d-a6a87ad6ae0a.jpg",
+      "PackagePath": "staticwebassets\\images\\eb60a52a-a938-41ad-ae1d-a6a87ad6ae0a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\eeaa6e11-ca00-4b6f-a469-46f4f7ec795e.jpg",
+      "PackagePath": "staticwebassets\\images\\eeaa6e11-ca00-4b6f-a469-46f4f7ec795e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\f366f73f-dcee-4d54-bc01-ad5188987e62.jpg",
+      "PackagePath": "staticwebassets\\images\\f366f73f-dcee-4d54-bc01-ad5188987e62.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\f5a1a316-cdc7-472f-b8ad-dc7cfb326bad.jpg",
+      "PackagePath": "staticwebassets\\images\\f5a1a316-cdc7-472f-b8ad-dc7cfb326bad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\fc547f84-cd98-4949-9d82-8970ecd9779b.jpg",
+      "PackagePath": "staticwebassets\\images\\fc547f84-cd98-4949-9d82-8970ecd9779b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\feb5ac85-b642-40bc-9b54-78656076a39c.jpg",
+      "PackagePath": "staticwebassets\\images\\feb5ac85-b642-40bc-9b54-78656076a39c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (1).jpg",
       "PackagePath": "staticwebassets\\images\\images (1).jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (3).jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (3).jpg",
       "PackagePath": "staticwebassets\\images\\images (3).jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (4).jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images (4).jpg",
       "PackagePath": "staticwebassets\\images\\images (4).jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images.png",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\images.png",
       "PackagePath": "staticwebassets\\images\\images.png"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\iphone-16-blue-600x600.png",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\iphone-16-blue-600x600.png",
       "PackagePath": "staticwebassets\\images\\iphone-16-blue-600x600.png"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg",
       "PackagePath": "staticwebassets\\images\\macbook-air-m2-bac_27fb644471d94f8eb774897a6ab437e8.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\macbook-air-m3-15-silver-2tmobile.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\macbook-air-m3-15-silver-2tmobile.jpg",
       "PackagePath": "staticwebassets\\images\\macbook-air-m3-15-silver-2tmobile.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg",
       "PackagePath": "staticwebassets\\images\\mieng-dan-man-hinh-samsung-galaxy-a15-pa-thumb1.-600x600.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg",
       "PackagePath": "staticwebassets\\images\\op-lung-magsafe-iphone-16-pro-nhua-trong-apple-600x600.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg",
       "PackagePath": "staticwebassets\\images\\ốp lưng silicon magsafe cho iphone 16 pro max - xám đá - 1.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png",
       "PackagePath": "staticwebassets\\images\\tai-nghe-khong-day-chong-on-sony-wh-ch720n-1_1679458320.png"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg",
       "PackagePath": "staticwebassets\\images\\tai-nghe-khong-day-tws-edifier-neobuds-plus-black-03.jpg"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Addtocart.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Addtocart.js",
       "PackagePath": "staticwebassets\\js\\Addtocart.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Gemini.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Gemini.js",
       "PackagePath": "staticwebassets\\js\\Gemini.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Shearcgh.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Shearcgh.js",
       "PackagePath": "staticwebassets\\js\\Shearcgh.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\Sosanh.js",
       "PackagePath": "staticwebassets\\js\\Sosanh.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\ajax-loader.gif",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\js\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\jquery-1.11.0.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\jquery-1.11.0.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-1.11.0.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\modernizr.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\modernizr.js",
       "PackagePath": "staticwebassets\\js\\modernizr.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\page.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\page.js",
       "PackagePath": "staticwebassets\\js\\page.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\plugins.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\plugins.js",
       "PackagePath": "staticwebassets\\js\\plugins.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\script.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\wed\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\ngogi\\Downloads\\wed_ban_phu_kien\\wed_ban_phu_kien\\WebBanPhuKienDienThoai\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
