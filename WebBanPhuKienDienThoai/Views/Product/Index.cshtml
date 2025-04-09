@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
+
 @{
     ViewData["Title"] = "Products";
     int numOfQuantity = 1;
@@ -20,7 +21,9 @@
                         <option value="">Tất cả</option>
                         @foreach (var category in ViewBag.Categories)
                         {
-                            <option value="@category.Id" selected="@(category.Id == ViewBag.CategoryId ? "selected" : null)">@category.Name</option>
+                            <option value="@category.Id" selected="@(category.Id == ViewBag.CategoryId ? "selected" : null)">
+                                @category.Name
+                            </option>
                         }
                     </select>
                 </div>
@@ -31,7 +34,9 @@
                         <option value="">Tất cả</option>
                         @foreach (var device in ViewBag.DeviceTypes)
                         {
-                            <option value="@device.Id" selected="@(device.Id == ViewBag.DeviceTypeId ? "selected" : null)">@device.Name</option>
+                            <option value="@device.Id" selected="@(device.Id == ViewBag.DeviceTypeId ? "selected" : null)">
+                                @device.Name
+                            </option>
                         }
                     </select>
                 </div>
@@ -41,16 +46,36 @@
                     <input type="range" class="form-range" id="minPrice" name="minPrice"
                            min="@ViewBag.MinPrice" max="@ViewBag.MaxPrice" value="@(ViewBag.MinPrice ?? 0)"
                            oninput="document.getElementById('minPriceValue').innerText = this.value" />
-                    <div class="small mb-2">Giá tối thiểu: <span id="minPriceValue">@ViewBag.MinPrice</span> VND</div>
+                    <div class="small mb-2">
+                        Giá tối thiểu: <span id="minPriceValue">@ViewBag.MinPrice</span> VND
+                    </div>
 
                     <input type="range" class="form-range" id="maxPrice" name="maxPrice"
                            min="@ViewBag.MinPrice" max="@ViewBag.MaxPrice" value="@(ViewBag.MaxPrice ?? 10000000)"
                            oninput="document.getElementById('maxPriceValue').innerText = this.value" />
-                    <div class="small">Giá tối đa: <span id="maxPriceValue">@ViewBag.MaxPrice</span> VND</div>
+                    <div class="small">
+                        Giá tối đa: <span id="maxPriceValue">@ViewBag.MaxPrice</span> VND
+                    </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100 mt-2">Áp dụng</button>
             </form>
+
+            <div class="mb-3"></div>
+
+            <form method="get" asp-action="Index">
+                <input type="hidden" name="priceFilter" value="@ViewData["CurrentFilter"]" />
+                <input type="hidden" name="sortOrder" value="priceAsc" />
+                <button type="submit" class="btn btn-secondary">Sắp xếp theo giá tăng dần</button>
+            </form>
+
+            <div class="mb-3">
+                <form method="get" asp-action="Index">
+                    <input type="hidden" name="priceFilter" value="@ViewData["CurrentFilter"]" />
+                    <input type="hidden" name="sortOrder" value="newest" />
+                    <button type="submit" class="btn btn-secondary">Sắp xếp theo sản phẩm mới</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -84,7 +109,10 @@
                             <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-outline-primary btn-sm">
                                 Chi tiết
                             </a>
-                            <a class="compare btn btn-primary btn-sm" data-productid="@product.Id" data-name="@product.Name" data-image="@product.ImageUrl">
+                            <a class="compare btn btn-primary btn-sm"
+                               data-productid="@product.Id"
+                               data-name="@product.Name"
+                               data-image="@product.ImageUrl">
                                 +
                             </a>
                             <a href="#" class="btn btn-dark btn-sm" onclick="addToCart(@product.Id, 1); return false;">
@@ -98,30 +126,27 @@
     </div>
 </div>
 
-
-
 <style>
     .product-img-hover {
         height: 220px;
         width: 100%;
-        object-fit: contain; /* <<-- fix hình bị cắt */
-       
+        object-fit: contain;
         padding: 10px;
         border-radius: 10px;
         transition: transform 0.3s ease;
     }
 
-        .product-img-hover:hover {
-            transform: scale(1.05);
-        }
+    .product-img-hover:hover {
+        transform: scale(1.05);
+    }
 
     .fa-star {
         color: #ddd;
     }
 
-        .fa-star.checked {
-            color: #f39c12;
-        }
+    .fa-star.checked {
+        color: #f39c12;
+    }
 
     .card-title {
         white-space: nowrap;
@@ -132,15 +157,11 @@
     .card-footer .btn {
         min-width: 80px;
     }
-
-
-    
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    
-
+    // Lazy loading placeholder - chưa bật
     // let page = 1;
     // let isLoading = false;
     // let hasMoreProducts = true;
@@ -171,8 +192,7 @@
     // }
 
     // $(document).ready(function () {
-    //     loadProducts(); Tải trang đầu tiên
-
+    //     loadProducts();
     //     let trigger = document.getElementById('load-trigger');
     //     if (trigger) {
     //         observer = new IntersectionObserver(function (entries) {
@@ -183,5 +203,4 @@
     //         observer.observe(trigger);
     //     }
     // });
-
 </script>
