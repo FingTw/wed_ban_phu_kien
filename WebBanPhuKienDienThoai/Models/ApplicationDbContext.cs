@@ -16,6 +16,8 @@ namespace WebBanPhuKienDienThoai.Models
         public DbSet<DeviceType> DeviceTypes { get; set; }
         public DbSet<DeviceTypeCategory> DeviceTypeCategories { get; set; }
         public DbSet<DiscountCode> DiscountCodes { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
+        public DbSet<Comment> Comments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -51,6 +53,30 @@ namespace WebBanPhuKienDienThoai.Models
                 .HasOne(dc => dc.Category)
                 .WithMany(c => c.DeviceTypeCategories)
                 .HasForeignKey(dc => dc.CategoryId);
+
+            modelBuilder.Entity<Comment>()
+           .HasOne(c => c.Product)
+           .WithMany(p => p.Comments)
+           .HasForeignKey(c => c.ProductId)
+           .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Comment>()
+                .HasOne(c => c.User)
+                .WithMany(u => u.Comments)
+                .HasForeignKey(c => c.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Rating>()
+                .HasOne(r => r.Product)
+                .WithMany(p => p.Ratings)
+                .HasForeignKey(r => r.ProductId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Rating>()
+                .HasOne(r => r.User)
+                .WithMany(u => u.Ratings)
+                .HasForeignKey(r => r.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "Ốp lưng", Description = "Bảo vệ điện thoại khỏi trầy xước và va đập." },

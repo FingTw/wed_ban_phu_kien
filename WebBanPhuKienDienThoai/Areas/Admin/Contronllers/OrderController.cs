@@ -10,7 +10,7 @@ using WebBanPhuKienDienThoai.Repositories;
 namespace WebBanPhuKienDienThoai.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = SD.Role_Admin + "," + SD.Role_Employee)]
     public class OrderController : Controller
     {
         private readonly IOrderRepository _orderRepository;

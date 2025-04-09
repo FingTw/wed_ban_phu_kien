@@ -8,71 +8,47 @@
 
 @model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
 
-@section Scripts {
-    <script>
-        $(document).ready(function () {
-            var selectedProducts = [];
 
-            $('.compare').on('click', function () {
-                var productId = $(this).data('productid');
-                var productName = $(this).data('name');
-                var productImage = $(this).data('image');
-                if (!selectedProducts.some(p => p.id === productId)) {
-                    selectedProducts.push({ id: productId, name: productName, image: productImage });
-                    updateCompareSection();
-                }
-            });
 
-            function updateCompareSection() {
-                var compareSection = $('#compare-section');
-                compareSection.empty();
-                selectedProducts.forEach(function (product, index) {
-                    compareSection.append(`
-                        <div class="compare-item">
-                            <img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;" />
-                            <span>${product.name}</span>
-                            <button class="remove-compare" data-index="${index}">×</button>
-                        </div>
-                    `);
-                });
-                if (selectedProducts.length > 0) {
-                    compareSection.append(`
-                        <div class="compare-actions">
-                            <button id="compare-now" class="btn btn-primary">@Localizer["Compare Now"]</button>
-                            <button id="clear-compare" class="btn btn-danger">@Localizer["Clear All"]</button>
-                        </div>
-                    `);
-                }
-            }
+<style>
+    .fa-star.checked {
+        color: orange;
+    }
 
-            $(document).on('click', '.remove-compare', function () {
-                var index = $(this).data('index');
-                selectedProducts.splice(index, 1);
-                updateCompareSection();
-            });
+    .scroll-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-            $(document).on('click', '#clear-compare', function () {
-                selectedProducts = [];
-                updateCompareSection();
-            });
+    #carousel-wrapper {
+        overflow: hidden;
+    }
 
-            $(document).on('click', '#compare-now', function () {
-                if (selectedProducts.length > 0) {
-                    var productIds = selectedProducts.map(p => p.id).join(',');
-                    window.location.href = '/ShoppingCart/CompareProducts?productIds=' + productIds;
-                } else {
-                    alert('@Localizer["Please select at least one product to compare!"]');
-                }
-            });
-        });
-    </script>
-}
+    #carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 1rem;
+    }
+
+    .slide {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        min-width: 100%;
+        padding: 0 0.5rem;
+        box-sizing: border-box;
+    }
+</style>
 
 <section class="bg-light py-5">
-    <div class="container">
+    <div class="container img-hover-zoom">
         <div class="row align-items-center">
             <div class="col-md-12 banner-container">
-                <img src="~/images/banner.jpg" alt="banner" class="banner-image">
+                <img src="~/images/banner.jpg" alt="banner" class="banner-image ">
                 <div class="col-md-6">
                     <h1 class="display-4 fw-bold">@Localizer["Products"]</h1>
                     <a href="@Url.Action("Index", "Product")" class="btn btn-dark mt-3">@Localizer["Shop Product"]</a>
@@ -121,44 +97,70 @@
     </div>
 </section>
 
-<section id="mobile-products" class="py-5">
+<section id="mobile-products" class="py-5 bg-white">
+    @{
+        int productsPerSlide = 4;
+        var productList = Model.Where(p => p.Stock > 0).ToList();
+        int slideCount = (int)Math.Ceiling((double)productList.Count / productsPerSlide);
+    }
+
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>@Localizer["Mobile Products"]</h2>
-            <a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark">@Localizer["Go to Shop"]</a>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="fw-bold">@Localizer["Featured Products"]</h2>
+            <div>
+                <button id="prevBtn" class="btn btn-outline-secondary scroll-btn me-2">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button id="nextBtn" class="btn btn-outline-secondary scroll-btn">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            @foreach (var item in Model.Take(4))
-            {
-                <div class="col">
-                    <div class="card h-100">
-                        <a asp-controller="Product" asp-action="Display" asp-route-id="@item.Id">
-                            <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="@Url.Action("Display", "Product", new { id = item.Id })">@item.Name</a>
-                            </h5>
-                            <p class="card-text">@item.Price.ToString("#,##0") VND</p>
-                            <div class="d-flex align-items-center">
-                                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@item.Id, 1); return false;">@Localizer["Add to Cart"]</a>
-                                <button class="compare btn btn-primary btn-sm"
-                                        data-productid="@item.Id"
-                                        data-name="@item.Name"
-                                        data-image="@item.ImageUrl">
-                                    +
-                                </button>
-                            </div>
-                        </div>
+        <div id="compare-section" class="mb-4 d-flex align-items-center flex-wrap gap-3 border rounded p-3 bg-white shadow-sm"></div>
+        <div id="carousel-wrapper">
+            <div id="carousel-inner">
+
+                @for (int i = 0; i < slideCount; i++)
+                {
+                    <div class="slide">
+                        @foreach (var product in productList.Skip(i * productsPerSlide).Take(productsPerSlide))
+                        {
+                            
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <a asp-controller="Product" asp-action="Display" asp-route-id="@product.Id">
+                                        <img src="@product.ImageUrl" class="card-img-top img-hover-zoom" alt="@product.Name">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="@Url.Action("Display", "Product", new { id = product.Id })">@product.Name</a>
+                                            </h5>
+                                            <p class="card-text">@product.Price.ToString("#,##0") VND</p>
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@product.Id, 1); return false;">@Localizer["Add to Cart"]</a>
+                                                <button class="compare btn btn-primary btn-sm"
+                                                        data-productid="@product.Id"
+                                                        data-name="@product.Name"
+                                                        data-image="@product.ImageUrl">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        }
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
-        <div id="compare-section" class="mt-4 d-flex align-items-center flex-wrap gap-3"></div>
     </div>
 </section>
 
-<section class="bg-light py-5">
+
+</section>
+
+<section id="yearly-sale" class="bg-light py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
@@ -182,7 +184,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="~/images/Case-MBP13-CrystalX.jpg" class="card-img-top" alt="post">
+                    <img src="~/images/images (3).jpg" class="card-img-top" alt="post">
                     <div class="card-body">
                         <p class="text-muted">Feb 22, 2023 - Gadgets</p>
                         <h5 class="card-title">
@@ -217,6 +219,29 @@
     </div>
 </section>
 
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">@Localizer["More Products"]</h2>
+            <p class="text-muted">@Localizer["Explore more accessories and gadgets"]</p>
+        </div>
+
+        <!-- Compare Section -->
+        <div id="compare-section" class="mb-4 d-flex align-items-center flex-wrap gap-3 border rounded p-3 bg-white shadow-sm"></div>
+
+        <!-- Dynamic Product Load -->
+        <div id="product-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4"></div>
+
+        <!-- Trigger Load More -->
+        <div id="load-trigger" class="text-center mt-4">
+            <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section class="bg-dark text-white py-5">
     <div class="container">
         <div class="row justify-content-center">
@@ -234,19 +259,85 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    function addToCart(productId, quantity) {
+    // function addToCart(productId, quantity) {
+    //     $.ajax({
+    //         url: '@Url.Action("AddToCart", "ShoppingCart")',
+    //         type: 'POST',
+    //         data: { productId: productId, quantity: quantity },
+    //         success: function (response) {
+    //             if (response.success) {
+    //                 alert(response.message);
+    //             }
+    //         },
+    //         error: function () {
+    //             alert("@Localizer["An error occurred!"]");
+    //         }
+    //     });
+    // }
+     let page = 1;
+    let isLoading = false;
+    let hasMoreProducts = true;
+    let observer = null;
+
+    function loadProducts() {
+        if (isLoading || !hasMoreProducts) return;
+        isLoading = true;
+
         $.ajax({
-            url: '@Url.Action("AddToCart", "ShoppingCart")',
-            type: 'POST',
-            data: { productId: productId, quantity: quantity },
-            success: function (response) {
-                if (response.success) {
-                    alert(response.message);
+            url: '@Url.Action("LoadMoreProduct", "Product")',
+            type: 'GET',
+            data: { page: page },
+            success: function (data) {
+                if (data.trim() === '') {
+                    hasMoreProducts = false;
+                    if (observer) observer.disconnect();
+                } else {
+                    $('#product-container').append(data);
+                    page++;
                 }
+                isLoading = false;
             },
             error: function () {
-                alert("@Localizer["An error occurred!"]");
+                isLoading = false;
             }
         });
     }
+
+    $(document).ready(function () {
+        loadProducts(); // Tải trang đầu tiên
+
+        let trigger = document.getElementById('load-trigger');
+        if (trigger) {
+            observer = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting) {
+                    loadProducts();
+                }
+            }, { threshold: 1.0 });
+            observer.observe(trigger);
+        }
+    });
+
+
+     let currentPage = 0;
+    const totalPages = @slideCount;
+    const carouselInner = document.getElementById("carousel-inner");
+
+    function updateSlide() {
+        const offset = -100 * currentPage;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+    }
+
+    document.getElementById("nextBtn").addEventListener("click", () => {
+        if (currentPage < totalPages - 1) {
+            currentPage++;
+            updateSlide();
+        }
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+        if (currentPage > 0) {
+            currentPage--;
+            updateSlide();
+        }
+    });
 </script>

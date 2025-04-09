@@ -17,6 +17,7 @@ namespace WebBanPhuKienDienThoai.Respository
             var query = _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.DeviceType)
+                .Include(p => p.Ratings)
                 .AsQueryable();
 
             if (categoryId.HasValue)
@@ -43,6 +44,7 @@ namespace WebBanPhuKienDienThoai.Respository
             // Lấy tất cả sản phẩm kèm thông tin category
             return await _context.Products
                 .Include(p => p.Category)
+                .Include(p => p.Ratings)
                 .ToListAsync();
         }
 
@@ -52,10 +54,11 @@ namespace WebBanPhuKienDienThoai.Respository
                 .Include(p => p.DeviceType)  // 🔹 Load thông tin DeviceType
                 .Include(p => p.Category)    // 🔹 Load cả Category nếu cần
                 .Include(p => p.Images)      // 🔹 Load danh sách hình ảnh
+                .Include(p => p.Ratings)
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task AddAsync(Product product , List<ProductImage> productImages)
+        public async Task AddAsync(Product product, List<ProductImage> productImages)
         {
             _context.Products.Add(product);
             foreach (var image in productImages)
@@ -115,5 +118,25 @@ namespace WebBanPhuKienDienThoai.Respository
                 .Include(p => p.Images)
                 .ToListAsync();
         }
+        public async Task<List<Product>> getPaginatedProducts(int pageNumber, int pageSize)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .Include(p => p.Ratings)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+        }
+
+        public async Task<List<Product>> GetProductsByCategoryId(int categoryId)
+        {
+            return await _context.Products
+                .Where(p => p.CategoryId == categoryId)
+                .Include(p => p.Category)
+                .Include(p => p.DeviceType)
+                .ToListAsync();
+        }
     }
+
 }

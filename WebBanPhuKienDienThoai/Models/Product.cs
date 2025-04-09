@@ -19,5 +19,9 @@ namespace WebBanPhuKienDienThoai.Models
         public Category? Category { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        public List<Comment>? Comments { get; set; } = new List<Comment>();
+        public List<Rating>? Ratings { get; set; } = new List<Rating>();
+        public double AverageRating => Ratings.Any() ? Ratings.Average(r => r.Stars) : 0;
+
     }
 }

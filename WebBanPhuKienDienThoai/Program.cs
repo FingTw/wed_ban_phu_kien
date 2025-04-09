@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using WebBanPhuKienDienThoai.Controllers;
 using WebBanPhuKienDienThoai.Models;
 using WebBanPhuKienDienThoai.Repositories;
 using WebBanPhuKienDienThoai.Respository;
@@ -33,8 +34,12 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 });
 
 
+
 builder.Services.AddControllersWithViews();
+
+builder.Services.Configure<PayPalConfig>(builder.Configuration.GetSection("PayPal"));
 builder.Services.AddSingleton<PayPalService>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -72,12 +77,26 @@ builder.Services.AddScoped<IDeviceTypeRepository, EFDeviceTypeRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IDiscountRepository, EFDiscountRepository>();
 
+builder.Services.AddScoped<IRatingRepository, EFRatingRepository>();
+builder.Services.AddScoped<ICommentRepository, EFCommentRepository>();
+
+// Đăng ký UserManager
+builder.Services.AddScoped<UserManager<ApplicationUser>>();
+
 builder.Services.AddRazorPages();
 
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<IGeminiService, GeminiService>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+    await DataInitializer.SeedData(services);
+}
 
 if (!app.Environment.IsDevelopment())
 {

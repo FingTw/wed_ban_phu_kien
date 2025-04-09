@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@inject IViewLocalizer Localizer
+@model IEnumerable<WebBanPhuKienDienThoai.Models.Product>
+
+@foreach (var product in Model.Where(p => p.Stock > 0))
+{
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <a asp-controller="Product" asp-action="Display" asp-route-id="@product.Id">
+                <img src="@product.ImageUrl" class="card-img-top p-3 img-hover-zoom" alt="Product Image"
+                     style="height: 250px; object-fit: cover; border-radius: 15px;">
+            </a>
+            <div class="card-body text-center">
+                <h5 class="card-title text-dark fw-bold">@product.Name</h5>
+                <p class="card-text text-muted">
+                    <strong>Category:</strong> @product.Category?.Name
+                </p>
+                <p class="card-text text-danger fw-bold">
+                    @product.Price.ToString("C")
+                </p>
+                <p class="card-text text-truncate" style="max-width: 100%;">
+                    @product.Description
+                </p>
+                <div>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <span class="fa fa-star @(i <= product.AverageRating ? "checked" : "")"></span>
+                    }
+                    <span>@product.Ratings.Count() ratings</span>
+                </div>
+            </div>
+            <div class="card-footer text-center bg-white">
+                <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-outline-primary w-100">
+                    View Details
+                </a>
+                <a class="compare btn btn-primary" data-productid="@product.Id" data-name="@product.Name" data-image="@product.ImageUrl">
+                    +
+                </a>
+                <a href="#" class="btn btn-dark me-2" onclick="addToCart(@product.Id, 1); return false;">@Localizer["Add to Cart"]</a>
+
+            </div>
+        </div>
+    </div>
+}
+

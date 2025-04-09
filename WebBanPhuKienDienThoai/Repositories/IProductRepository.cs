@@ -10,4 +10,5 @@ public interface IProductRepository
     Task<IEnumerable<Product>> GetByCategoryIdAsync(int categoryId);
     Task<IEnumerable<Product>> GetProductsByIdsAsync(int[] productIds);
     Task<IEnumerable<Product>> FilterAsync(int? categoryId, int? deviceTypeId, decimal? minPrice, decimal? maxPrice);
+    Task<List<Product>> getPaginatedProducts(int pageNumber, int pageSize);
 }

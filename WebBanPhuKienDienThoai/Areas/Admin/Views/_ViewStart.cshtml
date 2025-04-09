@@ -1,3 +1,22 @@
-﻿@{
-    Layout = "_AdminLayout";
+﻿@using Microsoft.AspNetCore.Identity
+   @inject SignInManager<ApplicationUser> SignInManager
+   @inject UserManager<ApplicationUser> UserManager
+
+@{
+    var layout = "_Layout";
+    if (SignInManager.IsSignedIn(User))
+    {
+        var user = await UserManager.GetUserAsync(User);
+        if (user != null && await UserManager.IsInRoleAsync(user, "Admin"))
+        {
+            layout = "_AdminLayout";
+        }
+        else if (user != null && await UserManager.IsInRoleAsync(user, "Employee"))
+        {
+            layout = "_LayoutEmployee";
+        }
+
+        // Thêm các vai trò khác nếu cần
+    }
+    Layout = layout;
 }

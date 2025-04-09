@@ -60,6 +60,10 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-image: url('~\images\bgbody.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .floating-dot {
@@ -86,6 +90,20 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+
+.img-hover-zoom {
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà trong 0.3 giây */
+}
+
+    .img-hover-zoom:hover {
+        transform: scale(1.1); /* Phóng to ảnh lên 110% khi hover */
+    }
+
+
+.fa-star.checked {
+    color: orange;
+}
+
 
 .chat-icon {
     position: fixed;
